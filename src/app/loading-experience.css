@@ -1,0 +1,32 @@
+.loading-surface { position: relative; min-height: 24rem; border-radius: 1.35rem; }
+.loading-surface > .loading-underlay { transition: opacity 180ms ease; }
+.loading-surface:has(> .loading-experience[data-active=true]) > .loading-underlay { opacity: 0; visibility: hidden; }
+.loading-experience { --loading-ink: #f4effb; --loading-muted: #c2b6d2; --loading-accent: #d0b4fa; color: var(--loading-ink); }
+.panel-loading { position: absolute; inset: 0; pointer-events: none; border-radius: inherit; }
+.panel-loading[data-active=true] { pointer-events: auto; background: #241a30; }
+.loading-content { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.4rem; min-height: 100%; padding: 2rem 1.25rem; text-align: center; animation: learning-arrive 220ms ease-out both; }
+.panel-loading .loading-content { position: sticky; top: 9rem; min-height: min(27rem, calc(100svh - 10rem)); }
+.loading-copy { width: 100%; max-width: 30rem; }
+.loading-copy p { margin: 0; }
+.loading-copy .loading-kicker { color: var(--loading-muted); font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; margin-bottom: .8rem; }
+.loading-copy .loading-message { min-height: 2.8em; display: grid; place-items: center; font-size: clamp(1.35rem, 3vw, 1.9rem); font-weight: 650; line-height: 1.4; letter-spacing: -.025em; text-wrap: balance; animation: learning-arrive 500ms ease both; }
+.loading-copy .loading-reassurance { color: var(--loading-muted); font-size: .85rem; line-height: 1.7; margin-top: .7rem; }
+.learning-motif { width: 6.5rem; height: 5rem; display: grid; align-content: center; gap: .55rem; transform: rotate(-5deg); }
+.learning-motif span { display: block; height: .38rem; width: 100%; border-radius: 1rem; background: var(--loading-accent); transform-origin: left; animation: learning-flow 3.6s ease-in-out infinite; }
+.learning-motif span:nth-child(2) { width: 78%; margin-left: 12%; animation-delay: 300ms; background: #ac83da; }
+.learning-motif span:nth-child(3) { width: 90%; animation-delay: 600ms; }
+.learning-motif span:nth-child(4) { width: 58%; margin-left: 12%; animation-delay: 900ms; background: #ac83da; }
+.loading-experience.compact { min-height: 4rem; }
+.loading-experience.compact .loading-content { flex-direction: row; justify-content: flex-start; gap: 1rem; padding: .5rem 0; text-align: left; }
+.loading-experience.compact .learning-motif { flex: 0 0 2.5rem; height: 3rem; gap: .3rem; }
+.loading-experience.compact .learning-motif span { height: .2rem; }
+.loading-experience.compact .loading-message { font-size: 1rem; min-height: 2.8em; display: block; }
+.loading-experience.compact .loading-kicker { display: none; }
+.loading-experience.compact .loading-reassurance { display: none; }
+.panel .loading-experience { --loading-ink: #34213f; --loading-muted: #62536b; --loading-accent: #775196; }
+.adapt-experience, .reflection-response { animation: learning-arrive 220ms ease-out both; }
+@keyframes learning-flow { 0%, 100% { opacity: .55; transform: scaleX(.84); } 50% { opacity: 1; transform: scaleX(1); } }
+@keyframes learning-arrive { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 480px) { .panel-loading .loading-message { min-height: 4.2em; } }
+@media (prefers-reduced-motion: reduce) { .loading-experience *, .adapt-experience, .reflection-response { animation: none !important; transition: none !important; } .loading-surface > .loading-underlay { transition: none; } }
+@media (forced-colors: active) { .learning-motif span { background: CanvasText; } .loading-experience { --loading-ink: CanvasText; --loading-muted: CanvasText; } .panel-loading[data-active=true] { background: Canvas; } }

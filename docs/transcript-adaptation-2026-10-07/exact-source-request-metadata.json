@@ -1,0 +1,17 @@
+{
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "sourceSha256": "6de993763a5e77ea11236741daec35b7709f7b89ef880e9e56c464e543b26026",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "I cannot access spoken audio. Arrange the complete transcript into readable paragraphs and concise key points. Use exact source sentences for the paragraphs and exact source sentences or exact continuous source excerpts for key points. Retain the original order and every detail. Preserve qualifiers such as little regard, contributed to, and weakened exactly. Do not add explanatory facts, intentions, causal conclusions, or new descriptions. Use a short neutral introduction and source-anchored title. Copy dates and century numbers exactly; no numeric step labels or changed date-range notation.",
+    "focus": ""
+  },
+  "startedAt": "2026-10-07T19:16:33.553Z",
+  "flow": "Existing fileMaterial -> source-only learning store -> store.adapt -> existing Claude adaptSource -> existing strict validation",
+  "inferenceConfig": {
+    "maxTokens": 8000,
+    "temperature": 0
+  }
+}

@@ -1,0 +1,1321 @@
+{
+  "schemaVersion": 1,
+  "generator": {
+    "pypdf": "6.10.0",
+    "reportlab": "4.4.9",
+    "Pillow": "12.3.0",
+    "fontSha256": "baa251526d6862712a58e613ef451d8a2b60482142ec6aab1d47fb8e23e21a7c"
+  },
+  "documents": [
+    {
+      "id": "lecture-clean",
+      "file": ".pdf-corpus-cache/lecture-clean.pdf",
+      "sha256": "bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342",
+      "bytes": 1534,
+      "categories": [
+        "lecture-notes",
+        "headings",
+        "lists",
+        "single-column",
+        "compressed-streams"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Lecture: learning with evidence.",
+          "We observe the source before drawing a conclusion.",
+          "A second statement explains the same idea.",
+          "1. Observe the material.",
+          "2. Explain the evidence."
+        ],
+        "profile": "Selectable text should survive; layout labels are inferred, not authoritative."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          177
+        ]
+      }
+    },
+    {
+      "id": "columns-ordered",
+      "file": ".pdf-corpus-cache/columns-ordered.pdf",
+      "sha256": "293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e",
+      "bytes": 1494,
+      "categories": [
+        "multi-column",
+        "clean-layout"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "LEFT1: First idea.",
+          "LEFT2: Second idea.",
+          "LEFT3: Conclusion.",
+          "RIGHT1: Another idea.",
+          "RIGHT2: Evidence.",
+          "RIGHT3: Summary."
+        ],
+        "profile": "Visual columns read left top-to-bottom then right. Interleaved painting order must not be mistaken for verified reading order.",
+        "order": [
+          "LEFT1: First idea.",
+          "LEFT2: Second idea.",
+          "LEFT3: Conclusion.",
+          "RIGHT1: Another idea.",
+          "RIGHT2: Evidence.",
+          "RIGHT3: Summary."
+        ],
+        "requireWarning": "READING_ORDER_UNCERTAIN"
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          115
+        ]
+      }
+    },
+    {
+      "id": "columns-interleaved",
+      "file": ".pdf-corpus-cache/columns-interleaved.pdf",
+      "sha256": "a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54",
+      "bytes": 1494,
+      "categories": [
+        "multi-column",
+        "poorly-structured"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "LEFT1: First idea.",
+          "LEFT2: Second idea.",
+          "LEFT3: Conclusion.",
+          "RIGHT1: Another idea.",
+          "RIGHT2: Evidence.",
+          "RIGHT3: Summary."
+        ],
+        "profile": "Visual columns read left top-to-bottom then right. Interleaved painting order must not be mistaken for verified reading order.",
+        "order": [
+          "LEFT1: First idea.",
+          "LEFT2: Second idea.",
+          "LEFT3: Conclusion.",
+          "RIGHT1: Another idea.",
+          "RIGHT2: Evidence.",
+          "RIGHT3: Summary."
+        ],
+        "requireWarning": "READING_ORDER_UNCERTAIN"
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          115
+        ]
+      }
+    },
+    {
+      "id": "table-untagged",
+      "file": ".pdf-corpus-cache/table-untagged.pdf",
+      "sha256": "dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31",
+      "bytes": 1534,
+      "categories": [
+        "tables",
+        "untagged-visual-structure"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Material",
+          "Notes",
+          "Chapter"
+        ],
+        "profile": "Cell labels may extract; row/column semantics are not supported and must not be inferred from success.",
+        "unsupported": [
+          "table cell associations"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          71
+        ]
+      }
+    },
+    {
+      "id": "maths-layout",
+      "file": ".pdf-corpus-cache/maths-layout.pdf",
+      "sha256": "8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215",
+      "bytes": 42793,
+      "categories": [
+        "mathematical-notation",
+        "superscript",
+        "fractions",
+        "unicode"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Lecture: mathematics notation."
+        ],
+        "profile": "Glyphs may survive; equation structure and meaning are explicitly unsupported.",
+        "unsupported": [
+          "formula structure",
+          "fraction/superscript semantics"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          110
+        ]
+      }
+    },
+    {
+      "id": "diagram-labelled",
+      "file": ".pdf-corpus-cache/diagram-labelled.pdf",
+      "sha256": "2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268",
+      "bytes": 1533,
+      "categories": [
+        "diagrams",
+        "vector-graphics"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Reservoir",
+          "Field"
+        ],
+        "profile": "Labels are extractable; the relationship shown by the arrow is not represented.",
+        "unsupported": [
+          "arrow relationship"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          89
+        ]
+      }
+    },
+    {
+      "id": "code-indentation",
+      "file": ".pdf-corpus-cache/code-indentation.pdf",
+      "sha256": "84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18",
+      "bytes": 1604,
+      "categories": [
+        "source-code",
+        "indentation"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "def total(values):",
+          "result = 0",
+          "for value in values:",
+          "result += value",
+          "return result"
+        ],
+        "profile": "Lexical code should survive, but preserving line boundaries and indentation is essential; detect normalization losses.",
+        "exactBlocks": [
+          "def total(values):",
+          "    result = 0",
+          "    for value in values:",
+          "        result += value",
+          "    return result"
+        ],
+        "unsupported": [
+          "executable code semantics"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          101
+        ]
+      }
+    },
+    {
+      "id": "unicode-embedded-font",
+      "file": ".pdf-corpus-cache/unicode-embedded-font.pdf",
+      "sha256": "2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75",
+      "bytes": 43473,
+      "categories": [
+        "unicode",
+        "embedded-font",
+        "punctuation"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Café — naïve; ‘quoted’ words. Ω, β, Ж; résumé!"
+        ],
+        "profile": "Selectable text should survive; layout labels are inferred, not authoritative.",
+        "exactBlocks": [
+          "Café — naïve; ‘quoted’ words. Ω, β, Ж; résumé!"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          47
+        ]
+      }
+    },
+    {
+      "id": "poor-paint-order",
+      "file": ".pdf-corpus-cache/poor-paint-order.pdf",
+      "sha256": "f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094",
+      "bytes": 1419,
+      "categories": [
+        "poorly-structured",
+        "reading-order"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Learning",
+          "needs",
+          "clear",
+          "evidence."
+        ],
+        "profile": "Visually coherent sentence; scrambled content-stream order is an inherent source difficulty that should be warned about.",
+        "order": [
+          "Learning",
+          "needs",
+          "clear",
+          "evidence."
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          31
+        ]
+      }
+    },
+    {
+      "id": "scan-image-only",
+      "file": ".pdf-corpus-cache/scan-image-only.pdf",
+      "sha256": "f450c9d10ee680ac347fc9266e079dfe8f2b083c411425f3be0ddea81d835d38",
+      "bytes": 23090,
+      "categories": [
+        "scanned",
+        "image-only"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "NO_READABLE_TEXT",
+        "pages": 1,
+        "profile": "A legible rasterized lesson without OCR must fail honestly, not become an empty lesson."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "mixed-text-scan",
+      "file": ".pdf-corpus-cache/mixed-text-scan.pdf",
+      "sha256": "137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7",
+      "bytes": 23683,
+      "categories": [
+        "lecture-notes",
+        "scanned",
+        "mixed-pages"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 2,
+      "sourcePageMap": [
+        1,
+        2
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 2,
+        "anchors": [
+          "Lecture: learning with evidence.",
+          "We observe the source before drawing a conclusion.",
+          "A second statement explains the same idea.",
+          "1. Observe the material.",
+          "2. Explain the evidence."
+        ],
+        "profile": "First page extracts; second raster page is empty with page-specific NO_PAGE_TEXT.",
+        "coverage": "partial",
+        "emptyPages": [
+          2
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 2,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          177,
+          0
+        ]
+      }
+    },
+    {
+      "id": "repeated-boilerplate",
+      "file": ".pdf-corpus-cache/repeated-boilerplate.pdf",
+      "sha256": "a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8",
+      "bytes": 2569,
+      "categories": [
+        "lecture-notes",
+        "headers",
+        "footers",
+        "repetition"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 3,
+      "sourcePageMap": [
+        1,
+        2,
+        3
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 3,
+        "anchors": [
+          "Lesson section 1.",
+          "Lesson section 2.",
+          "Lesson section 3."
+        ],
+        "profile": "Repeated headers/footer are source boilerplate; repetition detection is a review signal, not proof of parser duplication."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 3,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          111,
+          111,
+          111
+        ]
+      }
+    },
+    {
+      "id": "truncated",
+      "file": ".pdf-corpus-cache/truncated.pdf",
+      "sha256": "a4e262b545839b3434e22295876604972b5f179081f442ef22a007fc4e0b1cf0",
+      "bytes": 1454,
+      "categories": [
+        "malformed"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "INVALID_PDF",
+        "pages": 1,
+        "profile": "Missing trailer should fail validation; incomplete source."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "unreadable": true
+      }
+    },
+    {
+      "id": "leading-junk",
+      "file": ".pdf-corpus-cache/leading-junk.pdf",
+      "sha256": "c01414cf73f033f65315cd463899b45317ad4b926ab1494c11ba03adaa418906",
+      "bytes": 1539,
+      "categories": [
+        "recoverable-nonstandard"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "NOT_PDF",
+        "pages": 1,
+        "profile": "The spike deliberately rejects leading junk; independent parser recoverability does not make this a library failure."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 1,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          177
+        ]
+      }
+    },
+    {
+      "id": "over-page-budget",
+      "file": ".pdf-corpus-cache/over-page-budget.pdf",
+      "sha256": "d2e6dcdc84387eafbc28129fbe5ae2145de4f649a7dd965bd89e7cf5941afa70",
+      "bytes": 10469,
+      "categories": [
+        "resource-boundary"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned validation fixture"
+      },
+      "sourcePageCount": 21,
+      "sourcePageMap": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "expected": {
+        "outcome": "RESOURCE_LIMIT",
+        "pages": 21,
+        "profile": "Valid PDF rejected by the current 20-page policy, not failed extraction quality."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 21,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": null
+      }
+    },
+    {
+      "id": "mit-probability-slides",
+      "file": ".pdf-corpus-cache/mit-probability-slides.pdf",
+      "sha256": "509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d",
+      "bytes": 173954,
+      "categories": [
+        "lecture-notes",
+        "slide-deck",
+        "tables",
+        "mathematics",
+        "diagrams",
+        "lists"
+      ],
+      "source": {
+        "kind": "public",
+        "title": "MIT OCW, 6.041 Spring 2006 lecture 1",
+        "url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006/e93a3d8242ae1c6e75f7ea9c0a2aa3bf_lec01.pdf",
+        "license": "CC BY-NC-SA 4.0 (OCW terms; retain attribution)"
+      },
+      "sourcePageCount": 14,
+      "sourcePageMap": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 14,
+        "anchors": [
+          "Motivation",
+          "Sample Space"
+        ],
+        "profile": "Text-heavy slides with tables/visuals; fragmented bullets and labels are likely. No claim of interpreting visuals.",
+        "unsupported": [
+          "table associations",
+          "diagram relationships",
+          "formula semantics"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 14,
+        "encrypted": false,
+        "tagged": true,
+        "pageCharacters": [
+          386,
+          151,
+          388,
+          326,
+          435,
+          132,
+          100,
+          54,
+          172,
+          77,
+          86,
+          287,
+          148,
+          294
+        ]
+      }
+    },
+    {
+      "id": "mit-theory-slides",
+      "file": ".pdf-corpus-cache/mit-theory-slides.pdf",
+      "sha256": "1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f",
+      "bytes": 238512,
+      "categories": [
+        "slide-deck",
+        "mathematical-notation",
+        "unicode"
+      ],
+      "source": {
+        "kind": "public",
+        "title": "MIT OCW, 18.175 Spring 2014 lecture 1",
+        "url": "https://ocw.mit.edu/courses/18-175-theory-of-probability-spring-2014/e793116b0f70b437cca5e9cf75754cab_MIT18_175S14_Lecture1.pdf",
+        "license": "CC BY-NC-SA 4.0 (OCW terms; retain attribution)"
+      },
+      "sourcePageCount": 12,
+      "sourcePageMap": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 12,
+        "anchors": [
+          "Probability"
+        ],
+        "profile": "Mathematical slides; extracted symbols do not preserve all mathematical structure.",
+        "unsupported": [
+          "equation meaning"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 12,
+        "encrypted": false,
+        "tagged": true,
+        "pageCharacters": [
+          94,
+          84,
+          84,
+          515,
+          378,
+          1001,
+          802,
+          337,
+          84,
+          85,
+          178,
+          178
+        ]
+      }
+    },
+    {
+      "id": "attention-paper",
+      "file": ".pdf-corpus-cache/attention-paper.pdf",
+      "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "bytes": 2215244,
+      "categories": [
+        "academic-paper",
+        "multi-column",
+        "tables",
+        "mathematics",
+        "diagrams",
+        "embedded-fonts"
+      ],
+      "source": {
+        "kind": "public",
+        "title": "Vaswani et al., Attention Is All You Need, arXiv 1706.03762v7",
+        "url": "https://arxiv.org/pdf/1706.03762v7",
+        "license": "Public arXiv copy; local evaluation only, do not redistribute source PDF"
+      },
+      "sourcePageCount": 15,
+      "sourcePageMap": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 15,
+        "anchors": [
+          "Abstract",
+          "Introduction"
+        ],
+        "profile": "Long-form scientific paper with complex visual material; layout order and line breaks require source comparison.",
+        "unsupported": [
+          "tables",
+          "equations",
+          "diagram meaning"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 15,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          2860,
+          4258,
+          1827,
+          2508,
+          3199,
+          3477,
+          3324,
+          3195,
+          2974,
+          3112,
+          3216,
+          3220,
+          812,
+          815,
+          818
+        ]
+      }
+    },
+    {
+      "id": "think-python-full",
+      "file": ".pdf-corpus-cache/think-python-full.pdf",
+      "sha256": "9d923cacf1b07e88a6314395a5afafae1aa01cd1aa0ce16b1851d38b18542487",
+      "bytes": 921415,
+      "categories": [
+        "textbook",
+        "over-page-budget",
+        "source-code"
+      ],
+      "source": {
+        "kind": "public",
+        "title": "Allen B. Downey, Think Python 2e, version 2.4.0",
+        "url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "license": "CC BY-NC 3.0"
+      },
+      "sourcePageCount": 244,
+      "sourcePageMap": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244
+      ],
+      "expected": {
+        "outcome": "RESOURCE_LIMIT",
+        "pages": 244,
+        "profile": "Complete open textbook exceeds 20 pages; evaluate selected chapters separately without changing application limits."
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 244,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": null
+      }
+    },
+    {
+      "id": "think-python-chapter2",
+      "file": ".pdf-corpus-cache/think-python-chapter2.pdf",
+      "sha256": "81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad",
+      "bytes": 148186,
+      "categories": [
+        "textbook-chapter",
+        "headings",
+        "source-code",
+        "mathematics",
+        "embedded-fonts"
+      ],
+      "source": {
+        "kind": "public-excerpt",
+        "title": "Allen B. Downey, Think Python 2e, version 2.4.0, chapter 2",
+        "url": "https://greenteapress.com/thinkpython2/thinkpython2.pdf",
+        "license": "CC BY-NC 3.0",
+        "derivation": "pypdf 6.10.0, original physical pages 31-38"
+      },
+      "sourcePageCount": 8,
+      "sourcePageMap": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 8,
+        "anchors": [
+          "Variables",
+          "Debugging"
+        ],
+        "profile": "Real textbook chapter; expect running headers, line hyphenation, code and prose. Verify boundaries rather than equating text volume with understanding.",
+        "unsupported": [
+          "code indentation semantics",
+          "mathematical structure"
+        ]
+      },
+      "independentInventory": {
+        "parser": "pypdf",
+        "version": "6.10.0",
+        "pageCount": 8,
+        "encrypted": false,
+        "tagged": false,
+        "pageCharacters": [
+          1127,
+          1927,
+          2395,
+          2277,
+          2651,
+          1949,
+          892,
+          51
+        ]
+      }
+    },
+    {
+      "id": "tagged-heading-list",
+      "file": ".pdf-corpus-cache/tagged-heading-list.pdf",
+      "sha256": "83955b796b9c78b7108533fbc6d0c0c947e43f8a9fceb96188e17815586c47de",
+      "bytes": 1534,
+      "categories": [
+        "headings",
+        "lists",
+        "document-tags"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned existing spike fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Learning together",
+          "A complete statement.",
+          "1. Observe the source.",
+          "2. Explain the idea."
+        ],
+        "profile": "Existing independent tagged control: heading and list structure should survive.",
+        "exactBlocks": [
+          "Learning together",
+          "A complete statement.",
+          "1. Observe the source.",
+          "2. Explain the idea."
+        ]
+      },
+      "independentInventory": {
+        "basis": "Known fixture construction",
+        "tagged": true
+      }
+    },
+    {
+      "id": "unicode-cmap",
+      "file": ".pdf-corpus-cache/unicode-cmap.pdf",
+      "sha256": "e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6",
+      "bytes": 2043,
+      "categories": [
+        "unicode",
+        "non-latin",
+        "font-cmap"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned existing spike fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "text",
+        "pages": 1,
+        "anchors": [
+          "Café — ‘complete’ sentences! Ω, β, and Ж survive."
+        ],
+        "profile": "Existing exact ToUnicode mapping control.",
+        "exactBlocks": [
+          "Café — ‘complete’ sentences! Ω, β, and Ж survive."
+        ]
+      },
+      "independentInventory": {
+        "basis": "Known fixture construction",
+        "tagged": false
+      }
+    },
+    {
+      "id": "encrypted-control",
+      "file": ".pdf-corpus-cache/encrypted-control.pdf",
+      "sha256": "5b90dbb362e573449a49ee1a0b1e18e1eac0532ad7df7046a67eb686d51c836a",
+      "bytes": 906,
+      "categories": [
+        "password-protected"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned existing spike fixture"
+      },
+      "sourcePageCount": 1,
+      "sourcePageMap": [
+        1
+      ],
+      "expected": {
+        "outcome": "PASSWORD_PROTECTED",
+        "pages": 1,
+        "profile": "Existing genuine encrypted fixture; no password should be requested or invented."
+      },
+      "independentInventory": {
+        "basis": "Known fixture construction",
+        "tagged": false
+      }
+    },
+    {
+      "id": "empty-control",
+      "file": ".pdf-corpus-cache/empty-control.pdf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "categories": [
+        "empty"
+      ],
+      "source": {
+        "kind": "synthetic",
+        "license": "Project-owned existing spike fixture"
+      },
+      "sourcePageCount": 0,
+      "sourcePageMap": [],
+      "expected": {
+        "outcome": "EMPTY_INPUT",
+        "pages": 0,
+        "profile": "No successful empty lesson."
+      },
+      "independentInventory": {
+        "basis": "Known fixture construction",
+        "tagged": false
+      }
+    }
+  ]
+}

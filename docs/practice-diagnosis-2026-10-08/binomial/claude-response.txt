@@ -1,0 +1,71 @@
+```json
+{
+  "questions": [
+    {
+      "id": "q1-binomial-form",
+      "prompt": "What is the usual form of a binomial expression, and what do the letters a, b, and n represent?",
+      "sectionId": "source-3",
+      "answerQuote": "Binomial expression is usually of the form (a + b)ⁿ where a, b are algebraic terms and n is a real number.",
+      "evidence": [
+        {
+          "sourceId": "p3",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "q2-natural-formula",
+      "prompt": "For a binomial expression (a + b)ⁿ where n is a natural number, what formula is used to expand it?",
+      "sectionId": "source-4",
+      "answerQuote": "(a + b)ⁿ equals the sum from k=0 to n of (n choose k) times aⁿ⁻ᵏ times bᵏ.",
+      "evidence": [
+        {
+          "sourceId": "p4",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "q3-coefficient-definition",
+      "prompt": "How is the binomial coefficient (n choose m) defined in terms of factorials?",
+      "sectionId": "source-6",
+      "answerQuote": "(n choose m) = n! / [(n−m)! m!] and n! = n × (n−1) × (n−2) × ⋯ × 2 × 1.",
+      "evidence": [
+        {
+          "sourceId": "p6",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "q4-real-power-form",
+      "prompt": "When the power n is negative or a fraction, what form do we transform the binomial expression into, and what formula do we use?",
+      "sectionId": "source-12",
+      "answerQuote": "In cases where the power n of a given binomial expression is negative or fraction, we transform the binomial expression into the form (1 − x)ⁿ then use the formula: (1 − x)ⁿ = 1 − nx + [n(n−1)/2!]x² − [n(n−1)(n−2)/3!]x³ + ⋯.",
+      "evidence": [
+        {
+          "sourceId": "p12",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "q5-summary-concepts",
+      "prompt": "What five main concepts are covered in this lecture on binomial expansion?",
+      "sectionId": "source-16",
+      "answerQuote": "Binomial expressions, binomial expansion, binomial coefficients and terms, algebraic application of binomial expansion, and binomial expansion with negative or fractional power.",
+      "evidence": [
+        {
+          "sourceId": "p16",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    }
+  ]
+}
+```

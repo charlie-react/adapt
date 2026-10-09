@@ -1,0 +1,37 @@
+{
+  "source": {
+    "filename": "Colonialism_in_Africa___Exact_60_Seconds.mp3",
+    "bytes": 927495,
+    "sha256": "a1e479affb031e56356c862c8bb19ec134e3337e6140e9ba21daf7d01be7f660",
+    "mimeType": "audio/mp3"
+  },
+  "attempts": [
+    {
+      "model": "gemini-2.5-flash",
+      "httpStatus": 404,
+      "latencyMs": 4882,
+      "redactionsApplied": false,
+      "transcriptCharacters": 0,
+      "outcome": "api-error-or-incomplete",
+      "error": {
+        "code": 404,
+        "message": "This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).",
+        "status": "NOT_FOUND"
+      }
+    },
+    {
+      "model": "gemini-2.5-flash-lite",
+      "httpStatus": 404,
+      "latencyMs": 4063,
+      "redactionsApplied": false,
+      "transcriptCharacters": 0,
+      "outcome": "api-error-or-incomplete",
+      "error": {
+        "code": 404,
+        "message": "This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).",
+        "status": "NOT_FOUND"
+      }
+    }
+  ],
+  "fidelityStatus": "Not verified against an independent verbatim reference transcript."
+}

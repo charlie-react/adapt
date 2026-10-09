@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What are the three main types of computer networks classified by geographical scope?",
+      "sectionId": "source-2",
+      "answerQuote": "LAN generally covers a small area, MAN a metropolitan area, and WAN a large geographical area such as a region, country or continent.",
+      "evidence": [
+        {
+          "sourceId": "p2",
+          "mode": "text",
+          "quote": "LAN, WAN and MAN • Page 2\n\n1. Introduction to Computer Networks\n\nA computer network is a collection of interconnected devices that communicate and share resources. Devices can include computers, servers, printers, phones, switches, routers and wireless access points.\n\nWhy networks matter\n\n• Resource sharing: files, printers, applications and internet connections can be shared.\n\n• Communication: users and systems can exchange information.\n\n• Centralized services: organizations can provide shared storage, authentication and applications.\n\n• Scalability: additional devices and locations can be connected as requirements grow.\n\nGeographical classification\n\n• One useful classification is geographical scope. LAN generally covers a small area, MAN a metropolitan\n\narea, and WAN a large geographical area such as a region, country or continent."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "What device connects devices on an Ethernet LAN and forwards frames toward their destinations?",
+      "sectionId": "source-4",
+      "answerQuote": "Switch: connects devices on an Ethernet LAN and forwards frames toward their destinations.",
+      "evidence": [
+        {
+          "sourceId": "p4",
+          "mode": "text",
+          "quote": "LAN, WAN and MAN • Page 4\n\n3. LAN Components and Technologies\n\nA LAN uses networking devices and transmission technologies to connect local devices.\n\nCommon components\n\n• Switch: connects devices on an Ethernet LAN and forwards frames toward their destinations.\n\n• Wireless access point: provides Wi-Fi connectivity.\n\n• Router: connects the LAN to other networks.\n\n• Network interface: provides wired or wireless network connectivity to a device.\n\n• Ethernet cabling: commonly provides wired LAN connections.\n\nLAN topology\n\n• Modern Ethernet LANs commonly use a star arrangement in which devices connect to a central switch.\n\nWireless LANs commonly use access points as central connection points."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "What type of network connects networks across a metropolitan or city-scale area?",
+      "sectionId": "source-5",
+      "answerQuote": "A Metropolitan Area Network connects networks across a metropolitan or city-scale area. It is larger than a typical LAN but generally smaller than a WAN.",
+      "evidence": [
+        {
+          "sourceId": "p5",
+          "mode": "text",
+          "quote": "LAN, WAN and MAN • Page 5\n\n4. Metropolitan Area Network (MAN)\n\nA Metropolitan Area Network connects networks across a metropolitan or city-scale area. It is larger than a typical LAN but generally smaller than a WAN.\n\nCharacteristics\n\n• City or metropolitan-scale coverage.\n\n• Can connect multiple LANs.\n\n• May use high-capacity fiber-optic links.\n\n• Requires more extensive infrastructure than a single-site LAN.\n\n• May be operated by an organization, service provider or partnership.\n\nExamples\n\n• A university connecting campuses across one city.\n\n• A government organization connecting offices throughout a metropolitan area.\n\n• A provider's metropolitan network linking customers and facilities."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "prompt": "Why are routers central to WAN connectivity?",
+      "sectionId": "source-8",
+      "answerQuote": "Routers are central because they make forwarding decisions between networks.",
+      "evidence": [
+        {
+          "sourceId": "p8",
+          "mode": "text",
+          "quote": "LAN, WAN and MAN • Page 8\n\n7. WAN Devices, Services and Technologies\n\nWAN connectivity requires systems capable of moving traffic between geographically separated networks. Routers are central because they make forwarding decisions between networks.\n\nCommon components\n\n• Routers: forward packets between different networks.\n\n• WAN links: communication paths connecting distant sites.\n\n• Provider services: telecommunications providers may supply connectivity between locations.\n\n• Firewalls and security gateways: help control traffic entering and leaving networks.\n\nWAN approaches\n\n• Organizations may use dedicated connectivity, provider-managed services, internet-based connections,\n\nor combinations. The choice depends on cost, reliability, performance and security requirements."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "prompt": "How can a large organization use LANs, MANs and WANs together?",
+      "sectionId": "source-10",
+      "answerQuote": "A large organization can use LANs at individual sites, metropolitan connectivity between nearby sites, and WAN connectivity between distant regions.",
+      "evidence": [
+        {
+          "sourceId": "p10",
+          "mode": "text",
+          "quote": "LAN, WAN and MAN • Page 10\n\n9. How LAN, MAN and WAN Work Together\n\nThese categories are not isolated. A large organization can use LANs at individual sites, metropolitan connectivity between nearby sites, and WAN connectivity between distant regions.\n\nExample\n\n• A university can have a LAN in each faculty building.\n\n• A metropolitan connection can link campuses around the same city.\n\n• A WAN can connect those campuses to a remote campus or cloud infrastructure.\n\n• Routers connect separate networks while switches and access points provide local connectivity.\n\nKey idea\n\n• LAN, MAN and WAN describe different networking scales. A network can therefore be part of a larger\n\ninterconnected system."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "request": {
+    "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+    "revision": 1
+  },
+  "status": 400,
+  "body": {
+    "code": "INVALID_REQUEST",
+    "error": "That request could not be accepted. Check your input and try again."
+  }
+}

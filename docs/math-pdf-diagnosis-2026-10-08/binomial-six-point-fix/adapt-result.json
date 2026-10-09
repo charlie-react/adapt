@@ -1,0 +1,524 @@
+{
+  "status": 200,
+  "body": {
+    "fingerprint": "bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+    "expiresAt": 1791478513492,
+    "material": {
+      "id": "pdf:bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+      "kind": "pdf",
+      "title": "CSC203LL_Y2_01_08_Expanding Binomial Expressions.pdf",
+      "fingerprint": "bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+      ],
+      "units": [
+        {
+          "id": "p1",
+          "locator": {
+            "kind": "pdf",
+            "page": 1
+          }
+        },
+        {
+          "id": "p2",
+          "locator": {
+            "kind": "pdf",
+            "page": 2
+          }
+        },
+        {
+          "id": "p3",
+          "locator": {
+            "kind": "pdf",
+            "page": 3
+          }
+        },
+        {
+          "id": "p4",
+          "locator": {
+            "kind": "pdf",
+            "page": 4
+          }
+        },
+        {
+          "id": "p5",
+          "locator": {
+            "kind": "pdf",
+            "page": 5
+          }
+        },
+        {
+          "id": "p6",
+          "locator": {
+            "kind": "pdf",
+            "page": 6
+          }
+        },
+        {
+          "id": "p7",
+          "locator": {
+            "kind": "pdf",
+            "page": 7
+          }
+        },
+        {
+          "id": "p8",
+          "locator": {
+            "kind": "pdf",
+            "page": 8
+          }
+        },
+        {
+          "id": "p9",
+          "locator": {
+            "kind": "pdf",
+            "page": 9
+          }
+        },
+        {
+          "id": "p10",
+          "locator": {
+            "kind": "pdf",
+            "page": 10
+          }
+        },
+        {
+          "id": "p11",
+          "locator": {
+            "kind": "pdf",
+            "page": 11
+          }
+        },
+        {
+          "id": "p12",
+          "locator": {
+            "kind": "pdf",
+            "page": 12
+          }
+        },
+        {
+          "id": "p13",
+          "locator": {
+            "kind": "pdf",
+            "page": 13
+          }
+        },
+        {
+          "id": "p14",
+          "locator": {
+            "kind": "pdf",
+            "page": 14
+          }
+        },
+        {
+          "id": "p15",
+          "locator": {
+            "kind": "pdf",
+            "page": 15
+          }
+        },
+        {
+          "id": "p16",
+          "locator": {
+            "kind": "pdf",
+            "page": 16
+          }
+        },
+        {
+          "id": "p17",
+          "locator": {
+            "kind": "pdf",
+            "page": 17
+          }
+        },
+        {
+          "id": "p18",
+          "locator": {
+            "kind": "pdf",
+            "page": 18
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "status": "source-ready"
+    },
+    "preferences": {
+      "needs": [
+        "stepwise"
+      ],
+      "description": "",
+      "focus": ""
+    },
+    "experience": {
+      "introduction": "This material presents binomial expansion step by step. Each section breaks down the formulas, examples, and calculations into connected steps, preserving the source terminology and mathematical expressions.",
+      "sections": [
+        {
+          "id": "source-1",
+          "title": "Title Slide: Expanding Binomial Expressions",
+          "kind": "prose",
+          "paragraphs": [
+            "This is the title slide for a lesson on expanding binomial expressions, presented by the Department of Computer Science. The slide displays the main topic prominently against a red background with institutional branding."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p1",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": []
+        },
+        {
+          "id": "source-2",
+          "title": "Learning Objectives",
+          "kind": "prose",
+          "paragraphs": [
+            "The lesson has three main learning objectives. By the end of this lesson, you should be able to expand a given binomial expression with a power of a natural number, expand a given binomial expression with a power of a real number, and use binomial expansion to simplify algebraic expressions."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p2",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Expand a given binomial expression with a power of a natural number.",
+            "Expand a given binomial expression with a power of a real number.",
+            "Use binomial expansion to simplify algebraic expression."
+          ]
+        },
+        {
+          "id": "source-3",
+          "title": "Rationale for Binomial Expansion",
+          "kind": "prose",
+          "paragraphs": [
+            "Binomial expression is usually of the form (a + b)^n where a, b are algebraic terms and n is a real number. If n is a natural number, one may decide to expand the bracket by multiplying two brackets then use the result to multiply another bracket until the power of n is exhausted. This approach could be time consuming in a case of large value of n and the approach may never work when n is not a natural number. In this lesson, we present the approaches to expanding binomial expression for any value of n in the set of real numbers."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p3",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Recognize that binomial expressions have the form (a + b)^n, where a and b are algebraic terms and n is a real number.",
+            "Understand that for natural number powers, repeated bracket multiplication is possible but becomes time consuming for large n.",
+            "Note that the repeated multiplication approach may never work when n is not a natural number.",
+            "Learn that this lesson presents approaches to expanding binomial expressions for any real number value of n."
+          ]
+        },
+        {
+          "id": "source-4",
+          "title": "Binomial Expansion Formula for Natural Number Powers",
+          "kind": "equation",
+          "paragraphs": [
+            "A binomial expression of the form (a + b)^n, where n is a natural number, can be expanded using a formula. The formula states that (a + b)^n equals the sum of binomial coefficient terms from k = 0 to k = n, where each term is (n choose k) times a^(n-k) times b^k."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p4",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Identify that the binomial expression has the form (a + b)^n where n is a natural number.",
+            "Apply the formula: (a + b)^n = (n choose 0)a^(n-0)b^0 + (n choose 1)a^(n-1)b^1 + ... + (n choose n)a^(n-n)b^n.",
+            "Recognize that each term involves a binomial coefficient (n choose k) multiplied by powers of a and b that sum to n."
+          ]
+        },
+        {
+          "id": "source-5",
+          "title": "Example 1: Expanding (x + y)^5 - Setup",
+          "kind": "example",
+          "paragraphs": [
+            "Example 1 asks: What is the expansion of (x + y)^5? The solution begins by using the binomial formula (a + b)^n = (n choose 0)a^(n-0)b^0 + (n choose 1)a^(n-1)b^1 + ... + (n choose n)a^(n-n)b^n. Here a = x, b = y and n = 5. Thus, (x + y)^5 equals the sum of six terms with binomial coefficients and decreasing powers of x and increasing powers of y."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p5",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Identify the values: a = x, b = y, and n = 5.",
+            "Write the expansion formula with these values: (x + y)^5 = (5 choose 0)x^5y^0 + (5 choose 1)x^4y^1 + (5 choose 2)x^3y^2 + (5 choose 3)x^2y^3 + (5 choose 4)xy^4 + (5 choose 5)y^5.",
+            "Simplify the powers: (x + y)^5 = (5 choose 0)x^5 + (5 choose 1)x^4y + (5 choose 2)x^3y^2 + (5 choose 3)x^2y^3 + (5 choose 4)xy^4 + (5 choose 5)y^5."
+          ]
+        },
+        {
+          "id": "source-6",
+          "title": "Example 1: Computing Binomial Coefficients",
+          "kind": "example",
+          "paragraphs": [
+            "To complete the expansion, we define the binomial coefficient (n choose m) = n! / ((n-m)! m!) and n! = n × (n - 1) × (n - 2) × ... × 2 × 1. The slide shows detailed calculations for each binomial coefficient from (5 choose 0) through (5 choose 5). Each calculation demonstrates the factorial formula step by step, simplifying to the final numerical values: 1, 5, 10, 10, 5, and 1 respectively."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p6",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Define (n choose m) = n! / ((n-m)! m!) and n! = n × (n - 1) × (n - 2) × ... × 2 × 1.",
+            "Calculate (5 choose 0) = 5! / (5! · 0!) = 1.",
+            "Calculate (5 choose 1) = 5! / (4! · 1!) = 5.",
+            "Calculate (5 choose 2) = 5! / (3! · 2!) = 10.",
+            "Calculate (5 choose 3) = 5! / (2! · 3!) = 10.",
+            "Calculate (5 choose 4) = 5! / (1! · 4!) = 5."
+          ]
+        },
+        {
+          "id": "source-7",
+          "title": "Example 1: Final Expansion and Activities",
+          "kind": "example",
+          "paragraphs": [
+            "We now substitute the binomial coefficients into the expansion, to obtain (x + y)^5 = 1·x^5 + 5·x^4y + 10·x^3y^2 + 10·x^2y^3 + 5·xy^4 + 1·y^5. Hence, (x + y)^5 = x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5. The slide also includes easy activities asking how many terms the expansion has and why, what are the 1st, 2nd, and 4th terms of the expansion, and what are the coefficients of the 1st, 2nd, and 4th terms of the expansion."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p7",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Substitute the computed coefficients: (x + y)^5 = 1·x^5 + 5·x^4y + 10·x^3y^2 + 10·x^2y^3 + 5·xy^4 + 1·y^5.",
+            "Simplify to the final form: (x + y)^5 = x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5.",
+            "Reflect on the number of terms in the expansion and their pattern.",
+            "Identify specific terms and their coefficients as requested in the activities."
+          ]
+        },
+        {
+          "id": "source-8",
+          "title": "Example 2: Expanding (2x - 3)^4 - Setup and Calculation",
+          "kind": "example",
+          "paragraphs": [
+            "Example 2 asks: What is the expansion of (2x - 3)^4? Hence, or otherwise, evaluate (-2.998)^4. The solution uses the binomial formula with a = 2x, b = -3 and n = 4. The expansion is written out term by term, showing each binomial coefficient multiplied by the appropriate powers of 2x and -3. After computing the binomial coefficients (1, 4, 6, 4, 1) and simplifying each term, the final expansion is (2x - 3)^4 = 16x^4 - 96x^3 + 216x^2 - 216x + 81."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p8",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Identify the values: a = 2x, b = -3, and n = 4.",
+            "Write the expansion: (2x - 3)^4 = (4 choose 0)(2x)^4(-3)^0 + (4 choose 1)(2x)^3(-3)^1 + (4 choose 2)(2x)^2(-3)^2 + (4 choose 3)(2x)(-3)^3 + (4 choose 4)(-3)^4.",
+            "Simplify each term using the binomial coefficients 1, 4, 6, 4, 1 and the powers of 2x and -3.",
+            "Combine to obtain the final expansion: 16x^4 - 96x^3 + 216x^2 - 216x + 81."
+          ]
+        },
+        {
+          "id": "source-9",
+          "title": "Example 2: Evaluating (-2.998)^4",
+          "kind": "example",
+          "paragraphs": [
+            "Now, we simplify (-2.998)^4 using the solution. Comparing (2x - 3)^4 and (-2.998)^4 implies 2x - 3 = -2.998, which gives x = 0.001. Using the expansion (2x - 3)^4 = 16x^4 - 96x^3 + 216x^2 - 216x + 81, we substitute x = 0.001 to get (-2.998)^4 = (2(0.001) - 3)^4 = 16(0.001)^4 - 96(0.001)^3 + 216(0.001)^2 - 216(0.001) + 81 = 80.7842. Hence, (-2.998)^4 = 80.7842."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p9",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Compare (2x - 3)^4 with (-2.998)^4 to find that 2x - 3 = -2.998.",
+            "Solve for x: x = 0.001.",
+            "Substitute x = 0.001 into the expansion: 16(0.001)^4 - 96(0.001)^3 + 216(0.001)^2 - 216(0.001) + 81.",
+            "Calculate the numerical result: 80.7842."
+          ]
+        },
+        {
+          "id": "source-10",
+          "title": "Student Activity: Two Practice Problems",
+          "kind": "prose",
+          "paragraphs": [
+            "The slide presents two student activities. The first asks: Find the coefficient of the 4th term in the expansion of (2 - (1/4)x^2)^6. The second asks: Evaluate the 5th term in the expansion of (4x - 3y)^8."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p10",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Identify the 4th term in the expansion of (2 - (1/4)x^2)^6 and find its coefficient.",
+            "Identify the 5th term in the expansion of (4x - 3y)^8 and evaluate it."
+          ]
+        },
+        {
+          "id": "source-11",
+          "title": "Solution to Student Activity",
+          "kind": "example",
+          "paragraphs": [
+            "The solution to the first activity shows that the 4th term is (6 choose 3)(2)^3(-(1/4)x^2)^3 = (6 choose 3) · 8 · (-(1/64)x^6) = (6×5×4×3!)/(3×2×1·3!) · 8 · (-(1/64)x^6) = -(20/8)x^6. Hence, the coefficient of the 4th term is -20/8. The solution to the second activity shows that the 5th term is (8 choose 5)(4x)^3(-3y)^5 = (8 choose 5) · 4^3x^3 · (-3)^5y^5 = (8×7×6×5!)/(3×2×1·5!) · 64x^3 · (-243y^5) = 56 · 64x^3 · (-243y^5) = -870,912x^3y^5."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p11",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "For problem 1, identify the 4th term: (6 choose 3)(2)^3(-(1/4)x^2)^3.",
+            "Calculate the binomial coefficient and simplify to find the coefficient: -20/8.",
+            "For problem 2, identify the 5th term: (8 choose 5)(4x)^3(-3y)^5.",
+            "Calculate the binomial coefficient and simplify to find the term: -870,912x^3y^5."
+          ]
+        },
+        {
+          "id": "source-12",
+          "title": "Binomial Expansion for Real Number Powers",
+          "kind": "equation",
+          "paragraphs": [
+            "In cases where the power n of a given binomial expression is negative or fraction, we transform the binomial expression into the form (1 - x)^n then use the formula: (1 - x)^n = 1 - nx + (n(n - 1)/2!)x^2 - (n(n - 1)(n - 2)/3!)x^3 + ... The slide also presents Example 1: Find the binomial expansion of (1 + 3x)^(-4) to the fourth term."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p12",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Recognize that when n is negative or a fraction, the binomial expression is transformed into the form (1 - x)^n.",
+            "Apply the formula: (1 - x)^n = 1 - nx + (n(n - 1)/2!)x^2 - (n(n - 1)(n - 2)/3!)x^3 + ...",
+            "Use this formula to expand expressions with non-natural number powers."
+          ]
+        },
+        {
+          "id": "source-13",
+          "title": "Solution to Example 1: (1 + 3x)^(-4)",
+          "kind": "example",
+          "paragraphs": [
+            "Given (1 + 3x)^(-4), comparing with (1 - x)^n we have 3x = -x and -4 = n. Using the formula (1 - x)^n = 1 - nx + (n(n - 1)/2!)x^2 - (n(n - 1)(n - 2)/3!)x^3 + ..., we substitute to get (1 - (-3x))^(-4) = 1 - (-4)(-3x) + ((-4)(-4 - 1)/2!)(-3x)^2 - ((-4)(-4 - 1)(-4 - 2)/3!)(-3x)^3 + ... This simplifies to 1 - 12x + (20/2)·9x^2 - (120/6)·27x^3 + ... = 1 - 12x + 90x^2 - 540x^3 + ..."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p13",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Compare (1 + 3x)^(-4) with (1 - x)^n to identify 3x = -x and -4 = n.",
+            "Substitute into the formula: (1 - (-3x))^(-4) = 1 - (-4)(-3x) + ((-4)(-4 - 1)/2!)(-3x)^2 - ((-4)(-4 - 1)(-4 - 2)/3!)(-3x)^3 + ...",
+            "Simplify each term step by step.",
+            "Obtain the final expansion: 1 - 12x + 90x^2 - 540x^3 + ..."
+          ]
+        },
+        {
+          "id": "source-14",
+          "title": "Student Activity: Expanding (1 - 2x)^(1/2)",
+          "kind": "prose",
+          "paragraphs": [
+            "The slide presents a student activity: Find the binomial expansion of (1 - 2x)^(1/2) to the fourth term."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p14",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Identify the form (1 - 2x)^(1/2) and compare with (1 - x)^n.",
+            "Apply the binomial expansion formula for fractional powers to the fourth term."
+          ]
+        },
+        {
+          "id": "source-15",
+          "title": "Solution to Student Activity: (1 - 2x)^(1/2)",
+          "kind": "example",
+          "paragraphs": [
+            "Given (1 - 2x)^(1/2), comparing with (1 - x)^n we have 2x = x and 1/2 = n. Using the formula (1 - x)^n = 1 - nx + (n(n - 1)/2!)x^2 - (n(n - 1)(n - 2)/3!)x^3 + ..., we substitute to get (1 - 2x)^(1/2) = 1 - (1/2)(2x) + ((1/2)((1/2) - 1)/2!)(2x)^2 - ((1/2)((1/2) - 1)((1/2) - 2)/3!)(2x)^3 + ... This simplifies to (1 - 2x)^(1/2) = 1 - x - (1/2)x^2 - (1/2)x^3 + ..."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p15",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Compare (1 - 2x)^(1/2) with (1 - x)^n to identify 2x = x and 1/2 = n.",
+            "Substitute into the formula: (1 - 2x)^(1/2) = 1 - (1/2)(2x) + ((1/2)((1/2) - 1)/2!)(2x)^2 - ((1/2)((1/2) - 1)((1/2) - 2)/3!)(2x)^3 + ...",
+            "Simplify each term step by step.",
+            "Obtain the final expansion: 1 - x - (1/2)x^2 - (1/2)x^3 + ..."
+          ]
+        },
+        {
+          "id": "source-16",
+          "title": "Summary of Concepts Covered",
+          "kind": "prose",
+          "paragraphs": [
+            "In this lecture, we cover the following concepts: Binomial expressions, Binomial expansion, Binomial coefficients and terms, Algebraic application of binomial expansion, and Binomial expansion with negative or fractional power."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p16",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": [
+            "Review the concept of binomial expressions.",
+            "Understand binomial expansion techniques.",
+            "Learn about binomial coefficients and terms.",
+            "Apply binomial expansion to algebraic problems.",
+            "Extend the method to negative or fractional powers."
+          ]
+        },
+        {
+          "id": "source-17",
+          "title": "Further Reading Resources",
+          "kind": "prose",
+          "paragraphs": [
+            "The slide lists further reading resources: Kenneth H. Rosen (2012), Discrete Mathematics and Its Applications, United States: McGraw-Hill; Handbook of Discrete Mathematics and Its Applications by Rosen, United States: McGraw-Hill; and the website http://www-history.mcs.st-and.ac.uk/."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p17",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": []
+        },
+        {
+          "id": "source-18",
+          "title": "Thank You Slide",
+          "kind": "prose",
+          "paragraphs": [
+            "This is the closing slide displaying 'Thank You' with the Department of Computer Science branding."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p18",
+              "mode": "visual",
+              "quote": ""
+            }
+          ],
+          "steps": []
+        }
+      ],
+      "practice": [],
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain.",
+        "The mathematical expressions and calculations shown are described based on visible content; exact symbolic notation may differ from the original source.",
+        "Some detailed intermediate steps in calculations may not be fully visible or may be abbreviated in the source slides."
+      ]
+    },
+    "revision": 1
+  }
+}

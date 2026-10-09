@@ -1,0 +1,29 @@
+{
+  "note": "Serial synthetic-file extraction/decoding in one fresh Node process; cumulative process peak RSS, not full HTTP/provider memory. No document text retained.",
+  "node": "v24.20.0",
+  "results": [
+    {
+      "kind": "pdf-100-pages",
+      "bytes": 30135,
+      "elapsedMs": 1360,
+      "pages": 100,
+      "processPeakRssMiB": 110
+    },
+    {
+      "kind": "wav-30-minutes",
+      "bytes": 57600044,
+      "elapsedMs": 5080,
+      "seconds": 1800,
+      "pcmBytes": 57600000,
+      "processPeakRssMiB": 209
+    },
+    {
+      "kind": "mp3-near-30-minutes",
+      "bytes": 28733802,
+      "elapsedMs": 21253,
+      "seconds": 1799.993469387755,
+      "pcmBytes": 158759424,
+      "processPeakRssMiB": 505
+    }
+  ]
+}

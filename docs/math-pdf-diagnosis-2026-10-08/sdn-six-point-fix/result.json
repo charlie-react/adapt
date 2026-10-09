@@ -1,0 +1,24 @@
+{
+  "name": "sdn-six-point-fix",
+  "sha256": "45f614358c4c80d40eef34e609818f271e3bc92771c0c8099af868670fb0e8d3",
+  "uploadStatus": 200,
+  "pages": 13,
+  "adaptStatus": 200,
+  "metadata": {
+    "elapsedMs": 74860.4885,
+    "stopReason": "end_turn",
+    "usage": {
+      "inputTokens": 30247,
+      "outputTokens": 3705,
+      "totalTokens": 33952,
+      "cacheReadInputTokens": 0,
+      "cacheWriteInputTokens": 0
+    },
+    "metrics": {
+      "latencyMs": 60965
+    },
+    "httpStatus": 200,
+    "requestId": "2fc072af-451e-492c-a1e1-30aa80a1b0f7"
+  },
+  "sections": 13
+}

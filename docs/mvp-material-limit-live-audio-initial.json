@@ -1,0 +1,16 @@
+{
+  "test": "Live approximately 30-minute MP3 -> Gemini -> existing Claude adaptation",
+  "source": "Existing approved colonialism recording repeated 31 times as a controlled duration fixture; not a varied 30-minute lecture.",
+  "bytes": 28750950,
+  "duration": 1796.8819954648527,
+  "transcriptionMs": 131069,
+  "transcriptCharacters": 33322,
+  "words": 4464,
+  "success": false,
+  "stage": "adaptation",
+  "error": {
+    "name": "ProviderResponseError",
+    "message": "Readable transcript adaptation changed or omitted source wording"
+  },
+  "elapsedMs": 157812
+}

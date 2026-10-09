@@ -1,0 +1,5 @@
+{
+  "name": "ProviderResponseError",
+  "message": "Answer was not presented in the lesson",
+  "stage": "validation"
+}

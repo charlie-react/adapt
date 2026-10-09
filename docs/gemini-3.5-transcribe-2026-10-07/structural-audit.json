@@ -1,0 +1,14 @@
+{
+  "sourceDurationSeconds": 57.91056689342403,
+  "sourceDecodeErrors": 0,
+  "transcriptWords": 144,
+  "paragraphs": 1,
+  "wordAnnotations": 144,
+  "invalidTimingOrTextReferences": 0,
+  "annotationsMatchFullTranscript": true,
+  "firstWordSeconds": 0.1,
+  "lastWordSeconds": 57.7,
+  "loadedKeyMatchesCurrentEnvFile": true,
+  "secretAudit": "passed; no configured key in artifacts",
+  "fidelityStatus": "No independent verbatim reference or listening check; no word-error-rate claimed"
+}

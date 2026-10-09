@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "id": "q1-order-degree",
+      "prompt": "What is the order and degree of the equation y''' + 4y'' - y' + 7y = 0?",
+      "sectionId": "source-2",
+      "answerQuote": "The highest derivative is y''', so the order is 3. The highest derivative occurs to the first power, so the degree is 1.",
+      "evidence": [
+        {
+          "sourceId": "p2",
+          "mode": "text",
+          "excerptId": "excerpt-2-1"
+        }
+      ]
+    },
+    {
+      "id": "q2-separable-pattern",
+      "prompt": "For a separable equation of the form dy/dx = f(x)g(y), what steps do you follow to solve it?",
+      "sectionId": "source-3",
+      "answerQuote": "If dy/dx = f(x)g(y), rearrange to dy/g(y) = f(x) dx, then integrate both sides.",
+      "evidence": [
+        {
+          "sourceId": "p3",
+          "mode": "text",
+          "excerptId": "excerpt-3-1"
+        }
+      ]
+    },
+    {
+      "id": "q3-integrating-factor",
+      "prompt": "What is the integrating factor for a first-order linear ODE in the form dy/dx + P(x)y = Q(x)?",
+      "sectionId": "source-4",
+      "answerQuote": "The integrating factor is μ(x) = e^(∫P(x)dx).",
+      "evidence": [
+        {
+          "sourceId": "p4",
+          "mode": "text",
+          "excerptId": "excerpt-4-1"
+        }
+      ]
+    },
+    {
+      "id": "q4-initial-condition",
+      "prompt": "In an initial-value problem, what does the initial condition determine?",
+      "sectionId": "source-5",
+      "answerQuote": "The condition determines the arbitrary constant in the general solution.",
+      "evidence": [
+        {
+          "sourceId": "p5",
+          "mode": "text",
+          "excerptId": "excerpt-5-1"
+        }
+      ]
+    },
+    {
+      "id": "q5-repeated-root",
+      "prompt": "If a second-order linear homogeneous ODE has a repeated root r in its characteristic equation, what is the form of the general solution?",
+      "sectionId": "source-6",
+      "answerQuote": "If there is a repeated root r, then y=(Cn+Cnx)e^(rx).",
+      "evidence": [
+        {
+          "sourceId": "p6",
+          "mode": "text",
+          "excerptId": "excerpt-6-1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "input": "Colonialism_in_Africa___Exact_60_Seconds.mp3",
+  "runtime": "Next.js production build, actual HTTP upload/source/adapt endpoints",
+  "transcriptionModel": "gemini-3.5-transcribe",
+  "adaptationModel": "Claude Sonnet 4.5",
+  "uploadStatus": 200,
+  "uploadLatencyMs": 46139,
+  "provider": "gemini-transcribe",
+  "sourceUnits": 2,
+  "adaptationStatus": 503,
+  "adaptationLatencyMs": 15626,
+  "failure": {
+    "code": "AI_UNAVAILABLE",
+    "error": "We couldn’t finish adapting this yet. Your original material is still available. Try again or choose another way to engage."
+  },
+  "outcome": "failed",
+  "stage": "adaptation",
+  "error": "Live workflow did not complete; see safe failure code"
+}

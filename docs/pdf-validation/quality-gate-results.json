@@ -1,0 +1,3558 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "1",
+  "node": "v24.20.0",
+  "manifestSha256": "dc9cd93b8ef64a98db11f8565b0aa8791d37c830bf36ce41a2739f661f07784f",
+  "method": "Two sequential adapter/gate calls per cached document, unchanged source hashes. No text stored. This is decision regression evidence, not a new latency/memory benchmark.",
+  "results": [
+    {
+      "id": "lecture-clean",
+      "sourceSha256": "bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342",
+        "fingerprint": "a265340286818dc16112d090a04d50bdc48a934a0aee23cc2542d58d73d0e378",
+        "readiness": "ready-with-warnings",
+        "canConfirm": true,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 150,
+            "blocks": 3,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bc0d3725d8195199fe82a62d45fc05305bff88f1ec9fb4a544c0dbb33eb9d342:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "columns-ordered",
+      "sourceSha256": "293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e",
+        "fingerprint": "97df992915bc5e037f586aadde69ca614f4127e49797efb00e1a61ae43dd3067",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 100,
+            "blocks": 6,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:293b3a5177e1d13c8846525ef4ba9e1a1e5d4684d8095f6465e125d6cb41978e:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "columns-interleaved",
+      "sourceSha256": "a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54",
+        "fingerprint": "2cddec22ecc29acf9d635a0fbf9620602bc07201b4f46ca98e964ce01495df56",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 100,
+            "blocks": 3,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:a0e8a9693eda276ace880643a17323b4badfa5fb52fcaabf7c0e414e6b2fcd54:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "table-untagged",
+      "sourceSha256": "dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31",
+        "fingerprint": "9ad9735996f45d26525f088f4d15e271a05e6075ea792c3c1f50e6715a8dc33d",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 59,
+            "blocks": 4,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:dfe8a410d6975dde4e02a601f23dc6b28aded7a808c1fcc2dc5c592aa6bc0d31:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "maths-layout",
+      "sourceSha256": "8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215",
+        "fingerprint": "beb13a7992d839c639ebb2520d1ee1c46800fc7dad14628a2d2995374860569a",
+        "readiness": "ready-with-warnings",
+        "canConfirm": true,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 87,
+            "blocks": 7,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:8b1565555b594cf765c36610b75135a3cc402852fb881f65ec8c7533e5ec3215:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "diagram-labelled",
+      "sourceSha256": "2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268",
+        "fingerprint": "51dd82443e5b344054cef702028b497a3db89fdcfbc5e703a32609abbfd812d1",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 76,
+            "blocks": 2,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:2d8737a591ff43e10cf714bb29749811be96f8aa6a4e3c37b0455c69a22ee268:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "code-indentation",
+      "sourceSha256": "84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18",
+        "fingerprint": "3954c7750de2038b819436aac9da4a77dc179b90fe5d116af50001fa21b436bb",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"CODE_FORMATTING_UNCERTAIN\",[\"pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1\"]]",
+            "code": "CODE_FORMATTING_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1"
+            ],
+            "learnerMessage": "Possible source code was found. Its indentation and line boundaries are not reliably preserved."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 67,
+            "blocks": 4,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "CODE_FORMATTING_UNCERTAIN",
+              "unitId": "pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:84266732994a6d0139c24b3e58fa92849e4b937482b9dcd50f0eedc936042f18:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "unicode-embedded-font",
+      "sourceSha256": "2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75",
+        "fingerprint": "cbb825301dd02d2342449fd45497d0f2d8151343b8da924919ee1ad6b7f2c335",
+        "readiness": "ready-with-warnings",
+        "canConfirm": true,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"LOW_CONTENT_UNIT\",[\"pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75:page:1\"]]",
+            "code": "LOW_CONTENT_UNIT",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75:page:1"
+            ],
+            "learnerMessage": "A page or section contains little text. Compare it with the original before continuing."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 38,
+            "blocks": 1,
+            "lowContent": true
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:2bd552bf91a9ccb4c7385fa7c77f0d0ebb2572e2abcb5a4772cc18ed519d6f75:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "poor-paint-order",
+      "sourceSha256": "f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094",
+        "fingerprint": "93278fcc48c9e5db28561b3d814d161b3796b3f90e5df27fcde68cf4593a49ee",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"LOW_CONTENT_UNIT\",[\"pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1\"]]",
+            "code": "LOW_CONTENT_UNIT",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1"
+            ],
+            "learnerMessage": "A page or section contains little text. Compare it with the original before continuing."
+          },
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 27,
+            "blocks": 2,
+            "lowContent": true
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:f05fd81df9bf67f13dcdc6acea6bf9103b8e4cbc4b9de9f1cda27ba193a66094:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "scan-image-only",
+      "sourceSha256": "f450c9d10ee680ac347fc9266e079dfe8f2b083c411425f3be0ddea81d835d38",
+      "extractionVersion": null,
+      "extractionFailure": "NO_READABLE_TEXT",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "77ca9821e19e27e3a4bcb532ea20b81eb4fe0ab1046fbf8c7acfcf0fb82bda13",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "NO_READABLE_TEXT"
+        }
+      }
+    },
+    {
+      "id": "mixed-text-scan",
+      "sourceSha256": "137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7",
+        "fingerprint": "9e704fc767627ca557426121eccb4a7055271c3e8588078935df9759445a08e0",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"EMPTY_UNIT\",[\"pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2\"]]",
+            "code": "EMPTY_UNIT",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2"
+            ],
+            "learnerMessage": "A source page or section has no readable text. Important content may be missing."
+          },
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"NO_PAGE_TEXT\",[\"pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2\"]]",
+            "code": "NO_PAGE_TEXT",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2"
+            ],
+            "learnerMessage": "A page has no selectable text. Its visual content has not been extracted."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 2,
+          "extractedUnits": 2,
+          "textUnits": 1,
+          "emptyUnitIds": [
+            "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2"
+          ],
+          "textUnitRatio": 0.5
+        },
+        "units": [
+          {
+            "id": "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 150,
+            "blocks": 3,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2",
+            "locator": {
+              "kind": "page",
+              "index": 2
+            },
+            "characters": 0,
+            "blocks": 0,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:1"
+            },
+            {
+              "code": "NO_PAGE_TEXT",
+              "unitId": "pdf-v2:137a611cbadf722329915c780e9f011960bc64b17bafca9a4a346b3d3fa58ec7:page:2"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "repeated-boilerplate",
+      "sourceSha256": "a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8",
+        "fingerprint": "baf3af7a40a6215de03936d38a2e8935db1551805726ba0cbb8b849e63ffe696",
+        "readiness": "ready-with-warnings",
+        "canConfirm": true,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:2\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:2"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:3\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:3"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 3,
+          "extractedUnits": 3,
+          "textUnits": 3,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 95,
+            "blocks": 2,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:2",
+            "locator": {
+              "kind": "page",
+              "index": 2
+            },
+            "characters": 95,
+            "blocks": 2,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:3",
+            "locator": {
+              "kind": "page",
+              "index": 3
+            },
+            "characters": 95,
+            "blocks": 2,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:2"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:a06bf934ddcfff4c3ecfd3f402553f1bc44542443d8f35c26a0d991b7a6bffe8:page:3"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "truncated",
+      "sourceSha256": "a4e262b545839b3434e22295876604972b5f179081f442ef22a007fc4e0b1cf0",
+      "extractionVersion": null,
+      "extractionFailure": "INVALID_PDF",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "647f433810bbcc7436c2d8dd8c4857f3b98ccd46df1b693878ff7fe6c1eaa765",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "INVALID_PDF"
+        }
+      }
+    },
+    {
+      "id": "leading-junk",
+      "sourceSha256": "c01414cf73f033f65315cd463899b45317ad4b926ab1494c11ba03adaa418906",
+      "extractionVersion": null,
+      "extractionFailure": "NOT_PDF",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "f4b1932691b27ca46867226c6e699f7c176fb3e1d52ae73347e44f0ef6dd0d0c",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "NOT_PDF"
+        }
+      }
+    },
+    {
+      "id": "over-page-budget",
+      "sourceSha256": "d2e6dcdc84387eafbc28129fbe5ae2145de4f649a7dd965bd89e7cf5941afa70",
+      "extractionVersion": null,
+      "extractionFailure": "RESOURCE_LIMIT",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "26430ca59d765490617d33e6e5e3707ae886be8403bac2c820102d8c712d5a38",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "RESOURCE_LIMIT"
+        }
+      }
+    },
+    {
+      "id": "mit-probability-slides",
+      "sourceSha256": "509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d",
+        "fingerprint": "93a6bf3b211056b8bf7aff6bae14adae30ebc2bdc3505e81e94932245196b02b",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:2\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:2"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:3\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:3"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:6\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:6"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 14,
+          "extractedUnits": 14,
+          "textUnits": 14,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 325,
+            "blocks": 27,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:2",
+            "locator": {
+              "kind": "page",
+              "index": 2
+            },
+            "characters": 126,
+            "blocks": 12,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:3",
+            "locator": {
+              "kind": "page",
+              "index": 3
+            },
+            "characters": 323,
+            "blocks": 20,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4",
+            "locator": {
+              "kind": "page",
+              "index": 4
+            },
+            "characters": 274,
+            "blocks": 26,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5",
+            "locator": {
+              "kind": "page",
+              "index": 5
+            },
+            "characters": 368,
+            "blocks": 31,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:6",
+            "locator": {
+              "kind": "page",
+              "index": 6
+            },
+            "characters": 111,
+            "blocks": 8,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7",
+            "locator": {
+              "kind": "page",
+              "index": 7
+            },
+            "characters": 83,
+            "blocks": 3,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8",
+            "locator": {
+              "kind": "page",
+              "index": 8
+            },
+            "characters": 45,
+            "blocks": 2,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9",
+            "locator": {
+              "kind": "page",
+              "index": 9
+            },
+            "characters": 142,
+            "blocks": 11,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10",
+            "locator": {
+              "kind": "page",
+              "index": 10
+            },
+            "characters": 65,
+            "blocks": 6,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11",
+            "locator": {
+              "kind": "page",
+              "index": 11
+            },
+            "characters": 69,
+            "blocks": 8,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12",
+            "locator": {
+              "kind": "page",
+              "index": 12
+            },
+            "characters": 233,
+            "blocks": 16,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13",
+            "locator": {
+              "kind": "page",
+              "index": 13
+            },
+            "characters": 107,
+            "blocks": 11,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14",
+            "locator": {
+              "kind": "page",
+              "index": 14
+            },
+            "characters": 239,
+            "blocks": 17,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:1"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:2"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:3"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:4"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:5"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:6"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:7"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:8"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:9"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:10"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:11"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:12"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:13"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:509d368723c1e84b7ed9b8abdfbe1c3d64f03c517618e3bfb7665434c70a927d:page:14"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "mit-theory-slides",
+      "sourceSha256": "1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f",
+        "fingerprint": "bded123061e99302a03890e9ed3493395f4c6b14e1574e525d04048d55af5ec1",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"TEXT_DECODE_WARNING\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4\"]]",
+            "code": "TEXT_DECODE_WARNING",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4"
+            ],
+            "learnerMessage": "Some characters could not be read reliably. Compare and correct the extraction before continuing."
+          },
+          {
+            "id": "[\"TEXT_DECODE_WARNING\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5\"]]",
+            "code": "TEXT_DECODE_WARNING",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            ],
+            "learnerMessage": "Some characters could not be read reliably. Compare and correct the extraction before continuing."
+          },
+          {
+            "id": "[\"TEXT_DECODE_WARNING\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6\"]]",
+            "code": "TEXT_DECODE_WARNING",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6"
+            ],
+            "learnerMessage": "Some characters could not be read reliably. Compare and correct the extraction before continuing."
+          },
+          {
+            "id": "[\"TEXT_DECODE_WARNING\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7\"]]",
+            "code": "TEXT_DECODE_WARNING",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7"
+            ],
+            "learnerMessage": "Some characters could not be read reliably. Compare and correct the extraction before continuing."
+          },
+          {
+            "id": "[\"TEXT_DECODE_WARNING\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8\"]]",
+            "code": "TEXT_DECODE_WARNING",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8"
+            ],
+            "learnerMessage": "Some characters could not be read reliably. Compare and correct the extraction before continuing."
+          },
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:11\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:11"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"UNSUPPORTED_STRUCTURE\",[\"pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10\"]]",
+            "code": "UNSUPPORTED_STRUCTURE",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10"
+            ],
+            "learnerMessage": "The source contains structures this extraction cannot preserve, such as tables, diagrams or equations."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 12,
+          "extractedUnits": 12,
+          "textUnits": 12,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1,
+              "label": "1"
+            },
+            "characters": 77,
+            "blocks": 7,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2",
+            "locator": {
+              "kind": "page",
+              "index": 2,
+              "label": "2"
+            },
+            "characters": 68,
+            "blocks": 6,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3",
+            "locator": {
+              "kind": "page",
+              "index": 3,
+              "label": "3"
+            },
+            "characters": 68,
+            "blocks": 6,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4",
+            "locator": {
+              "kind": "page",
+              "index": 4,
+              "label": "4"
+            },
+            "characters": 398,
+            "blocks": 29,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5",
+            "locator": {
+              "kind": "page",
+              "index": 5,
+              "label": "5"
+            },
+            "characters": 306,
+            "blocks": 39,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6",
+            "locator": {
+              "kind": "page",
+              "index": 6,
+              "label": "6"
+            },
+            "characters": 762,
+            "blocks": 40,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7",
+            "locator": {
+              "kind": "page",
+              "index": 7,
+              "label": "7"
+            },
+            "characters": 664,
+            "blocks": 22,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8",
+            "locator": {
+              "kind": "page",
+              "index": 8,
+              "label": "8"
+            },
+            "characters": 266,
+            "blocks": 19,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9",
+            "locator": {
+              "kind": "page",
+              "index": 9,
+              "label": "9"
+            },
+            "characters": 68,
+            "blocks": 6,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10",
+            "locator": {
+              "kind": "page",
+              "index": 10,
+              "label": "10"
+            },
+            "characters": 69,
+            "blocks": 6,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:11",
+            "locator": {
+              "kind": "page",
+              "index": 11,
+              "label": "11"
+            },
+            "characters": 156,
+            "blocks": 4,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:12",
+            "locator": {
+              "kind": "page",
+              "index": 12,
+              "label": "11"
+            },
+            "characters": 156,
+            "blocks": 4,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:2"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:3"
+            },
+            {
+              "code": "TEXT_DECODE_WARNING",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:4"
+            },
+            {
+              "code": "TEXT_DECODE_WARNING",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:5"
+            },
+            {
+              "code": "TEXT_DECODE_WARNING",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:6"
+            },
+            {
+              "code": "TEXT_DECODE_WARNING",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:7"
+            },
+            {
+              "code": "TEXT_DECODE_WARNING",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:8"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:9"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10"
+            },
+            {
+              "code": "UNSUPPORTED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:10"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:1a0dac8c032aebb299952b53c7dbb903a92fd48b9ea536c2faf6eefdb345174f:page:11"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "attention-paper",
+      "sourceSha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+        "fingerprint": "a0de364169fd11983593d7f6bb94996664247dcd22fb0ede2c7b761efabc2c4f",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:2\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:2"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:3\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:3"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:11\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:11"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:12\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:12"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 15,
+          "extractedUnits": 15,
+          "textUnits": 15,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 2462,
+            "blocks": 41,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:2",
+            "locator": {
+              "kind": "page",
+              "index": 2
+            },
+            "characters": 3634,
+            "blocks": 33,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:3",
+            "locator": {
+              "kind": "page",
+              "index": 3
+            },
+            "characters": 1535,
+            "blocks": 10,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4",
+            "locator": {
+              "kind": "page",
+              "index": 4
+            },
+            "characters": 2109,
+            "blocks": 66,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5",
+            "locator": {
+              "kind": "page",
+              "index": 5
+            },
+            "characters": 2674,
+            "blocks": 76,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6",
+            "locator": {
+              "kind": "page",
+              "index": 6
+            },
+            "characters": 2926,
+            "blocks": 58,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7",
+            "locator": {
+              "kind": "page",
+              "index": 7
+            },
+            "characters": 2801,
+            "blocks": 35,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8",
+            "locator": {
+              "kind": "page",
+              "index": 8
+            },
+            "characters": 2658,
+            "blocks": 54,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9",
+            "locator": {
+              "kind": "page",
+              "index": 9
+            },
+            "characters": 2480,
+            "blocks": 42,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10",
+            "locator": {
+              "kind": "page",
+              "index": 10
+            },
+            "characters": 2649,
+            "blocks": 26,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:11",
+            "locator": {
+              "kind": "page",
+              "index": 11
+            },
+            "characters": 2787,
+            "blocks": 40,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:12",
+            "locator": {
+              "kind": "page",
+              "index": 12
+            },
+            "characters": 2767,
+            "blocks": 33,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13",
+            "locator": {
+              "kind": "page",
+              "index": 13
+            },
+            "characters": 686,
+            "blocks": 73,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14",
+            "locator": {
+              "kind": "page",
+              "index": 14
+            },
+            "characters": 657,
+            "blocks": 112,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15",
+            "locator": {
+              "kind": "page",
+              "index": 15
+            },
+            "characters": 661,
+            "blocks": 112,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:1"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:2"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:3"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:4"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:5"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:6"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:7"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:8"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:9"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:10"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:11"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:12"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:13"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:14"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697:page:15"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "think-python-full",
+      "sourceSha256": "9d923cacf1b07e88a6314395a5afafae1aa01cd1aa0ce16b1851d38b18542487",
+      "extractionVersion": null,
+      "extractionFailure": "RESOURCE_LIMIT",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "26430ca59d765490617d33e6e5e3707ae886be8403bac2c820102d8c712d5a38",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "RESOURCE_LIMIT"
+        }
+      }
+    },
+    {
+      "id": "think-python-chapter2",
+      "sourceSha256": "81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad",
+        "fingerprint": "e2ef8f2becb1a5f4bd9312a6146d9b5aa005138f8ce48abac8faf34a0ecaf57f",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"LOW_CONTENT_UNIT\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8\"]]",
+            "code": "LOW_CONTENT_UNIT",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8"
+            ],
+            "learnerMessage": "A page or section contains little text. Compare it with the original before continuing."
+          },
+          {
+            "id": "[\"PARTIAL_COVERAGE\",[]]",
+            "code": "PARTIAL_COVERAGE",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "Extraction covers only part of this material. A usable subset has not yet been confirmed."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"READING_ORDER_UNCERTAIN\",[\"pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8\"]]",
+            "code": "READING_ORDER_UNCERTAIN",
+            "severity": "blocking",
+            "unitIds": [
+              "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8"
+            ],
+            "learnerMessage": "Text may be in the wrong reading order, including across columns. This needs correction before continuing."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 8,
+          "extractedUnits": 8,
+          "textUnits": 8,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 937,
+            "blocks": 16,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2",
+            "locator": {
+              "kind": "page",
+              "index": 2
+            },
+            "characters": 1589,
+            "blocks": 16,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3",
+            "locator": {
+              "kind": "page",
+              "index": 3
+            },
+            "characters": 1972,
+            "blocks": 18,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4",
+            "locator": {
+              "kind": "page",
+              "index": 4
+            },
+            "characters": 1879,
+            "blocks": 20,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5",
+            "locator": {
+              "kind": "page",
+              "index": 5
+            },
+            "characters": 2169,
+            "blocks": 15,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6",
+            "locator": {
+              "kind": "page",
+              "index": 6
+            },
+            "characters": 1617,
+            "blocks": 32,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7",
+            "locator": {
+              "kind": "page",
+              "index": 7
+            },
+            "characters": 708,
+            "blocks": 17,
+            "lowContent": false
+          },
+          {
+            "id": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8",
+            "locator": {
+              "kind": "page",
+              "index": 8
+            },
+            "characters": 45,
+            "blocks": 1,
+            "lowContent": true
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:1"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:2"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:3"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:4"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:5"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:6"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:7"
+            },
+            {
+              "code": "READING_ORDER_UNCERTAIN",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:81ef54154012b0160da59350c3ac66d79c110450ffaec0298ee4580080a74dad:page:8"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "tagged-heading-list",
+      "sourceSha256": "83955b796b9c78b7108533fbc6d0c0c947e43f8a9fceb96188e17815586c47de",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:83955b796b9c78b7108533fbc6d0c0c947e43f8a9fceb96188e17815586c47de",
+        "fingerprint": "5bd5aebcb3a1ea96d00760182df5a4c0a11e85cc061a8fcfc80aef572a987942",
+        "readiness": "ready-with-warnings",
+        "canConfirm": true,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:83955b796b9c78b7108533fbc6d0c0c947e43f8a9fceb96188e17815586c47de:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1,
+              "label": "i"
+            },
+            "characters": 71,
+            "blocks": 4,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "unicode-cmap",
+      "sourceSha256": "e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6",
+      "extractionVersion": "2",
+      "extractionFailure": null,
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": "pdf-v2:e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6",
+        "fingerprint": "0e8ef2c44224a9b8d878c58e1bbb4d422e672d6b1109e9336196e4ef3fffc3d7",
+        "readiness": "ready-with-warnings",
+        "canConfirm": true,
+        "scope": "selectable-text",
+        "reasons": [
+          {
+            "id": "[\"INFERRED_STRUCTURE\",[\"pdf-v2:e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6:page:1\"]]",
+            "code": "INFERRED_STRUCTURE",
+            "severity": "warning",
+            "unitIds": [
+              "pdf-v2:e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6:page:1"
+            ],
+            "learnerMessage": "Headings and text boundaries may be inferred from layout. Check them against the source."
+          },
+          {
+            "id": "[\"TEXT_ONLY\",[]]",
+            "code": "TEXT_ONLY",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Only selectable text is available. Diagrams, tables, equations and scans have not been understood. Compare the original before using this text."
+          },
+          {
+            "id": "[\"FORMATTING_NOT_PRESERVED\",[]]",
+            "code": "FORMATTING_NOT_PRESERVED",
+            "severity": "warning",
+            "unitIds": [],
+            "learnerMessage": "Line breaks and indentation are not guaranteed to match the original. Check any formatting that matters to the lesson."
+          }
+        ],
+        "coverage": {
+          "expectedUnits": 1,
+          "extractedUnits": 1,
+          "textUnits": 1,
+          "emptyUnitIds": [],
+          "textUnitRatio": 1
+        },
+        "units": [
+          {
+            "id": "pdf-v2:e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6:page:1",
+            "locator": {
+              "kind": "page",
+              "index": 1
+            },
+            "characters": 41,
+            "blocks": 1,
+            "lowContent": false
+          }
+        ],
+        "provenance": "valid",
+        "diagnostics": {
+          "signals": [
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "INFERRED_STRUCTURE",
+              "unitId": "pdf-v2:e29b6e887f7bbf1b8c6b7a6400813d20546bb758972c9c442c2019cf7af47ee6:page:1"
+            },
+            {
+              "code": "TEXT_ONLY"
+            },
+            {
+              "code": "FORMATTING_NOT_PRESERVED"
+            }
+          ],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score."
+        }
+      }
+    },
+    {
+      "id": "encrypted-control",
+      "sourceSha256": "5b90dbb362e573449a49ee1a0b1e18e1eac0532ad7df7046a67eb686d51c836a",
+      "extractionVersion": null,
+      "extractionFailure": "PASSWORD_PROTECTED",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "6c865afc551abdd36ca547fb07d257cb3255f10b79a8af1ecdea659ba8789142",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "PASSWORD_PROTECTED"
+        }
+      }
+    },
+    {
+      "id": "empty-control",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extractionVersion": null,
+      "extractionFailure": "EMPTY_INPUT",
+      "deterministic": true,
+      "quality": {
+        "policyVersion": "1",
+        "materialId": null,
+        "fingerprint": "2bf166d8f8aa11ec173a651b7a18a6d8da4e178a2b88e0108600f31a583baa98",
+        "readiness": "not-ready",
+        "canConfirm": false,
+        "scope": null,
+        "reasons": [
+          {
+            "id": "[\"EXTRACTION_FAILED\",[]]",
+            "code": "EXTRACTION_FAILED",
+            "severity": "blocking",
+            "unitIds": [],
+            "learnerMessage": "The material could not be extracted. Try a supported, readable source."
+          }
+        ],
+        "coverage": null,
+        "units": [],
+        "provenance": "unavailable",
+        "diagnostics": {
+          "signals": [],
+          "lowContentRule": "Review signal only: fewer than 40 non-whitespace characters or 8 whitespace-delimited words; not a competency score.",
+          "failureCode": "EMPTY_INPUT"
+        }
+      }
+    }
+  ]
+}

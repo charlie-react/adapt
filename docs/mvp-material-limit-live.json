@@ -1,0 +1,16 @@
+{
+  "test": "Live Claude adaptation of synthetic 100-page PDF",
+  "success": true,
+  "elapsedMs": 91490,
+  "sections": 100,
+  "inputTokens": 172221,
+  "outputTokens": 11512,
+  "outputTokenBudget": 16000,
+  "initialRejection": {
+    "outputTokenBudget": 64000,
+    "httpStatus": 400,
+    "name": "ValidationException",
+    "message": "The model returned the following errors: Input is too long for requested model."
+  },
+  "note": "Synthetic 100-page document; not evidence that every dense 100-page PDF fits model context."
+}

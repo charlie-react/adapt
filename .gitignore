@@ -12,6 +12,9 @@
 
 # testing
 /coverage
+/test-results/
+/playwright-report/
+/.pdf-corpus-cache/
 
 # next.js
 /.next/

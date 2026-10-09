@@ -1,0 +1,3445 @@
+[
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 1",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b2",
+        "text": "Ordinary Differential Equations (ODEs)",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b3",
+        "text": "A 7-page mathematics study guide with 8 worked examples.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b4",
+        "text": "Learning objectives",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b5",
+        "text": "• Understand what an ordinary differential equation is.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b6",
+        "text": "• Identify order and degree and distinguish linear from nonlinear equations.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b7",
+        "text": "• Solve basic first-order ODEs using separation of variables and integrating factors.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b8",
+        "text": "• Recognize and solve simple second-order linear homogeneous equations.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p1:b9",
+        "text": "• Interpret initial conditions and apply them to obtain particular solutions.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 1,
+          "blockIndex": 9
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 1
+      }
+    ],
+    "partial": false,
+    "pageNumber": 1,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 1",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 85.48579,
+        "y": 770.3701,
+        "width": 0,
+        "fontSize": 23,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Ordinary Differential Equations (ODEs)",
+        "x": 85.48579,
+        "y": 770.3701,
+        "width": 424.3040000000001,
+        "fontSize": 23,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 739.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "A 7-page mathematics study guide with 8 worked examples.",
+        "x": 51.35433,
+        "y": 739.1700999999999,
+        "width": 271.54439999999994,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 716.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Learning objectives",
+        "x": 51.35433,
+        "y": 716.3701,
+        "width": 117.40000000000002,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 696.6700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Understand what an ordinary differential equation is.",
+        "x": 57.35433,
+        "y": 696.6700999999999,
+        "width": 242.24999999999994,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Identify order and degree and distinguish linear from nonlinear equations.",
+        "x": 57.35433,
+        "y": 676.1700999999999,
+        "width": 336.93660000000006,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve basic first-order ODEs using separation of variables and integrating factors.",
+        "x": 57.35433,
+        "y": 655.6700999999999,
+        "width": 374.31960000000004,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Recognize and solve simple second-order linear homogeneous equations.",
+        "x": 57.35433,
+        "y": 635.1700999999999,
+        "width": 341.45520000000005,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Interpret initial conditions and apply them to obtain particular solutions.",
+        "x": 57.35433,
+        "y": 614.6700999999999,
+        "width": 324.4518000000001,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  },
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 2",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b2",
+        "text": "1. Introduction to ODEs",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b3",
+        "text": "An ordinary differential equation is an equation involving an unknown function of one independent variable and one or more of its derivatives. ODEs are used to describe quantities that change with respect to another variable, such as time, distance or position.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b4",
+        "text": "Basic terminology",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b5",
+        "text": "• The order of an ODE is the highest derivative appearing in the equation.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b6",
+        "text": "• The degree is the power of the highest-order derivative after the equation has been made polynomial in its",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b7",
+        "text": "derivatives.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b8",
+        "text": "• An ODE is linear if the dependent variable and its derivatives occur only to the first power and are not",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b9",
+        "text": "multiplied together.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 9
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b10",
+        "text": "• A solution is a function that satisfies the differential equation on an appropriate interval.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 10
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b11",
+        "text": "Example 1 — Identify order and degree",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 11
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b12",
+        "text": "• Consider: y''' + 4y'' - y' + 7y = 0.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 12
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b13",
+        "text": "• The highest derivative is y''', so the order is 3. The highest derivative occurs to the first power, so the",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 13
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b14",
+        "text": "degree is 1.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 14
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b15",
+        "text": "Example 2 — Classify an ODE",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 15
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b16",
+        "text": "• Consider: y' + 3y = x².",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 16
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b17",
+        "text": "• This is a first-order linear ODE because y and y' occur only to the first power and are not multiplied",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 17
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p2:b18",
+        "text": "together.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 2,
+          "blockIndex": 18
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 2
+      }
+    ],
+    "partial": false,
+    "pageNumber": 2,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 2",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 0,
+        "fontSize": 17,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "1. Introduction to ODEs",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 189.856,
+        "fontSize": 17,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "An ordinary differential equation is an equation involving an unknown function of one independent variable",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 477.96180000000004,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "and one or more of its derivatives. ODEs are used to describe quantities that change with respect to another",
+        "x": 51.35433,
+        "y": 738.6700999999999,
+        "width": 487.57020000000006,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "variable, such as time, distance or position.",
+        "x": 51.35433,
+        "y": 724.1700999999999,
+        "width": 195.01379999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 701.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Basic terminology",
+        "x": 51.35433,
+        "y": 701.3701,
+        "width": 108.3625,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 681.6700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• The order of an ODE is the highest derivative appearing in the equation.",
+        "x": 57.35433,
+        "y": 681.6700999999999,
+        "width": 331.2756,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• The degree is the power of the highest-order derivative after the equation has been made polynomial in its",
+        "x": 57.35433,
+        "y": 661.1700999999999,
+        "width": 484.90800000000013,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "derivatives.",
+        "x": 65.35433,
+        "y": 646.6700999999999,
+        "width": 51.5814,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• An ODE is linear if the dependent variable and its derivatives occur only to the first power and are not",
+        "x": 57.35433,
+        "y": 626.1700999999999,
+        "width": 462.78420000000006,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "multiplied together.",
+        "x": 65.35433,
+        "y": 611.6700999999999,
+        "width": 86.16959999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• A solution is a function that satisfies the differential equation on an appropriate interval.",
+        "x": 57.35433,
+        "y": 591.1700999999999,
+        "width": 398.1774,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 568.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 1 — Identify order and degree",
+        "x": 51.35433,
+        "y": 568.3701,
+        "width": 231.32499999999993,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 548.6700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Consider: y''' + 4y'' - y' + 7y = 0.",
+        "x": 57.35433,
+        "y": 548.6700999999999,
+        "width": 148.77719999999997,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• The highest derivative is y''', so the order is 3. The highest derivative occurs to the first power, so the",
+        "x": 57.35433,
+        "y": 528.1700999999999,
+        "width": 458.97960000000006,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "degree is 1.",
+        "x": 65.35433,
+        "y": 513.6700999999999,
+        "width": 53.295,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 490.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 2 — Classify an ODE",
+        "x": 51.35433,
+        "y": 490.8701,
+        "width": 177.84999999999997,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 471.1701,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Consider: y' + 3y = x².",
+        "x": 57.35433,
+        "y": 471.1701,
+        "width": 105.29459999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• This is a first-order linear ODE because y and y' occur only to the first power and are not multiplied",
+        "x": 57.35433,
+        "y": 450.6701,
+        "width": 450.52380000000005,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "together.",
+        "x": 65.35433,
+        "y": 436.1701,
+        "width": 40.2594,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  },
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 3",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b2",
+        "text": "2. First-Order ODEs: Separation of Variables",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b3",
+        "text": "A separable differential equation can be rearranged so that all terms involving the dependent variable are on one side and all terms involving the independent variable are on the other.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b4",
+        "text": "General pattern",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b5",
+        "text": "• If dy/dx = f(x)g(y), rearrange to dy/g(y) = f(x) dx, then integrate both sides.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b6",
+        "text": "Example 3 — Separable equation",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b7",
+        "text": "• Solve dy/dx = 3x²y.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b8",
+        "text": "• Separate: dy/y = 3x² dx.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b9",
+        "text": "• Integrate: ln|y| = x³ + C.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 9
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b10",
+        "text": "• Therefore: y = Ce^(x³).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 10
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b11",
+        "text": "Example 4 — Separable equation with an initial condition",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 11
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b12",
+        "text": "• Solve dy/dx = 2xy, given y(0) = 5.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 12
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b13",
+        "text": "• Separate: dy/y = 2x dx.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 13
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b14",
+        "text": "• Integrate: ln|y| = x² + C, so y = Ce^(x²).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 14
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b15",
+        "text": "• Using y(0)=5 gives C=5.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 15
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p3:b16",
+        "text": "• Therefore: y = 5e^(x²).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 3,
+          "blockIndex": 16
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 3
+      }
+    ],
+    "partial": false,
+    "pageNumber": 3,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 3",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 0,
+        "fontSize": 17,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "2. First-Order ODEs: Separation of Variables",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 358.054,
+        "fontSize": 17,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "A separable differential equation can be rearranged so that all terms involving the dependent variable are on",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 488.15160000000014,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "one side and all terms involving the independent variable are on the other.",
+        "x": 51.35433,
+        "y": 738.6700999999999,
+        "width": 334.5089999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "General pattern",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 92.3875,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• If dy/dx = f(x)g(y), rearrange to dy/g(y) = f(x) dx, then integrate both sides.",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 338.61960000000005,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 673.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 3 — Separable equation",
+        "x": 51.35433,
+        "y": 673.3701,
+        "width": 196.5999999999999,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 653.6700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve dy/dx = 3x²y.",
+        "x": 57.35433,
+        "y": 653.6700999999999,
+        "width": 92.86079999999998,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Separate: dy/y = 3x² dx.",
+        "x": 57.35433,
+        "y": 633.1700999999999,
+        "width": 114.41339999999998,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Integrate: ln|y| = x³ + C.",
+        "x": 57.35433,
+        "y": 612.6700999999999,
+        "width": 112.6284,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Therefore: y = Ce^(x³).",
+        "x": 57.35433,
+        "y": 592.1700999999999,
+        "width": 108.96660000000001,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 569.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 4 — Separable equation with an initial condition",
+        "x": 51.35433,
+        "y": 569.3701,
+        "width": 338.98749999999995,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 549.6700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve dy/dx = 2xy, given y(0) = 5.",
+        "x": 57.35433,
+        "y": 549.6700999999999,
+        "width": 157.21259999999995,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Separate: dy/y = 2x dx.",
+        "x": 57.35433,
+        "y": 529.1700999999999,
+        "width": 111.01679999999998,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Integrate: ln|y| = x² + C, so y = Ce^(x²).",
+        "x": 57.35433,
+        "y": 508.6701,
+        "width": 181.74359999999996,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Using y(0)=5 gives C=5.",
+        "x": 57.35433,
+        "y": 488.1701,
+        "width": 115.81079999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Therefore: y = 5e^(x²).",
+        "x": 57.35433,
+        "y": 467.6701,
+        "width": 107.27340000000001,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  },
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 4",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b2",
+        "text": "3. First-Order Linear ODEs",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b3",
+        "text": "A first-order linear ODE can be written in the standard form dy/dx + P(x)y = Q(x). It is commonly solved using an integrating factor.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b4",
+        "text": "Integrating factor",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b5",
+        "text": "• The integrating factor is μ(x) = e^(∫P(x)dx). Multiplying the equation by μ converts the left-hand side into the",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b6",
+        "text": "derivative of μy.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b7",
+        "text": "Example 5 — Integrating factor method",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b8",
+        "text": "• Solve dy/dx + 2y = 4.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b9",
+        "text": "• Here P(x)=2, so μ=e^(∫2dx)=e^(2x).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 9
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b10",
+        "text": "• Multiply through: e^(2x)y' + 2e^(2x)y = 4e^(2x).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 10
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b11",
+        "text": "• Thus d/dx(e^(2x)y)=4e^(2x).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 11
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b12",
+        "text": "• Integrating gives e^(2x)y=2e^(2x)+C.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 12
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p4:b13",
+        "text": "• Therefore: y=2+Ce^(-2x).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 4,
+          "blockIndex": 13
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 4
+      }
+    ],
+    "partial": false,
+    "pageNumber": 4,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 4",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 0,
+        "fontSize": 17,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "3. First-Order Linear ODEs",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 214.45499999999998,
+        "fontSize": 17,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "A first-order linear ODE can be written in the standard form dy/dx + P(x)y = Q(x). It is commonly solved using",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 490.33440000000024,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "an integrating factor.",
+        "x": 51.35433,
+        "y": 738.6700999999999,
+        "width": 92.9832,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Integrating factor",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 102.7875,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• The integrating factor is",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 112.528984,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 169.88331399999998,
+        "y": 696.1700999999999,
+        "width": 2.721496000000002,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "μ",
+        "x": 172.60481,
+        "y": 696.1700999999999,
+        "width": 5.8751999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "(x) = e^(",
+        "x": 178.48001,
+        "y": 696.1700999999999,
+        "width": 37.144591999999996,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "∫",
+        "x": 215.624602,
+        "y": 696.1700999999999,
+        "width": 2.7947999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "P(x)dx). Multiplying the equation by",
+        "x": 218.41940200000002,
+        "y": 696.1700999999999,
+        "width": 158.83698399999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 377.256386,
+        "y": 696.1700999999999,
+        "width": 2.721496000000002,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "μ",
+        "x": 379.977882,
+        "y": 696.1700999999999,
+        "width": 5.8751999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 385.85308200000003,
+        "y": 696.1700999999999,
+        "width": 2.721496000000002,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "converts the left-hand side into the",
+        "x": 388.57457800000003,
+        "y": 696.1700999999999,
+        "width": 155.34668,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "derivative of",
+        "x": 65.35433,
+        "y": 681.6700999999999,
+        "width": 54.9882,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 120.34252999999998,
+        "y": 681.6700999999999,
+        "width": 2.8355999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "μ",
+        "x": 123.17812999999998,
+        "y": 681.6700999999999,
+        "width": 5.8751999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "y.",
+        "x": 129.05333,
+        "y": 681.6700999999999,
+        "width": 7.935599999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 658.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 5 — Integrating factor method",
+        "x": 51.35433,
+        "y": 658.8701,
+        "width": 232.6874999999999,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 639.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve dy/dx + 2y = 4.",
+        "x": 57.35433,
+        "y": 639.1700999999999,
+        "width": 101.66339999999998,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Here P(x)=2, so",
+        "x": 57.35433,
+        "y": 618.6700999999999,
+        "width": 78.1116,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 135.46593,
+        "y": 618.6700999999999,
+        "width": 2.8355999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "μ",
+        "x": 138.30152999999999,
+        "y": 618.6700999999999,
+        "width": 5.8751999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "=e^(",
+        "x": 144.17673,
+        "y": 618.6700999999999,
+        "width": 19.8084,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "∫",
+        "x": 163.98513,
+        "y": 618.6700999999999,
+        "width": 2.7947999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "2dx)=e^(2x).",
+        "x": 166.77992999999998,
+        "y": 618.6700999999999,
+        "width": 56.6508,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Multiply through: e^(2x)y' + 2e^(2x)y = 4e^(2x).",
+        "x": 57.35433,
+        "y": 598.1700999999999,
+        "width": 217.70879999999997,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Thus d/dx(e^(2x)y)=4e^(2x).",
+        "x": 57.35433,
+        "y": 577.6700999999999,
+        "width": 133.5894,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Integrating gives e^(2x)y=2e^(2x)+C.",
+        "x": 57.35433,
+        "y": 557.1700999999999,
+        "width": 173.0022,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Therefore: y=2+Ce^(-2x).",
+        "x": 57.35433,
+        "y": 536.6700999999999,
+        "width": 120.5946,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  },
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 5",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b2",
+        "text": "4. Applications and Initial-Value Problems",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b3",
+        "text": "An initial-value problem gives a differential equation together with a condition such as y(xn)=yn. The condition determines the arbitrary constant in the general solution.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b4",
+        "text": "Example 6 — Initial-value problem",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b5",
+        "text": "• Solve y' = 6x - 4, given y(1)=3.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b6",
+        "text": "• Integrate: y = 3x² - 4x + C.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b7",
+        "text": "• Apply y(1)=3: 3 - 4 + C = 3, so C=4.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b8",
+        "text": "• Therefore: y = 3x² - 4x + 4.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b9",
+        "text": "Common interpretation",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 9
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b10",
+        "text": "• An ODE may describe a rate of change. For example, if y represents the amount of a quantity at time t,",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 10
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p5:b11",
+        "text": "then dy/dt represents its instantaneous rate of change. An initial condition specifies the starting state.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 5,
+          "blockIndex": 11
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 5
+      }
+    ],
+    "partial": false,
+    "pageNumber": 5,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 5",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 0,
+        "fontSize": 17,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "4. Applications and Initial-Value Problems",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 338.215,
+        "fontSize": 17,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "An initial-value problem gives a differential equation together with a condition such as y(x",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 400.8090000000001,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 452.1633300000001,
+        "y": 753.1700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": ")=y",
+        "x": 459.9255300000001,
+        "y": 753.1700999999999,
+        "width": 14.453399999999998,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 474.3789300000001,
+        "y": 753.1700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": ". The",
+        "x": 482.1411300000001,
+        "y": 753.1700999999999,
+        "width": 23.245799999999996,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "condition determines the arbitrary constant in the general solution.",
+        "x": 51.35433,
+        "y": 738.6700999999999,
+        "width": 298.2072,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 6 — Initial-value problem",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 202.8499999999999,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve y' = 6x - 4, given y(1)=3.",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 143.85059999999996,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Integrate: y = 3x² - 4x + C.",
+        "x": 57.35433,
+        "y": 675.6700999999999,
+        "width": 124.89899999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Apply y(1)=3: 3 - 4 + C = 3, so C=4.",
+        "x": 57.35433,
+        "y": 655.1700999999999,
+        "width": 167.42279999999997,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Therefore: y = 3x² - 4x + 4.",
+        "x": 57.35433,
+        "y": 634.6700999999999,
+        "width": 127.1634,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 611.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Common interpretation",
+        "x": 51.35433,
+        "y": 611.8701,
+        "width": 138.2,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 592.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• An ODE may describe a rate of change. For example, if y represents the amount of a quantity at time t,",
+        "x": 57.35433,
+        "y": 592.1700999999999,
+        "width": 470.15880000000004,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "then dy/dt represents its instantaneous rate of change. An initial condition specifies the starting state.",
+        "x": 65.35433,
+        "y": 577.6700999999999,
+        "width": 454.70580000000024,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  },
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 6",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b2",
+        "text": "5. Second-Order Linear ODEs",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b3",
+        "text": "A common second-order linear homogeneous ODE has the form ay'' + by' + cy = 0, where a, b and c are constants. We use the characteristic equation to determine the form of the solution.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b4",
+        "text": "Characteristic equation",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b5",
+        "text": "• Assume y=e^(rx). Substitution gives the characteristic equation ar²+br+c=0.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b6",
+        "text": "• If the roots are distinct real numbers rn and rn, then y=Cne^(rnx)+Cne^(rnx).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b7",
+        "text": "• If there is a repeated root r, then y=(Cn+Cnx)e^(rx).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b8",
+        "text": "Example 7 — Distinct roots",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b9",
+        "text": "• Solve y'' - 5y' + 6y = 0.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 9
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b10",
+        "text": "• Characteristic equation: r² - 5r + 6 = 0.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 10
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b11",
+        "text": "• Factor: (r-2)(r-3)=0, giving r=2 and r=3.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 11
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p6:b12",
+        "text": "• Therefore: y=Cne^(2x)+Cne^(3x).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 6,
+          "blockIndex": 12
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 6
+      }
+    ],
+    "partial": false,
+    "pageNumber": 6,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 6",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 0,
+        "fontSize": 17,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "5. Second-Order Linear ODEs",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 239.01999999999998,
+        "fontSize": 17,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "A common second-order linear homogeneous ODE has the form ay'' + by' + cy = 0, where a, b and c are",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 471.01559999999995,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "constants. We use the characteristic equation to determine the form of the solution.",
+        "x": 51.35433,
+        "y": 738.6700999999999,
+        "width": 374.748,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Characteristic equation",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 138.92499999999998,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Assume y=e^(rx). Substitution gives the characteristic equation ar²+br+c=0.",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 346.22879999999986,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• If the roots are distinct real numbers r",
+        "x": 57.35433,
+        "y": 675.6700999999999,
+        "width": 175.33799999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 232.69233,
+        "y": 675.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 240.45453,
+        "y": 675.6700999999999,
+        "width": 2.8355999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "and r",
+        "x": 243.29013,
+        "y": 675.6700999999999,
+        "width": 23.2458,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 266.53593,
+        "y": 675.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": ", then y=C",
+        "x": 274.29813,
+        "y": 675.6700999999999,
+        "width": 46.77719999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 321.07533,
+        "y": 675.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "e^(r",
+        "x": 328.83753,
+        "y": 675.6700999999999,
+        "width": 17.248199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 346.08572999999996,
+        "y": 675.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x)+C",
+        "x": 353.84792999999996,
+        "y": 675.6700999999999,
+        "width": 21.8178,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 375.66572999999994,
+        "y": 675.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "e^(r",
+        "x": 383.42792999999995,
+        "y": 675.6700999999999,
+        "width": 17.248199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 400.6761299999999,
+        "y": 675.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x).",
+        "x": 408.4383299999999,
+        "y": 675.6700999999999,
+        "width": 11.332199999999998,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• If there is a repeated root r, then y=(C",
+        "x": 57.35433,
+        "y": 655.1700999999999,
+        "width": 176.77620000000002,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 234.13053,
+        "y": 655.1700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "+C",
+        "x": 241.89273,
+        "y": 655.1700999999999,
+        "width": 13.321199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 255.21392999999998,
+        "y": 655.1700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x)e^(rx).",
+        "x": 262.97612999999996,
+        "y": 655.1700999999999,
+        "width": 37.077,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 632.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 7 — Distinct roots",
+        "x": 51.35433,
+        "y": 632.3701,
+        "width": 161.84999999999997,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 612.6700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve y'' - 5y' + 6y = 0.",
+        "x": 57.35433,
+        "y": 612.6700999999999,
+        "width": 108.06899999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Characteristic equation: r² - 5r + 6 = 0.",
+        "x": 57.35433,
+        "y": 592.1700999999999,
+        "width": 178.74479999999997,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Factor: (r-2)(r-3)=0, giving r=2 and r=3.",
+        "x": 57.35433,
+        "y": 571.6700999999999,
+        "width": 181.84559999999996,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Therefore: y=C",
+        "x": 57.35433,
+        "y": 551.1700999999999,
+        "width": 74.71499999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 132.06932999999998,
+        "y": 551.1700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "e^(2x)+C",
+        "x": 139.83153,
+        "y": 551.1700999999999,
+        "width": 41.340599999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 181.17212999999998,
+        "y": 551.1700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "e^(3x).",
+        "x": 188.93433,
+        "y": 551.1700999999999,
+        "width": 30.854999999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  },
+  {
+    "blocks": [
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b1",
+        "text": "Ordinary Differential Equations (ODEs) • Page 7",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 1
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b2",
+        "text": "6. Repeated Roots, Summary and Practice",
+        "origin": "extracted",
+        "kind": "heading",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 2
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b3",
+        "text": "Repeated roots require a second independent solution containing x. This is one of the important cases in second-order linear ODEs.",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 3
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b4",
+        "text": "Example 8 — Repeated root",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 4
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b5",
+        "text": "• Solve y'' - 4y' + 4y = 0.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 5
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b6",
+        "text": "• Characteristic equation: r² - 4r + 4 = 0 = (r-2)².",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 6
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b7",
+        "text": "• The repeated root is r=2.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 7
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b8",
+        "text": "• Therefore: y=(Cn+Cnx)e^(2x).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 8
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b9",
+        "text": "Quick revision checklist",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 9
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b10",
+        "text": "• Can you identify the order and degree of an ODE?",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 10
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b11",
+        "text": "• Can you recognize a separable equation?",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 11
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b12",
+        "text": "• Can you find an integrating factor for a first-order linear equation?",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 12
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b13",
+        "text": "• Can you apply an initial condition to find an arbitrary constant?",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 13
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b14",
+        "text": "• Can you form and solve a characteristic equation for a second-order homogeneous ODE?",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 14
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b15",
+        "text": "Key formulas",
+        "origin": "extracted",
+        "kind": "paragraph",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 15
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b16",
+        "text": "• Separable: dy/g(y) = f(x)dx.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 16
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b17",
+        "text": "• Linear first order: y' + P(x)y = Q(x), with μ=e^(∫P(x)dx).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 17
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b18",
+        "text": "• Second-order constant coefficients: ar²+br+c=0.",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 18
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b19",
+        "text": "• Distinct roots: y=Cne^(rnx)+Cne^(rnx).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 19
+        }
+      },
+      {
+        "id": "pdf-v2:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a:p7:b20",
+        "text": "• Repeated root: y=(Cn+Cnx)e^(rx).",
+        "origin": "extracted",
+        "kind": "list-item",
+        "structureBasis": "layout-heuristic",
+        "locator": {
+          "kind": "page",
+          "pageNumber": 7,
+          "blockIndex": 20
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "code": "INFERRED_STRUCTURE",
+        "message": "Block boundaries and headings/list labels use layout heuristics; they are not author-confirmed semantic structure.",
+        "pageNumber": 7
+      }
+    ],
+    "partial": false,
+    "pageNumber": 7,
+    "rawItems": [
+      {
+        "text": "Ordinary Differential Equations (ODEs) • Page 7",
+        "x": 212.4298,
+        "y": 19.84252,
+        "width": 170.41600000000003,
+        "fontSize": 8,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 0,
+        "fontSize": 17,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "6. Repeated Roots, Summary and Practice",
+        "x": 51.35433,
+        "y": 776.3701,
+        "width": 341.054,
+        "fontSize": 17,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Repeated roots require a second independent solution containing x. This is one of the important cases in",
+        "x": 51.35433,
+        "y": 753.1700999999999,
+        "width": 471.7092000000002,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "second-order linear ODEs.",
+        "x": 51.35433,
+        "y": 738.6700999999999,
+        "width": 120.73739999999998,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Example 8 — Repeated root",
+        "x": 51.35433,
+        "y": 715.8701,
+        "width": 165.325,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Solve y'' - 4y' + 4y = 0.",
+        "x": 57.35433,
+        "y": 696.1700999999999,
+        "width": 108.06899999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Characteristic equation: r² - 4r + 4 = 0 = (r-2)².",
+        "x": 57.35433,
+        "y": 675.6700999999999,
+        "width": 213.027,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• The repeated root is r=2.",
+        "x": 57.35433,
+        "y": 655.1700999999999,
+        "width": 118.38119999999999,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Therefore: y=(C",
+        "x": 57.35433,
+        "y": 634.6700999999999,
+        "width": 78.1116,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 135.46593,
+        "y": 634.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "+C",
+        "x": 143.22813,
+        "y": 634.6700999999999,
+        "width": 13.321199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 156.54933,
+        "y": 634.6700999999999,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x)e^(2x).",
+        "x": 164.31152999999998,
+        "y": 634.6700999999999,
+        "width": 39.3516,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 611.8701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Quick revision checklist",
+        "x": 51.35433,
+        "y": 611.8701,
+        "width": 143.125,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 592.1700999999999,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Can you identify the order and degree of an ODE?",
+        "x": 57.35433,
+        "y": 592.1700999999999,
+        "width": 233.76359999999997,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Can you recognize a separable equation?",
+        "x": 57.35433,
+        "y": 571.6700999999999,
+        "width": 195.20759999999996,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Can you find an integrating factor for a first-order linear equation?",
+        "x": 57.35433,
+        "y": 551.1700999999999,
+        "width": 301.7772,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Can you apply an initial condition to find an arbitrary constant?",
+        "x": 57.35433,
+        "y": 530.6700999999999,
+        "width": 287.60939999999994,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Can you form and solve a characteristic equation for a second-order homogeneous ODE?",
+        "x": 57.35433,
+        "y": 510.1701,
+        "width": 411.75359999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 51.35433,
+        "y": 487.3701,
+        "width": 0,
+        "fontSize": 12.5,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "Key formulas",
+        "x": 51.35433,
+        "y": 487.3701,
+        "width": 79.1875,
+        "fontSize": 12.5,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "",
+        "x": 57.35433,
+        "y": 467.6701,
+        "width": 0,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Separable: dy/g(y) = f(x)dx.",
+        "x": 57.35433,
+        "y": 467.6701,
+        "width": 129.7032,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Linear first order: y' + P(x)y = Q(x), with",
+        "x": 57.35433,
+        "y": 447.1701,
+        "width": 184.06919999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": " ",
+        "x": 241.42352999999997,
+        "y": 447.1701,
+        "width": 2.8355999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "μ",
+        "x": 244.25912999999997,
+        "y": 447.1701,
+        "width": 5.8751999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "=e^(",
+        "x": 250.13432999999998,
+        "y": 447.1701,
+        "width": 19.8084,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "∫",
+        "x": 269.9427299999999,
+        "y": 447.1701,
+        "width": 2.7947999999999995,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "P(x)dx).",
+        "x": 272.73752999999994,
+        "y": 447.1701,
+        "width": 35.699999999999996,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Second-order constant coefficients: ar²+br+c=0.",
+        "x": 57.35433,
+        "y": 426.6701,
+        "width": 222.12539999999993,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Distinct roots: y=C",
+        "x": 57.35433,
+        "y": 406.1701,
+        "width": 89.44379999999998,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 146.79813,
+        "y": 406.1701,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "e^(r",
+        "x": 154.56033,
+        "y": 406.1701,
+        "width": 17.248199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 171.80853,
+        "y": 406.1701,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x)+C",
+        "x": 179.57073,
+        "y": 406.1701,
+        "width": 21.8178,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 201.38852999999997,
+        "y": 406.1701,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "e^(r",
+        "x": 209.15072999999998,
+        "y": 406.1701,
+        "width": 17.248199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 226.39893,
+        "y": 406.1701,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x).",
+        "x": 234.16113,
+        "y": 406.1701,
+        "width": 11.332199999999998,
+        "fontSize": 10.2,
+        "hasEOL": true,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "• Repeated root: y=(C",
+        "x": 57.35433,
+        "y": 385.6701,
+        "width": 98.532,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 155.88633,
+        "y": 385.6701,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "+C",
+        "x": 163.64853,
+        "y": 385.6701,
+        "width": 13.321199999999997,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "n",
+        "x": 176.96973,
+        "y": 385.6701,
+        "width": 7.762199999999999,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      },
+      {
+        "text": "x)e^(rx).",
+        "x": 184.73193,
+        "y": 385.6701,
+        "width": 37.077,
+        "fontSize": 10.2,
+        "hasEOL": false,
+        "direction": "ltr",
+        "rotated": false
+      }
+    ]
+  }
+]

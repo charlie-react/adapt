@@ -1,0 +1,16 @@
+{
+  "elapsedMs": 66879.7751,
+  "stopReason": "end_turn",
+  "usage": {
+    "inputTokens": 29998,
+    "outputTokens": 3327,
+    "totalTokens": 33325,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "metrics": {
+    "latencyMs": 62196
+  },
+  "httpStatus": 200,
+  "requestId": "380fa4b6-f1e0-40c2-a5e4-093764b65199"
+}

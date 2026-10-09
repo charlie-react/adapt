@@ -1,0 +1,24 @@
+{
+  "name": "binomial-six-point-fix",
+  "sha256": "bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+  "uploadStatus": 200,
+  "pages": 18,
+  "adaptStatus": 200,
+  "metadata": {
+    "elapsedMs": 81055.5607,
+    "stopReason": "end_turn",
+    "usage": {
+      "inputTokens": 38478,
+      "outputTokens": 6147,
+      "totalTokens": 44625,
+      "cacheReadInputTokens": 0,
+      "cacheWriteInputTokens": 0
+    },
+    "metrics": {
+      "latencyMs": 77164
+    },
+    "httpStatus": 200,
+    "requestId": "b25283c7-77f2-4d49-a8ec-bfe8e31ba51f"
+  },
+  "sections": 18
+}

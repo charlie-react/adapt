@@ -1,0 +1,12 @@
+{
+  "localAdaptationStatus": 200,
+  "localPracticeStatus": 400,
+  "freshPracticeStatus": 200,
+  "replay": {
+    "parsing": "passed",
+    "evidence": "passed",
+    "validation": "passed",
+    "count": 4
+  },
+  "sourceUnchanged": true
+}

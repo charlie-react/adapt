@@ -1,0 +1,71 @@
+{
+  "targetPid": 7104,
+  "paused": false,
+  "readOnlyProbe": true,
+  "contexts": [
+    {
+      "contextId": 1,
+      "hasCachedStore": true,
+      "methods": [
+        "create",
+        "snapshot",
+        "source",
+        "analyze",
+        "adapt",
+        "reflect",
+        "remove"
+      ],
+      "practiceType": "undefined",
+      "adaptType": "function"
+    },
+    {
+      "contextId": 2,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    },
+    {
+      "contextId": 71,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    },
+    {
+      "contextId": 81,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    },
+    {
+      "contextId": 84,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    },
+    {
+      "contextId": 85,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    },
+    {
+      "contextId": 86,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    },
+    {
+      "contextId": 87,
+      "hasCachedStore": false,
+      "methods": [],
+      "practiceType": "undefined",
+      "adaptType": "undefined"
+    }
+  ]
+}

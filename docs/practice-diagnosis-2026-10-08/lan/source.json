@@ -1,0 +1,100 @@
+{
+  "id": "pdf:cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "kind": "pdf",
+  "title": "LAN_WAN_MAN_10_Page_Study_Material.pdf",
+  "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "bytes": "<38632 original bytes omitted>",
+  "format": "pdf",
+  "units": [
+    {
+      "id": "p1",
+      "locator": {
+        "kind": "pdf",
+        "page": 1
+      },
+      "text": "LAN, WAN and MAN • Page 1\n\nLAN, WAN and MAN\n\nA 10-page study material on computer networks classified by geographical scope.\n\nLearning objectives\n\n• Define LAN, MAN and WAN.\n\n• Distinguish the three by geographical scope, ownership, performance, cost and complexity.\n\n• Identify common devices and technologies.\n\n• Explain how LANs, MANs and WANs can work together."
+    },
+    {
+      "id": "p2",
+      "locator": {
+        "kind": "pdf",
+        "page": 2
+      },
+      "text": "LAN, WAN and MAN • Page 2\n\n1. Introduction to Computer Networks\n\nA computer network is a collection of interconnected devices that communicate and share resources. Devices can include computers, servers, printers, phones, switches, routers and wireless access points.\n\nWhy networks matter\n\n• Resource sharing: files, printers, applications and internet connections can be shared.\n\n• Communication: users and systems can exchange information.\n\n• Centralized services: organizations can provide shared storage, authentication and applications.\n\n• Scalability: additional devices and locations can be connected as requirements grow.\n\nGeographical classification\n\n• One useful classification is geographical scope. LAN generally covers a small area, MAN a metropolitan\n\narea, and WAN a large geographical area such as a region, country or continent."
+    },
+    {
+      "id": "p3",
+      "locator": {
+        "kind": "pdf",
+        "page": 3
+      },
+      "text": "LAN, WAN and MAN • Page 3\n\n2. Local Area Network (LAN)\n\nA Local Area Network connects devices within a relatively small geographical area. It may serve a room, home, office, laboratory, school building or group of nearby buildings.\n\nCharacteristics\n\n• Small geographical coverage.\n\n• Usually high performance within the local environment.\n\n• Commonly managed by one organization or household.\n\n• Ethernet and Wi-Fi are widely used.\n\n• Can connect computers, printers, servers, cameras, phones and other devices.\n\nExamples\n\n• A university computer laboratory connected through Ethernet.\n\n• An office network connecting employees to servers and printers.\n\n• A home Wi-Fi network connecting laptops, phones and smart devices."
+    },
+    {
+      "id": "p4",
+      "locator": {
+        "kind": "pdf",
+        "page": 4
+      },
+      "text": "LAN, WAN and MAN • Page 4\n\n3. LAN Components and Technologies\n\nA LAN uses networking devices and transmission technologies to connect local devices.\n\nCommon components\n\n• Switch: connects devices on an Ethernet LAN and forwards frames toward their destinations.\n\n• Wireless access point: provides Wi-Fi connectivity.\n\n• Router: connects the LAN to other networks.\n\n• Network interface: provides wired or wireless network connectivity to a device.\n\n• Ethernet cabling: commonly provides wired LAN connections.\n\nLAN topology\n\n• Modern Ethernet LANs commonly use a star arrangement in which devices connect to a central switch.\n\nWireless LANs commonly use access points as central connection points."
+    },
+    {
+      "id": "p5",
+      "locator": {
+        "kind": "pdf",
+        "page": 5
+      },
+      "text": "LAN, WAN and MAN • Page 5\n\n4. Metropolitan Area Network (MAN)\n\nA Metropolitan Area Network connects networks across a metropolitan or city-scale area. It is larger than a typical LAN but generally smaller than a WAN.\n\nCharacteristics\n\n• City or metropolitan-scale coverage.\n\n• Can connect multiple LANs.\n\n• May use high-capacity fiber-optic links.\n\n• Requires more extensive infrastructure than a single-site LAN.\n\n• May be operated by an organization, service provider or partnership.\n\nExamples\n\n• A university connecting campuses across one city.\n\n• A government organization connecting offices throughout a metropolitan area.\n\n• A provider's metropolitan network linking customers and facilities."
+    },
+    {
+      "id": "p6",
+      "locator": {
+        "kind": "pdf",
+        "page": 6
+      },
+      "text": "LAN, WAN and MAN • Page 6\n\n5. MAN Technologies and Uses\n\nA MAN can use high-capacity infrastructure to connect sites across a city. Fiber-optic networks are particularly useful for high-bandwidth metropolitan connectivity.\n\nUses\n\n• Connecting branches within one city.\n\n• Connecting university campuses and research facilities.\n\n• Providing metropolitan connectivity for organizations.\n\n• Connecting distributed services and facilities.\n\nMAN versus LAN\n\n• A LAN normally serves a smaller site such as a building. A MAN extends connectivity across a\n\nmetropolitan area and therefore may require broader physical infrastructure, planning and management."
+    },
+    {
+      "id": "p7",
+      "locator": {
+        "kind": "pdf",
+        "page": 7
+      },
+      "text": "LAN, WAN and MAN • Page 7\n\n6. Wide Area Network (WAN)\n\nA Wide Area Network connects networks across large geographical distances. A WAN can link cities, countries and continents. Organizations can operate private WANs while also using public networks and service providers.\n\nCharacteristics\n\n• Large geographical coverage.\n\n• Can connect multiple LANs and MANs.\n\n• Often depends on telecommunications or network service providers.\n\n• Can combine several communication technologies and routing systems.\n\n• Can involve greater latency and management complexity than a local network.\n\nExamples\n\n• A multinational company connecting offices in different countries.\n\n• A bank connecting branches across regions.\n\n• An organization connecting users and facilities across continents."
+    },
+    {
+      "id": "p8",
+      "locator": {
+        "kind": "pdf",
+        "page": 8
+      },
+      "text": "LAN, WAN and MAN • Page 8\n\n7. WAN Devices, Services and Technologies\n\nWAN connectivity requires systems capable of moving traffic between geographically separated networks. Routers are central because they make forwarding decisions between networks.\n\nCommon components\n\n• Routers: forward packets between different networks.\n\n• WAN links: communication paths connecting distant sites.\n\n• Provider services: telecommunications providers may supply connectivity between locations.\n\n• Firewalls and security gateways: help control traffic entering and leaving networks.\n\nWAN approaches\n\n• Organizations may use dedicated connectivity, provider-managed services, internet-based connections,\n\nor combinations. The choice depends on cost, reliability, performance and security requirements."
+    },
+    {
+      "id": "p9",
+      "locator": {
+        "kind": "pdf",
+        "page": 9
+      }
+    },
+    {
+      "id": "p10",
+      "locator": {
+        "kind": "pdf",
+        "page": 10
+      },
+      "text": "LAN, WAN and MAN • Page 10\n\n9. How LAN, MAN and WAN Work Together\n\nThese categories are not isolated. A large organization can use LANs at individual sites, metropolitan connectivity between nearby sites, and WAN connectivity between distant regions.\n\nExample\n\n• A university can have a LAN in each faculty building.\n\n• A metropolitan connection can link campuses around the same city.\n\n• A WAN can connect those campuses to a remote campus or cloud infrastructure.\n\n• Routers connect separate networks while switches and access points provide local connectivity.\n\nKey idea\n\n• LAN, MAN and WAN describe different networking scales. A network can therefore be part of a larger\n\ninterconnected system."
+    },
+    {
+      "id": "p11",
+      "locator": {
+        "kind": "pdf",
+        "page": 11
+      },
+      "text": "LAN, WAN and MAN • Page 11\n\n10. Summary and Revision Questions\n\nLAN, MAN and WAN classify networks mainly by geographical scope. LANs serve relatively small areas, MANs connect networks across metropolitan areas, and WANs connect networks over much larger distances.\n\nQuick revision\n\n• 1. What is the main distinction between LAN, MAN and WAN?\n\n• 2. Give three examples of LAN environments.\n\n• 3. Why might a university use a MAN?\n\n• 4. Why can WAN management be more complex than LAN management?\n\n• 5. What role does a router play between separate networks?\n\n• 6. Explain how LANs, MANs and WANs can work together.\n\nKey takeaway\n\n• Think: LAN = local, MAN = metropolitan, WAN = wide. These are conceptual categories, and real\n\nnetworks can combine multiple scales and technologies."
+    }
+  ],
+  "limitations": [
+    "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+  ]
+}

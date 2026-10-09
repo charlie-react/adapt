@@ -1,0 +1,298 @@
+[
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\adapt.css",
+    "Hash": "0E770071E5CFE5786C676B8CAEAF6D6490BBE415F64C1068DD1B9A99C6448359"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\favicon.ico",
+    "Hash": "2B8AD2D33455A8F736FC3A8EBF8F0BDEA8848AD4C0DB48A2833BD0F9CD775932"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\globals.css",
+    "Hash": "81B7C5C79D750C17958D8C4E6713EB6B8158E8CC5538D3CD3016B860CC173F63"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\layout.tsx",
+    "Hash": "B12C1F154CAE74B9A77811666B6037B4AA4DE6DF445FA5E8689D0AE9CE985D3E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\page.tsx",
+    "Hash": "3DF09FC91682F392E8CBC6A59ACF844C037DE1E0DDA69CB41EACA68AB98666C0"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\accommodation\\route.ts",
+    "Hash": "160601C9CCA7DE241141E258580C078D2FCDD2F7871DCFC3C624FE4D3481B003"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\ingestion\\pdf-spike\\route.ts",
+    "Hash": "6BD0D53A1DE515334A1D217EEB19876E5092AB1DA978416E1B15C70927BE52EB"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\learning\\route.ts",
+    "Hash": "78D7AA989380EB4D1C3F6E78EE9C1E5874AEAC1FA366252FB71558025EA0DE22"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\learning\\adapt\\route.ts",
+    "Hash": "4F66B9CBBE493BE0A06DCE766FDDCE5821D81942F7FF9A49453BCFFF51A7EDA2"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\learning\\analyze\\route.ts",
+    "Hash": "1A992AB44395ACB916BAE380551AADB0180EB0DDD7B9D69A0BC58A36018DC381"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\learning\\reflect\\route.ts",
+    "Hash": "C17DAF02594B7A1D444070643C34F39BB607405530313FF692F9C463BF9F1084"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\learning\\source\\route.ts",
+    "Hash": "15B14BEFF86DAE864B26C9FED40CE4DEB1525080C41FDDCEF23CDFDEBFE31A1E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\material-review\\route.ts",
+    "Hash": "8CA72763409BB7188E7A2E119E7995D6EC73936E6433D1BFC2B0E453D253FBBD"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\material-review\\confirm\\route.ts",
+    "Hash": "8CBBE1230950872457ECBA17315971ABCC986DCF472A8058ECF8AE9107326B65"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\material-review\\goals\\route.ts",
+    "Hash": "F4916099F17FDEF650D8FFEAAE13B523B733854BFF69742B07FC0F9E719F7077"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\material-review\\preferences\\route.ts",
+    "Hash": "A1319D20AE745EFF2A4B3DA861565117D8193B1C06F9524CA664B77907A3972A"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\material-review\\proceed\\route.ts",
+    "Hash": "C32552037002CCA4A981F26BCDAACB91B5FC07CDA9F039B2E9F9E752C5284280"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\material-review\\session\\route.ts",
+    "Hash": "4E3CE2CACF14DF6D60845AD53B4C8D0205678147F808DCF37D85E6D43244D195"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\api\\practice\\route.ts",
+    "Hash": "9566F3F78B7A2D1D4C615E101079EFB47909559C1AF5E06E8070DDA8A52632EE"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\app\\demo\\page.tsx",
+    "Hash": "D86FB59C3843E26E13E492F137094B2281C446DFAF7CBE3553637C7268EB8DFE"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\adapt-workspace.tsx",
+    "Hash": "176DD3E4C0809AB5F5111517999BD014C7D3B73B53B5A14DEB3C959DB2907D99"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\adapted-learning.tsx",
+    "Hash": "CCB4935DD9D4E64E4D6A0ED5B4D26C0FC30837C0642C133839C25EDA95839748"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\competency-practice.tsx",
+    "Hash": "3D47ECBE980A3A0E27FD14CFE94CA629DB8E5E53F49BE2F5EBF5419382881A8F"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\learning-space.tsx",
+    "Hash": "1239612D1340221AED05513527ACC77604FC4F8CED929E287B567D06F3173CC2"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\lesson-workspace.tsx",
+    "Hash": "6E27BFB70DAA751FCA7C92C7549665BE076EF629C7E3501C13DCBD72F0A3D9D1"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\material-review.tsx",
+    "Hash": "E2C74EE42A10CFD11AA683AEB04929A33F783CE8E55968FDA185EBE920BFF22B"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\original-material.tsx",
+    "Hash": "8B53B8B71140837F037057FE2428A3696BA24123DFD364C0EA0A02BD7FC47A0C"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\pdf-upload-workspace.tsx",
+    "Hash": "9DEDC9EB66BE8B806E7675D4D31026B515635960A7E56152143304F72697FB62"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\read-aloud.tsx",
+    "Hash": "7AB056C878AF91DFA760ED8FCCBBEE5B5A112AE49925BB9CAE5796DEE7760D25"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\semantic-explorer.tsx",
+    "Hash": "0A7ED656C0367AAC905EB57CC1C58948FAFF058466BF2B5EEF9557006C8CC7C2"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\source-links.tsx",
+    "Hash": "76BC49E8ABC5261B928463F64D2685A3EFFC791529FA3504F147237464534025"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\components\\voice-field.tsx",
+    "Hash": "868D16E6F8353041F60DBDC19B18973DAEF0A8342E607F321CC403C8CBD0DB81"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\runtime.ts",
+    "Hash": "3D58315B28BF2D78C4455E4DB71CDC3E125213C8EE5796BA28672A0CD9E90A8F"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\accessibility\\read-aloud.ts",
+    "Hash": "F26542237CEF79CB5060A9B4B5A7EE2B3E472BB3470707A7F21D748833F27E00"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\accessibility\\semantic-reading.ts",
+    "Hash": "9E550802F8D83463DE75E4CE2F63BAEA6AB74E4E5C51AE21BC62B3467572D51D"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\accessibility\\speech-content.ts",
+    "Hash": "63D1D9638D0089628B927C6078CD69AA0A6E05B99318BBAF2A5DC19F7AB2F508"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\accessibility\\voice-input.ts",
+    "Hash": "4776CF07E48D2D90313D2C697F51D55D6DC7416377ACF1DCBB7E7332D53F3903"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ai\\bedrock.ts",
+    "Hash": "38C0053812C8A7D9A01C2FDBD794ED6E8367A4B456CA180218829FFAAF637345"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ai\\learning-goal.ts",
+    "Hash": "F883E059F06EFA450D4516FDB2195F77D836CB8AD05A31719398280AC7DF2F37"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ai\\provider.ts",
+    "Hash": "5049E2F01EEE89787A4DE4D0022569BE2A72516F2342CA1DD4EBF3D12D68B269"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ai\\runtime.ts",
+    "Hash": "2DF1035B65B6EAB7DB7C311CA3DDAAA5C82F699E5396DFE4FA342ABE22EC7AFD"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\engine\\http.ts",
+    "Hash": "E86F77C5DA0EF7C09E308A92580511038DF89C1D54024BC4A28FC16F1BF05CE5"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\engine\\pipeline.ts",
+    "Hash": "4608D8694F3C7A59B75A1E6C0A44294DD26A297C4A945552F1CFB25845A59CBB"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\engine\\types.ts",
+    "Hash": "5F8609CF25C6E0E256DDA77FEB9FADCB29A53DE11732BE8E7009188CCCCA4F8B"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\fixtures\\binary-tree-source.tsx",
+    "Hash": "3876BC7E658BBF64AFCF075659465D338E7D427B253BC1B7A4FEF51A36028E17"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\fixtures\\binary-tree.ts",
+    "Hash": "1DD7328B3F39F0C32AF084CCEF38E1D0BB06CAB7F0816610F5752D493B7063CE"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\errors.ts",
+    "Hash": "2B6374BAE60B04E66513F8635241A6054876DDB5050B77F1867E48987D76A133"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\types.ts",
+    "Hash": "67E3FD3206AF582A402E1161F7165FB46EF2918AA8D03EF9845FF8EAE397D777"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\pdf\\adapter.ts",
+    "Hash": "7EB4BE3EE06D0116B7156B3882407649C9F410C8C68AAE11A3C74B9F08BC8458"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\pdf\\contracts.ts",
+    "Hash": "76B3BCFBD1EC64CC721B8B2A6ED26097F61A538CBDF41FC6EBD1721BB1A2272E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\pdf\\normalize.ts",
+    "Hash": "B06324C102BDF4D326B8A367F9132529D561AEEC892F93A6F019A0BB25A78ABF"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\pdf\\quality.ts",
+    "Hash": "413DB944558463F94B89910A5325D4BA00E72180F6AF7CDE703659A7A89D44DC"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\ingestion\\pdf\\worker-source.ts",
+    "Hash": "0280405F97685C56E9B0AFF450173CBCCA84194EC7152CC59D5802A465EE3491"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\audio.ts",
+    "Hash": "45F6924E346D7A030169E238B67B340B4F80301188955AFB06CAAC4219F044A0"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\gemini-transcription.ts",
+    "Hash": "684580F84188D94860232CDE49B14005730C2F0B43CD7D2AF9CEAD3874007D4E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\http.ts",
+    "Hash": "C5EB0955D0309CB51FB9167D0CA51EA0838E0FA83A49171FC2066577700F71DE"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\learner-messages.ts",
+    "Hash": "3E9F86B94BD5E4013266E43F2B4A9FFE4EDCC4EB3B425FD629E61037DFB1046C"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\limits.ts",
+    "Hash": "7CE86D11CA49DF7A77FD78C247D79E7B68D726EEA1888B65F57A478530016818"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\material.ts",
+    "Hash": "A03364D0375BA0D1A20B49375BAE36BFC98E693E03E2F3C45DDFFA238144622E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\provider-response.ts",
+    "Hash": "23A2EAD1ABF7A5EC4FACB458F8905E47162C7E5F7141F1A8B5AA3CFA80CFA06E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\provider.ts",
+    "Hash": "19EFA1CB11203A4CB70763982290268D0E4B6F286408D8703DD62540154E23B0"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\service.ts",
+    "Hash": "7FBF2E7B97A2B60380153173ADC5C0343F0E8B7E7E9BD2DAF673A69E625431DD"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\source-label.ts",
+    "Hash": "2C86A6D24004CE5584E4EC72B4F5F63C32E3D183CE26058BA49A908B469474DE"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\transcription.ts",
+    "Hash": "A0016F781472B0BB82E4A321D7CEE4892062C29C5524203864719520890AFCB8"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\types.ts",
+    "Hash": "79B508B462B893D8D9AB053DE09D57D7B1D704979FACDAF2FBCA7AF1EC37172C"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning\\validation.ts",
+    "Hash": "E8526BFB7E0DE587AC8A9375212338532AA366399D138FF6B8BE3563270BC721"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\learning-session\\goals.ts",
+    "Hash": "700A18DB957FB5104D650622C3F37DFFA65BF3556325A71C2FB0F7C46AB72AAE"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\material-quality\\gate.ts",
+    "Hash": "C8222BBC28C07130A4E3623E2A1740F52333D10C8894616FC5AD68BCE7EF6B8F"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\material-quality\\policy.ts",
+    "Hash": "31CCD1594C756BC3903CBF00705572CAA5BE6D15713F551624BCC1BA9A410B9F"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\material-quality\\types.ts",
+    "Hash": "50A97994C73347732DD57A27EBBEC5F2ACD0AEB613763B11A0744DB820EB073B"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\material-review\\http.ts",
+    "Hash": "65E9B2048F215B753CE8CC037797EAF7E4C11BFBFBC20D72D7EFB9AE97659261"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\material-review\\service.ts",
+    "Hash": "748CBEC4EDA765FEF67115265C366757A05EC3DD3BC43B6CD557F79379F14A4E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\material-review\\types.ts",
+    "Hash": "4E0EF022CE1A43FE6DFA8418A63E608C539E96AA8F8499C505EC3BDE50C6D55E"
+  },
+  {
+    "Path": "C:\\Users\\besle\\OneDrive\\Documents\\ChatGPT\\ADAPT\\adapt\\src\\lib\\server\\request.ts",
+    "Hash": "78E683CC98CDF93D2251571C46B4F1FDA4588BCE24350130D5580681034FA72D"
+  }
+]

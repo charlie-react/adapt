@@ -1,0 +1,16 @@
+{
+  "runtime": "Final Next.js production HTTP endpoints",
+  "awsRegion": "eu-north-1",
+  "input": "Colonialism_in_Africa___Exact_60_Seconds.mp3",
+  "uploadStatus": 200,
+  "transcriptionLatencyMs": 7614,
+  "adaptationStatus": 200,
+  "adaptationLatencyMs": 12223,
+  "completeTranscriptPreserved": true,
+  "exactKeyPoints": true,
+  "transcriptionProvider": "gemini-transcribe",
+  "transcriptionModel": "gemini-3.5-transcribe",
+  "wordTimestamps": 144,
+  "sections": 4,
+  "outcome": "passed"
+}

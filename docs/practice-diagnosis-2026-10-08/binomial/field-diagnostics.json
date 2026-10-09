@@ -1,0 +1,201 @@
+{
+  "parsing": "passed",
+  "evidenceResolution": "passed",
+  "count": 5,
+  "validation": "Answer was not presented in the lesson",
+  "details": [
+    {
+      "index": 0,
+      "id": "q1-binomial-form",
+      "sectionId": "source-3",
+      "sectionExists": true,
+      "answerQuote": "Binomial expression is usually of the form (a + b)ⁿ where a, b are algebraic terms and n is a real number.",
+      "exactPresentedQuote": false,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": false,
+      "exactQuoteInOriginalExtractedSourceIds": [],
+      "sectionParagraphs": [
+        "A binomial expression is usually of the form (a + b)ⁿ where a, b are algebraic terms and n is a real number. If n is a natural number, one may decide to expand the bracket by multiplying two brackets then use the result to multiply another bracket until the power of n is exhausted. This approach could be time consuming in a case of large value of n and the approach may never work when n is not a natural number. In this lesson, we present the approaches to expanding binomial expression for any value of n in the set of real numbers."
+      ],
+      "sectionSteps": [
+        "Recognize that binomial expressions have the form (a + b)ⁿ with algebraic terms a, b and real number n.",
+        "Understand that repeated bracket multiplication works for natural number powers but is time consuming for large n.",
+        "Note that the repeated multiplication approach may never work when n is not a natural number.",
+        "Learn the general approaches for expanding binomial expressions for any real number n."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p3",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "p3",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 1,
+      "id": "q2-natural-formula",
+      "sectionId": "source-4",
+      "sectionExists": true,
+      "answerQuote": "(a + b)ⁿ equals the sum from k=0 to n of (n choose k) times aⁿ⁻ᵏ times bᵏ.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [],
+      "sectionParagraphs": [
+        "A binomial expression of the form (a + b)ⁿ, n ∈ ℕ can be expanded using a formula. The formula shows the expansion as a sum of terms involving binomial coefficients and powers of a and b."
+      ],
+      "sectionSteps": [
+        "Identify the binomial expression (a + b)ⁿ where n is a natural number.",
+        "Apply the formula: (a + b)ⁿ equals the sum from k=0 to n of (n choose k) times aⁿ⁻ᵏ times bᵏ.",
+        "The first term is (n choose 0) aⁿ b⁰, the second is (n choose 1) aⁿ⁻¹ b¹, continuing to the last term (n choose n) a⁰ bⁿ."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p4",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "p4",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 2,
+      "id": "q3-coefficient-definition",
+      "sectionId": "source-6",
+      "sectionExists": true,
+      "answerQuote": "(n choose m) = n! / [(n−m)! m!] and n! = n × (n−1) × (n−2) × ⋯ × 2 × 1.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [],
+      "sectionParagraphs": [
+        "This page defines the binomial coefficient (n choose m) as n! divided by (n−m)! times m!, and n! as n × (n−1) × (n−2) × ⋯ × 2 × 1. The page then calculates each binomial coefficient for n = 5: (5 choose 0) = 1, (5 choose 1) = 5, (5 choose 2) = 10, (5 choose 3) = 10, (5 choose 4) = 5, and (5 choose 5) = 1. Each calculation shows the factorial expansions and simplifications step by step."
+      ],
+      "sectionSteps": [
+        "Define (n choose m) = n! / [(n−m)! m!] and n! = n × (n−1) × (n−2) × ⋯ × 2 × 1.",
+        "Calculate (5 choose 0) = 5! / (5! · 0!) = 1.",
+        "Calculate (5 choose 1) = 5! / (4! · 1!) = 5.",
+        "Calculate (5 choose 2) = 5! / (3! · 2!) = 10.",
+        "Calculate (5 choose 3) = 5! / (2! · 3!) = 10.",
+        "Calculate (5 choose 4) = 5! / (1! · 4!) = 5 and (5 choose 5) = 1."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p6",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "p6",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 3,
+      "id": "q4-real-power-form",
+      "sectionId": "source-12",
+      "sectionExists": true,
+      "answerQuote": "In cases where the power n of a given binomial expression is negative or fraction, we transform the binomial expression into the form (1 − x)ⁿ then use the formula: (1 − x)ⁿ = 1 − nx + [n(n−1)/2!]x² − [n(n−1)(n−2)/3!]x³ + ⋯.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [],
+      "sectionParagraphs": [
+        "In cases where the power n of a given binomial expression is negative or fraction, we transform the binomial expression into the form (1 − x)ⁿ then use the formula: (1 − x)ⁿ = 1 − nx + [n(n−1)/2!]x² − [n(n−1)(n−2)/3!]x³ + ⋯. An example is given: Find the binomial expansion of (1 + 3x)⁻⁴ to the fourth term."
+      ],
+      "sectionSteps": [
+        "Recognize that for negative or fractional n, transform the expression into the form (1 − x)ⁿ.",
+        "Apply the formula: (1 − x)ⁿ = 1 − nx + [n(n−1)/2!]x² − [n(n−1)(n−2)/3!]x³ + ⋯.",
+        "Use this formula to expand (1 + 3x)⁻⁴ to the fourth term."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p12",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "p12",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 4,
+      "id": "q5-summary-concepts",
+      "sectionId": "source-16",
+      "sectionExists": true,
+      "answerQuote": "Binomial expressions, binomial expansion, binomial coefficients and terms, algebraic application of binomial expansion, and binomial expansion with negative or fractional power.",
+      "exactPresentedQuote": false,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": false,
+      "exactQuoteInOriginalExtractedSourceIds": [],
+      "sectionParagraphs": [
+        "In this lecture, the following concepts are covered: binomial expressions, binomial expansion, binomial coefficients and terms, algebraic application of binomial expansion, and binomial expansion with negative or fractional power."
+      ],
+      "sectionSteps": [
+        "Binomial expressions",
+        "Binomial expansion",
+        "Binomial coefficients and terms",
+        "Algebraic application of binomial expansion",
+        "Binomial expansion with negative or fractional power"
+      ],
+      "evidence": [
+        {
+          "sourceId": "p16",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "p16",
+          "mode": "visual",
+          "quote": ""
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    }
+  ],
+  "diagnosticCounterfactual": {
+    "notProductionBehavior": true,
+    "explanation": "Select existing server-owned lesson paragraphs instead of regenerating their words. Raw response remains unchanged.",
+    "selected": [
+      {
+        "question": "q1-binomial-form",
+        "sectionId": "source-3",
+        "paragraphIndex": 0
+      },
+      {
+        "question": "q5-summary-concepts",
+        "sectionId": "source-16",
+        "paragraphIndex": 0
+      }
+    ],
+    "validation": "passed"
+  }
+}

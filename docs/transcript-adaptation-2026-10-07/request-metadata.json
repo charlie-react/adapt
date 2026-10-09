@@ -1,0 +1,18 @@
+{
+  "source": "docs/gemini-3.5-transcribe-2026-10-07/transcript.txt",
+  "sourceSha256": "6de993763a5e77ea11236741daec35b7709f7b89ef880e9e56c464e543b26026",
+  "sourceCharacters": 1074,
+  "sourceUnits": 1,
+  "transcriptVerification": "The learner reports an independent listening review confirmed the transcript accurate.",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "I cannot access spoken audio. I need the complete lecture in readable sections with clear key points, preserving important concepts, source terminology and the original order. Do not require listening to the recording.",
+    "focus": ""
+  },
+  "flow": "Existing fileMaterial -> source-only learning store -> store.adapt -> existing Claude adaptSource -> existing source validation",
+  "startedAt": "2026-10-07T19:04:25.462Z",
+  "retryStartedAt": "2026-10-07T19:06:24.232Z"
+}

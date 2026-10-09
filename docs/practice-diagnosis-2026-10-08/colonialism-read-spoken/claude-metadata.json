@@ -1,0 +1,15 @@
+{
+  "httpStatus": 200,
+  "requestId": "0e06fa86-0ffc-46d0-9ecb-fe7ce6a76007",
+  "stopReason": "end_turn",
+  "usage": {
+    "inputTokens": 1993,
+    "outputTokens": 566,
+    "totalTokens": 2559,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "metrics": {
+    "latencyMs": 5667
+  }
+}

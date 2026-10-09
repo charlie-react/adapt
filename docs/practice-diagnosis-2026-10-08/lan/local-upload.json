@@ -1,0 +1,99 @@
+{
+  "status": 200,
+  "body": {
+    "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+    "expiresAt": 1791486400192,
+    "material": {
+      "id": "pdf:cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+      "kind": "pdf",
+      "title": "LAN_WAN_MAN_10_Page_Study_Material.pdf",
+      "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+      ],
+      "units": [
+        {
+          "id": "p1",
+          "locator": {
+            "kind": "pdf",
+            "page": 1
+          }
+        },
+        {
+          "id": "p2",
+          "locator": {
+            "kind": "pdf",
+            "page": 2
+          }
+        },
+        {
+          "id": "p3",
+          "locator": {
+            "kind": "pdf",
+            "page": 3
+          }
+        },
+        {
+          "id": "p4",
+          "locator": {
+            "kind": "pdf",
+            "page": 4
+          }
+        },
+        {
+          "id": "p5",
+          "locator": {
+            "kind": "pdf",
+            "page": 5
+          }
+        },
+        {
+          "id": "p6",
+          "locator": {
+            "kind": "pdf",
+            "page": 6
+          }
+        },
+        {
+          "id": "p7",
+          "locator": {
+            "kind": "pdf",
+            "page": 7
+          }
+        },
+        {
+          "id": "p8",
+          "locator": {
+            "kind": "pdf",
+            "page": 8
+          }
+        },
+        {
+          "id": "p9",
+          "locator": {
+            "kind": "pdf",
+            "page": 9
+          }
+        },
+        {
+          "id": "p10",
+          "locator": {
+            "kind": "pdf",
+            "page": 10
+          }
+        },
+        {
+          "id": "p11",
+          "locator": {
+            "kind": "pdf",
+            "page": 11
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "status": "source-ready"
+    },
+    "revision": 0
+  }
+}

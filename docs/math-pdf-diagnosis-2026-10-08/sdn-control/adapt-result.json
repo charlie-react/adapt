@@ -1,0 +1,398 @@
+{
+  "status": 200,
+  "body": {
+    "fingerprint": "45f614358c4c80d40eef34e609818f271e3bc92771c0c8099af868670fb0e8d3",
+    "expiresAt": 1791468823753,
+    "material": {
+      "id": "pdf:45f614358c4c80d40eef34e609818f271e3bc92771c0c8099af868670fb0e8d3",
+      "kind": "pdf",
+      "title": "AI-and-Machine-Learning-in-SDN-SEN305.pdf",
+      "fingerprint": "45f614358c4c80d40eef34e609818f271e3bc92771c0c8099af868670fb0e8d3",
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+      ],
+      "units": [
+        {
+          "id": "p1",
+          "locator": {
+            "kind": "pdf",
+            "page": 1,
+            "label": "1"
+          }
+        },
+        {
+          "id": "p2",
+          "locator": {
+            "kind": "pdf",
+            "page": 2,
+            "label": "2"
+          }
+        },
+        {
+          "id": "p3",
+          "locator": {
+            "kind": "pdf",
+            "page": 3,
+            "label": "3"
+          }
+        },
+        {
+          "id": "p4",
+          "locator": {
+            "kind": "pdf",
+            "page": 4,
+            "label": "4"
+          }
+        },
+        {
+          "id": "p5",
+          "locator": {
+            "kind": "pdf",
+            "page": 5,
+            "label": "5"
+          }
+        },
+        {
+          "id": "p6",
+          "locator": {
+            "kind": "pdf",
+            "page": 6,
+            "label": "6"
+          }
+        },
+        {
+          "id": "p7",
+          "locator": {
+            "kind": "pdf",
+            "page": 7,
+            "label": "7"
+          }
+        },
+        {
+          "id": "p8",
+          "locator": {
+            "kind": "pdf",
+            "page": 8,
+            "label": "8"
+          }
+        },
+        {
+          "id": "p9",
+          "locator": {
+            "kind": "pdf",
+            "page": 9,
+            "label": "9"
+          }
+        },
+        {
+          "id": "p10",
+          "locator": {
+            "kind": "pdf",
+            "page": 10,
+            "label": "10"
+          }
+        },
+        {
+          "id": "p11",
+          "locator": {
+            "kind": "pdf",
+            "page": 11,
+            "label": "11"
+          }
+        },
+        {
+          "id": "p12",
+          "locator": {
+            "kind": "pdf",
+            "page": 12,
+            "label": "12"
+          }
+        },
+        {
+          "id": "p13",
+          "locator": {
+            "kind": "pdf",
+            "page": 13,
+            "label": "13"
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "status": "source-ready"
+    },
+    "preferences": {
+      "needs": [
+        "stepwise"
+      ],
+      "description": "",
+      "focus": ""
+    },
+    "experience": {
+      "introduction": "This lesson explores AI and Machine Learning in Software Defined Networking. The material is presented step-by-step to help you understand how intelligent techniques enhance network automation, prediction, and security.",
+      "sections": [
+        {
+          "id": "source-1",
+          "title": "Course Title and Topic",
+          "kind": "prose",
+          "paragraphs": [
+            "This is the title page for the Software Defined Networking course, focusing on the topic of AI and Machine Learning in SDN."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p1",
+              "mode": "text",
+              "quote": "Course:\n\nTitle:\n\nSoftware Defined\n\nNetworking\n\nAI and Machine Learning in SDN"
+            }
+          ],
+          "steps": []
+        },
+        {
+          "id": "source-2",
+          "title": "Learning Objectives",
+          "kind": "prose",
+          "paragraphs": [
+            "By the end of this lesson, you will be able to discuss the role of artificial intelligence and machine learning in software-defined networking. You will identify key AI/ML techniques used in SDN for network optimisation and management. You will explore how AI/ML improves automation, fault detection, and traffic prediction in SDN. Finally, you will evaluate the challenges and limitations of integrating AI/ML in SDN."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p2",
+              "mode": "text",
+              "quote": "Software Defined Networking\n\nLEARNING OBJECTIVES\n\nAt the end of this lesson, you should be able to:\n\n● Discuss the role of artificial intelligence (AI) and machine\n\nlearning (ML) in software-defined networking (SDN).\n\n● Identify key AI/ML techniques used in SDN for network\n\noptimisation and management.\n\n● Explore how AI/ML improves automation, fault detection, and\n\ntraic prediction in SDN.\n\n● Evaluate the challenges and limitations of integrating AI/ML in\n\nSDN.\n\n______________________________________________________________\n\n______________________________________________________________\n\n______________________________________________________________\n\n______________________________________________________________\n\n______________________________________________________________\n\n______________________________________________________________\n\nPERSONAL GOALS FOR THIS TOPIC\n\nWhat issues may arise with AI-driven decisions in a network?\n\nExpand Your Horizons\n\n😊"
+            }
+          ],
+          "steps": [
+            "Discuss the role of AI and ML in SDN",
+            "Identify key AI/ML techniques for network optimisation",
+            "Explore improvements in automation, fault detection, and traffic prediction",
+            "Evaluate challenges and limitations of AI/ML integration"
+          ]
+        },
+        {
+          "id": "source-3",
+          "title": "Introduction to AI and ML in SDN",
+          "kind": "prose",
+          "paragraphs": [
+            "Artificial Intelligence and Machine Learning are transforming Software Defined Networking by bringing predictive insights, automation, and adaptive capabilities. Traditional SDN relies on predefined rules and manual configurations, which can be insufficient in managing complex and dynamic networks. AI and ML enable SDN to move beyond static rules to intelligent decision-making, improving efficiency, security, and user experience.",
+            "Think of managing a massive train network where delays, congestion, and breakdowns are common. An AI-powered system could predict train delays before they happen, optimise schedules dynamically, and ensure seamless operations. Similarly, in SDN, AI and ML bring intelligence and adaptability to networks, transforming them into self-optimising systems."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p3",
+              "mode": "text",
+              "quote": "Artificial Intelligence (AI) and Machine Learning (ML) are transforming Software Defined Networking (SDN) by bringing predictive insights, automation, and adaptive capabilities. Traditional SDN relies on predefined rules and manual configurations, which can be insuicient in managing complex and dynamic networks. AI and ML enable SDN to move beyond static rules to intelligent decision-making, improving eiciency, security, and user experience.\n\nImagine managing a massive train network where delays, congestion, and breakdowns are common. Now, what if there’s an AI-powered system predicting train delays before they happen, optimising schedules dynamically, and ensuring seamless operations? Similarly, in SDN, AI and ML bring intelligence and adaptability to networks, transforming them into self-optimising systems. Let’s explore how AI and ML are shaping the future of SDN.\n\nintroduction\n\nSoftware Defined Networking"
+            }
+          ],
+          "steps": [
+            "Understand that AI and ML bring predictive insights and automation to SDN",
+            "Recognise that traditional SDN uses predefined rules that may be insufficient",
+            "See how AI and ML enable intelligent decision-making beyond static rules",
+            "Compare this to an AI-powered train network that predicts and prevents delays"
+          ]
+        },
+        {
+          "id": "source-4",
+          "title": "The Role of AI and ML in SDN",
+          "kind": "prose",
+          "paragraphs": [
+            "AI and ML play several important roles in SDN. They enhance network automation by automating complex decision-making processes, allowing SDN controllers to adapt dynamically to network conditions without human intervention. They provide predictive analytics, where machine learning models predict traffic patterns, congestion, and potential failures, enabling proactive management rather than reactive responses.",
+            "AI algorithms enable intelligent traffic management by optimising routing decisions, balancing traffic loads, and minimising latency in real-time. They also support anomaly detection and security, where AI-powered tools identify abnormal behaviours or traffic patterns, flagging potential security threats like Distributed Denial of Service attacks or data breaches."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p4",
+              "mode": "text",
+              "quote": "The Role of AI and ML in SDN\n\nSoftware Defined Networking\n\n● Enhancing network automation: AI and ML\n\nautomate complex decision-making processes,\n\nallowing SDN controllers to adapt dynamically\n\nto network conditions without human\n\nintervention.\n\n● Predictive analytics: Machine learning models\n\npredict traic paerns, congestion, and\n\npotential failures, enabling proactive\n\nmanagement rather than reactive responses.\n\n● Intelligent traic management: AI algorithms\n\noptimise routing decisions by balancing traic\n\nloads and minimising latency in real-time.\n\n● Anomaly detection and security: AI-powered\n\ntools identify abnormal behaviours or traic\n\npaerns, flagging potential security threats like\n\nDistributed Denial of Service (DDoS) aacks or\n\ndata breaches."
+            }
+          ],
+          "steps": [
+            "Enhance network automation through dynamic adaptation without human intervention",
+            "Use predictive analytics to forecast traffic patterns and potential failures",
+            "Optimise routing decisions to balance traffic loads and minimise latency",
+            "Detect anomalies and security threats like DDoS attacks or data breaches"
+          ]
+        },
+        {
+          "id": "source-5",
+          "title": "AI/ML Techniques: Supervised and Unsupervised Learning",
+          "kind": "prose",
+          "paragraphs": [
+            "Supervised learning models use labelled data to predict specific outcomes, such as traffic congestion or network failures. For example, a supervised learning model predicts when a specific link is likely to fail based on historical data, allowing the controller to reroute traffic preemptively.",
+            "Unsupervised learning identifies patterns and anomalies in unlabelled data, making it ideal for detecting unknown threats or traffic irregularities. For example, clustering algorithms group similar traffic flows, helping detect unusual patterns that might indicate a cyberattack."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p5",
+              "mode": "text",
+              "quote": "Software Defined Networking\n\nAI/ML Techniques in SDN\n\nSupervised Learning\n\nSupervised ML models use labelled data to predict specific outcomes, such\n\nas traic congestion or network failures.\n\nExample:\n\nA supervised learning model predicts when a specific link is likely to fail\n\nbased on historical data, allowing the controller to reroute traic\n\npreemptively.\n\nUnsupervised Learning\n\nUnsupervised ML identifies paerns and anomalies in unlabelled data,\n\nmaking it ideal for detecting unknown threats or traic irregularities.\n\nExample:\n\nClustering algorithms group similar traic flows, helping detect unusual\n\npaerns that might indicate a cyberaack."
+            }
+          ],
+          "steps": [
+            "Supervised learning uses labelled data to predict outcomes like congestion or failures",
+            "Example: predict link failures from historical data to reroute traffic early",
+            "Unsupervised learning finds patterns in unlabelled data for unknown threats",
+            "Example: clustering algorithms detect unusual traffic patterns indicating attacks"
+          ]
+        },
+        {
+          "id": "source-6",
+          "title": "AI/ML Techniques: Reinforcement and Deep Learning",
+          "kind": "prose",
+          "paragraphs": [
+            "Reinforcement learning enables SDN controllers to learn optimal policies through trial and error, adapting to network changes dynamically. For example, a reinforcement learning agent adjusts Quality of Service policies in real-time to maximise user satisfaction during peak hours.",
+            "Deep learning models process large volumes of data, enabling advanced capabilities like image recognition for physical network inspections or complex pattern detection. For example, deep learning identifies subtle traffic patterns that could indicate advanced persistent threats."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p6",
+              "mode": "text",
+              "quote": "Software Defined Networking\n\nAI/ML Techniques in SDN\n\nReinforcement Learning\n\nReinforcement learning enables SDN controllers to learn optimal policies\n\nthrough trial and error, adapting to network changes dynamically.\n\nExample:\n\nA reinforcement learning agent adjusts Quality of Service (QoS) policies in\n\nreal-time to maximise user satisfaction during peak hours.\n\nDeep Learning\n\nDeep learning models process large volumes of data, enabling advanced\n\ncapabilities like image recognition for physical network inspections or\n\ncomplex paern detection.\n\nExample:\n\nDeep learning identifies subtle traic paerns that could indicate\n\nadvanced persistent threats (APTs)."
+            }
+          ],
+          "steps": [
+            "Reinforcement learning learns optimal policies through trial and error",
+            "Example: adjust QoS policies in real-time during peak hours",
+            "Deep learning processes large data volumes for advanced pattern detection",
+            "Example: identify subtle traffic patterns indicating advanced persistent threats"
+          ]
+        },
+        {
+          "id": "source-7",
+          "title": "Mid-Lesson Question",
+          "kind": "prose",
+          "paragraphs": [
+            "This page presents a mid-lesson question asking you to explain how unsupervised learning helps detect network anomalies in SDN. Space is provided for your written response."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p7",
+              "mode": "text",
+              "quote": "MID-LESSON QUESTION\n\nExplain how unsupervised learning helps detect network anomalies in SDN.\n\n_________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _________________________________________________ _____"
+            }
+          ],
+          "steps": []
+        },
+        {
+          "id": "source-8",
+          "title": "Applications of AI/ML in SDN",
+          "kind": "prose",
+          "paragraphs": [
+            "AI and ML have several practical applications in SDN. Traffic prediction and optimisation involves AI/ML models analysing historical and real-time traffic data to predict future trends and optimise routing. For example, a telecom operator uses ML to predict evening internet traffic spikes and preemptively allocates additional bandwidth to streaming services.",
+            "Fault detection and recovery means AI identifies potential failures before they occur and suggests or implements corrective actions. For example, an SDN controller uses AI to detect that a switch is underperforming and reroutes traffic to prevent downtime. Network security involves ML models identifying malicious traffic patterns, enabling real-time threat mitigation. For example, AI-powered anomaly detection systems block a DDoS attack by identifying and isolating rogue traffic sources.",
+            "Resource allocation means AI dynamically adjusts resources such as bandwidth and compute power to meet varying demands. For example, cloud service providers use AI to allocate resources to virtual machines based on real-time usage patterns."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p8",
+              "mode": "text",
+              "quote": "Applications of AI/ML in SDN\n\nSoftware Defined Networking\n\n● Traic prediction and optimisation: AI/ML models\n\nanalyse historical and real-time traic data to predict\n\nfuture trends and optimise routing.\n\nExample: A telecom operator uses ML to predict\n\nevening internet traic spikes and preemptively\n\nallocates additional bandwidth to streaming services.\n\n● Fault detection and recovery: AI identifies potential\n\nfailures before they occur and suggests or\n\nimplements corrective actions.\n\nExample: An SDN controller uses AI to detect that a\n\nswitch is underperforming and reroutes traic to\n\nprevent downtime.\n\n● Network security: ML models identify malicious traic\n\npaerns, enabling real-time threat mitigation.\n\nExample: AI-powered anomaly detection systems\n\nblock a DDoS aack by identifying and isolating rogue\n\ntraic sources.\n\n● Resource allocation: AI dynamically adjusts\n\nresources such as bandwidth and compute power to\n\nmeet varying demands.\n\nExample: Cloud service providers use AI to allocate\n\nresources to virtual machines based on real-time\n\nusage paerns."
+            }
+          ],
+          "steps": [
+            "Traffic prediction: analyse data to predict trends and optimise routing",
+            "Fault detection: identify potential failures and implement corrective actions",
+            "Network security: detect malicious patterns and mitigate threats in real-time",
+            "Resource allocation: dynamically adjust bandwidth and compute power to meet demands"
+          ]
+        },
+        {
+          "id": "source-9",
+          "title": "Challenges and Limitations",
+          "kind": "prose",
+          "paragraphs": [
+            "Integrating AI and ML in SDN comes with several challenges. Data dependency means AI/ML models require vast amounts of high-quality data for training, and inadequate or biased data can lead to inaccurate predictions. Complexity means developing and deploying AI/ML models for SDN requires specialised expertise, which may not be readily available.",
+            "Computational overhead means ML algorithms can be resource-intensive, requiring significant compute power and storage. Trust and transparency means AI decisions can sometimes lack explainability, making it difficult for administrators to trust automated actions."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p9",
+              "mode": "text",
+              "quote": "● Data dependency: AI/ML models require\n\nvast amounts of high-quality data for\n\ntraining. Inadequate or biased data can lead\n\nto inaccurate predictions.\n\n● Complexity: Developing and deploying\n\nAI/ML models for SDN requires specialised\n\nexpertise, which may not be readily\n\navailable.\n\n● Computational overhead: ML algorithms\n\ncan be resource-intensive, requiring\n\nsignificant compute power and storage.\n\n● Trust and transparency: AI decisions can\n\nsometimes lack explainability, making it\n\ndiicult for administrators to trust\n\nautomated actions.\n\nSoftware Defined Networking\n\nChallenges and Limitations"
+            }
+          ],
+          "steps": [
+            "Data dependency: models need vast high-quality data; poor data leads to inaccurate predictions",
+            "Complexity: development requires specialised expertise that may not be available",
+            "Computational overhead: algorithms require significant compute power and storage",
+            "Trust and transparency: AI decisions may lack explainability, reducing administrator trust"
+          ]
+        },
+        {
+          "id": "source-10",
+          "title": "Summary of the Lesson",
+          "kind": "prose",
+          "paragraphs": [
+            "Here are the key takeaways from this lesson. AI and ML bring predictive capabilities, automation, and adaptability to SDN networks. Supervised learning, unsupervised learning, reinforcement learning, and deep learning enhance various aspects of SDN management. AI/ML improves traffic prediction, fault detection, network security, and resource allocation. Data dependency, complexity, computational overhead, and transparency issues pose challenges to AI/ML adoption in SDN."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p10",
+              "mode": "text",
+              "quote": "SUMMARY OF THE LESSON\n\nSome of the take-away from the lesson are:\n\n● AI and ML bring predictive capabilities, automation, and\n\nadaptability to SDN networks.\n\n● Supervised learning, unsupervised learning, reinforcement\n\nlearning, and deep learning enhance various aspects of\n\nSDN management.\n\n● AI/ML improves traic prediction, fault detection, network\n\nsecurity, and resource allocation.\n\n● Data dependency, complexity, computational overhead,\n\nand transparency issues pose challenges to AI/ML adoption\n\nin SDN.\n\nSoftware Defined Networking"
+            }
+          ],
+          "steps": [
+            "AI and ML add prediction, automation, and adaptability to SDN",
+            "Four learning techniques enhance different aspects of SDN management",
+            "AI/ML improves traffic prediction, fault detection, security, and resource allocation",
+            "Challenges include data dependency, complexity, overhead, and transparency issues"
+          ]
+        },
+        {
+          "id": "source-11",
+          "title": "References and Further Reading",
+          "kind": "prose",
+          "paragraphs": [
+            "This page lists references and further reading materials on Software Defined Networking, including comprehensive surveys, textbooks on computer networking and internetworking with TCP/IP, and works on the intellectual history of programmable networks and SDN software."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p11",
+              "mode": "text",
+              "quote": "REFERENCES & FURTHER READING\n\n● Kreutz, D., Ramos, F. M., & Verissimo, P. E. (2015).\n\n\"Software-Defined Networking: A Comprehensive Survey.\" Proceedings of the IEEE.\n\n● Kurose, J. F., & Ross, K. W. (2016). Computer Networking:\n\nA Top-Down Approach. Pearson.\n\n● Comer, D. E. (2018). Internetworking with TCP/IP:\n\nPrinciples, Protocols, and Architecture. Pearson.\n\n● Feamster, N., Rexford, J., & Zegura, E. (2013). \"The Road\n\nto SDN: An Intellectual History of Programmable Networks.\" ACM SIGCOMM Computer Communication Review.\n\n● Comer, D. E. (2018). Internetworking with TCP/IP:\n\nPrinciples, Protocols, and Architecture. Pearson.\n\n● Nadeau, T., & Gray, K. (2013). SDN: Software Defined\n\nNetworks. O'Reilly Media.\n\nREFERENCES\n\nSoftware Defined Networking"
+            }
+          ],
+          "steps": []
+        },
+        {
+          "id": "source-12",
+          "title": "Lesson Questions",
+          "kind": "prose",
+          "paragraphs": [
+            "This page presents lesson questions to test your understanding. Question 1 asks what is a primary challenge of using AI/ML in SDN, with options including lack of centralised control, limited availability of labelled data for training, inability to adjust routing dynamically, and high scalability of AI/ML algorithms.",
+            "Question 2 asks which AI/ML technique is best suited for detecting unknown traffic patterns in SDN, with options including supervised learning, unsupervised learning, reinforcement learning, and deep learning. Question 3 asks about the primary benefits of using AI for traffic prediction in SDN. Question 4 asks how reinforcement learning benefits SDN controllers."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p12",
+              "mode": "text",
+              "quote": "LESSON QUESTIONS\n\n1. What is a primary challenge of using AI/ML in SDN?\n\nLack of centralised control.\n\nLimited availability of labelled data for training.\n\nInability to adjust routing dynamically.\n\nHigh scalability of AI/ML algorithms.\n\nA\n\nB\n\nC\n\nD\n\n2. Which AI/ML technique is best suited for detecting unknown traic\n\npaerns in SDN?\n\n3. What are the primary benefits of using AI for traic prediction in SDN?\n\n4. How does reinforcement learning benefit SDN controllers?\n\nSupervised learning\n\nUnsupervised learning\n\nReinforcement learning\n\nDeep learning\n\nA\n\nB\n\nC\n\nD\n\nSoftware Defined Networking"
+            }
+          ],
+          "steps": []
+        },
+        {
+          "id": "source-13",
+          "title": "Completion Page",
+          "kind": "prose",
+          "paragraphs": [
+            "This is the completion page congratulating you for reaching the finish line of the lesson on AI and Machine Learning in SDN."
+          ],
+          "evidence": [
+            {
+              "sourceId": "p13",
+              "mode": "text",
+              "quote": "AI and Machine Learning in SDN\n\nWell Done!\n\nYou've Reached the Finish Line!"
+            }
+          ],
+          "steps": []
+        }
+      ],
+      "practice": [],
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+      ]
+    },
+    "revision": 1
+  }
+}

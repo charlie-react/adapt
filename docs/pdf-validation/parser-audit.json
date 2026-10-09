@@ -1,0 +1,244 @@
+{
+  "method": "Existing restricted PDF.js worker output compared with existing normalizer; counts/coordinates only, no document text.",
+  "cases": [
+    {
+      "id": "code-indentation",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "parserTextItems": 7,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 50,
+          "parserDistinctTextXPositions": 3,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 4,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "columns-interleaved",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "parserTextItems": 6,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 45,
+          "parserDistinctTextXPositions": 2,
+          "parserWhitespaceSpansOver48Points": 3,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 3,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mit-theory-slides",
+      "pages": [
+        {
+          "pageNumber": 1,
+          "parserTextItems": 15,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 28.346,
+          "parserDistinctTextXPositions": 14,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 7,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 2,
+          "parserTextItems": 13,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 11,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 6,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 3,
+          "parserTextItems": 13,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 11,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 6,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 4,
+          "parserTextItems": 117,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 92,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 4,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 29,
+          "normalizedReplacementCharacters": 4,
+          "warningCodes": [
+            "TEXT_DECODE_WARNING",
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 5,
+          "parserTextItems": 95,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 60,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 4,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 39,
+          "normalizedReplacementCharacters": 4,
+          "warningCodes": [
+            "TEXT_DECODE_WARNING",
+            "READING_ORDER_UNCERTAIN",
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 6,
+          "parserTextItems": 269,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 165,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 9,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 40,
+          "normalizedReplacementCharacters": 9,
+          "warningCodes": [
+            "TEXT_DECODE_WARNING",
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 7,
+          "parserTextItems": 132,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 87,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 4,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 22,
+          "normalizedReplacementCharacters": 4,
+          "warningCodes": [
+            "TEXT_DECODE_WARNING",
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 8,
+          "parserTextItems": 78,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 64,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 3,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 19,
+          "normalizedReplacementCharacters": 3,
+          "warningCodes": [
+            "TEXT_DECODE_WARNING",
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 9,
+          "parserTextItems": 13,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 11,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 6,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 10,
+          "parserTextItems": 13,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 8.504,
+          "parserDistinctTextXPositions": 11,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 6,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE",
+            "UNSUPPORTED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 11,
+          "parserTextItems": 5,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 29.4024,
+          "parserDistinctTextXPositions": 3,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 4,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": [
+            "INFERRED_STRUCTURE"
+          ]
+        },
+        {
+          "pageNumber": 12,
+          "parserTextItems": 5,
+          "parserLeadingWhitespaceItems": 0,
+          "parserMinimumTextX": 29.4024,
+          "parserDistinctTextXPositions": 3,
+          "parserWhitespaceSpansOver48Points": 0,
+          "parserReplacementCharacters": 0,
+          "blockLeadingWhitespaceCount": 0,
+          "normalizedBlocks": 4,
+          "normalizedReplacementCharacters": 0,
+          "warningCodes": []
+        }
+      ]
+    }
+  ]
+}

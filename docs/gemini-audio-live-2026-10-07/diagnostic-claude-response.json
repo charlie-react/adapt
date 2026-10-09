@@ -1,0 +1,29 @@
+{
+  "output": {
+    "message": {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "```json\n{\n  \"introduction\": \"Read the lecture in structured text at your own pace.\",\n  \"sections\": [\n    {\n      \"id\": \"transcript-1\",\n      \"title\": \"Colonialism in Africa: Definition and Historical Context\",\n      \"kind\": \"prose\",\n      \"paragraphs\": [\n        \"Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.\"\n      ],\n      \"steps\": [\n        \"European powers took political, economic, and military control over much of the continent, especially from the late 19th century.\",\n        \"A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.\"\n      ],\n      \"evidence\": [\n        {\n          \"sourceId\": \"transcript-1\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-1-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"transcript-2\",\n      \"title\": \"Colonial Infrastructure and Interests\",\n      \"kind\": \"prose\",\n      \"paragraphs\": [\n        \"Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests.\"\n      ],\n      \"steps\": [\n        \"Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures.\",\n        \"However, these developments mainly served colonial interests.\"\n      ],\n      \"evidence\": [\n        {\n          \"sourceId\": \"transcript-1\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-1-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"transcript-3\",\n      \"title\": \"Exploitation and Weakening of Local Systems\",\n      \"kind\": \"prose\",\n      \"paragraphs\": [\n        \"African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions.\"\n      ],\n      \"steps\": [\n        \"African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.\",\n        \"Colonial rule also created artificial borders that later contributed to political and ethnic tensions.\"\n      ],\n      \"evidence\": [\n        {\n          \"sourceId\": \"transcript-1\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-1-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"transcript-4\",\n      \"title\": \"Independence Movements and Lasting Legacy\",\n      \"kind\": \"prose\",\n      \"paragraphs\": [\n        \"From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems.\"\n      ],\n      \"steps\": [\n        \"From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.\",\n        \"The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems.\"\n      ],\n      \"evidence\": [\n        {\n          \"sourceId\": \"transcript-1\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-1-1\"\n        }\n      ]\n    }\n  ],\n  \"practice\": [],\n  \"limitations\": [\n    \"Stereo audio is mixed to one channel for transcription. Overlapping speakers may be difficult to distinguish.\",\n    \"This machine transcript may mishear words, names, numbers or notation. Adaptations use the transcript, not independently verified audio. Non-speech sounds and unstated visual information are not reconstructed.\"\n  ]\n}\n```"
+        }
+      ]
+    }
+  },
+  "stopReason": "end_turn",
+  "usage": {
+    "inputTokens": 6536,
+    "outputTokens": 964,
+    "totalTokens": 7500,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "metrics": {
+    "latencyMs": 10034
+  },
+  "$metadata": {
+    "httpStatusCode": 200,
+    "requestId": "c234ee4d-288d-4228-927c-df002361a79b",
+    "attempts": 1,
+    "totalRetryDelay": 0
+  }
+}

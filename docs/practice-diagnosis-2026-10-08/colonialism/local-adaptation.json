@@ -1,0 +1,1240 @@
+{
+  "status": 200,
+  "body": {
+    "fingerprint": "7703eb79744a1171a159c3e86583d4dbc6df867d3038b4100ad67ccb992f6327",
+    "expiresAt": 1791486479950,
+    "material": {
+      "id": "audio:a1e479affb031e56356c862c8bb19ec134e3337e6140e9ba21daf7d01be7f660:transcript:7703eb79744a1171a159c3e86583d4dbc6df867d3038b4100ad67ccb992f6327",
+      "kind": "audio",
+      "title": "Colonialism_in_Africa___Exact_60_Seconds.mp3",
+      "fingerprint": "7703eb79744a1171a159c3e86583d4dbc6df867d3038b4100ad67ccb992f6327",
+      "limitations": [
+        "Stereo audio is mixed to one channel for transcription. Overlapping speakers may be difficult to distinguish.",
+        "This machine transcript may mishear words, names, numbers or notation. Adaptations use the transcript, not independently verified audio. Non-speech sounds and unstated visual information are not reconstructed."
+      ],
+      "units": [
+        {
+          "id": "audio-1",
+          "locator": {
+            "kind": "audio",
+            "duration": 57.91056689342403
+          }
+        },
+        {
+          "id": "transcript-1",
+          "locator": {
+            "kind": "transcript",
+            "start": 0,
+            "end": 1074,
+            "startSeconds": 0.1,
+            "endSeconds": 57.7
+          },
+          "transcription": {
+            "service": "gemini-transcribe",
+            "language": "und",
+            "model": "gemini-3.5-transcribe",
+            "words": [
+              {
+                "text": "Colonialism",
+                "startIndex": 0,
+                "endIndex": 11,
+                "timing": "interval",
+                "start": 0.1,
+                "end": 0.7
+              },
+              {
+                "text": "in",
+                "startIndex": 12,
+                "endIndex": 14,
+                "timing": "interval",
+                "start": 0.7,
+                "end": 0.8
+              },
+              {
+                "text": "Africa",
+                "startIndex": 15,
+                "endIndex": 21,
+                "timing": "interval",
+                "start": 0.8,
+                "end": 1.4
+              },
+              {
+                "text": "refers",
+                "startIndex": 22,
+                "endIndex": 28,
+                "timing": "interval",
+                "start": 1.5,
+                "end": 2
+              },
+              {
+                "text": "to",
+                "startIndex": 29,
+                "endIndex": 31,
+                "timing": "point",
+                "at": 2
+              },
+              {
+                "text": "the",
+                "startIndex": 32,
+                "endIndex": 35,
+                "timing": "interval",
+                "start": 2,
+                "end": 2.1
+              },
+              {
+                "text": "period",
+                "startIndex": 36,
+                "endIndex": 42,
+                "timing": "interval",
+                "start": 2.1,
+                "end": 2.6
+              },
+              {
+                "text": "when",
+                "startIndex": 43,
+                "endIndex": 47,
+                "timing": "interval",
+                "start": 2.6,
+                "end": 2.7
+              },
+              {
+                "text": "European",
+                "startIndex": 48,
+                "endIndex": 56,
+                "timing": "interval",
+                "start": 2.7,
+                "end": 3.2
+              },
+              {
+                "text": "powers",
+                "startIndex": 57,
+                "endIndex": 63,
+                "timing": "interval",
+                "start": 3.2,
+                "end": 3.6
+              },
+              {
+                "text": "took",
+                "startIndex": 64,
+                "endIndex": 68,
+                "timing": "interval",
+                "start": 3.6,
+                "end": 3.8
+              },
+              {
+                "text": "political,",
+                "startIndex": 69,
+                "endIndex": 79,
+                "timing": "interval",
+                "start": 3.8,
+                "end": 4.3
+              },
+              {
+                "text": "economic,",
+                "startIndex": 80,
+                "endIndex": 89,
+                "timing": "interval",
+                "start": 4.5,
+                "end": 5.2
+              },
+              {
+                "text": "and",
+                "startIndex": 90,
+                "endIndex": 93,
+                "timing": "interval",
+                "start": 5.4,
+                "end": 5.5
+              },
+              {
+                "text": "military",
+                "startIndex": 94,
+                "endIndex": 102,
+                "timing": "interval",
+                "start": 5.5,
+                "end": 6.1
+              },
+              {
+                "text": "control",
+                "startIndex": 103,
+                "endIndex": 110,
+                "timing": "interval",
+                "start": 6.1,
+                "end": 6.6
+              },
+              {
+                "text": "over",
+                "startIndex": 111,
+                "endIndex": 115,
+                "timing": "interval",
+                "start": 6.6,
+                "end": 6.8
+              },
+              {
+                "text": "much",
+                "startIndex": 116,
+                "endIndex": 120,
+                "timing": "interval",
+                "start": 6.8,
+                "end": 7.1
+              },
+              {
+                "text": "of",
+                "startIndex": 121,
+                "endIndex": 123,
+                "timing": "interval",
+                "start": 7.1,
+                "end": 7.2
+              },
+              {
+                "text": "the",
+                "startIndex": 124,
+                "endIndex": 127,
+                "timing": "interval",
+                "start": 7.2,
+                "end": 7.3
+              },
+              {
+                "text": "continent,",
+                "startIndex": 128,
+                "endIndex": 138,
+                "timing": "interval",
+                "start": 7.3,
+                "end": 7.9
+              },
+              {
+                "text": "especially",
+                "startIndex": 139,
+                "endIndex": 149,
+                "timing": "interval",
+                "start": 8,
+                "end": 8.6
+              },
+              {
+                "text": "from",
+                "startIndex": 150,
+                "endIndex": 154,
+                "timing": "interval",
+                "start": 8.6,
+                "end": 8.8
+              },
+              {
+                "text": "the",
+                "startIndex": 155,
+                "endIndex": 158,
+                "timing": "interval",
+                "start": 8.8,
+                "end": 8.9
+              },
+              {
+                "text": "late",
+                "startIndex": 159,
+                "endIndex": 163,
+                "timing": "interval",
+                "start": 8.9,
+                "end": 9.1
+              },
+              {
+                "text": "19th",
+                "startIndex": 164,
+                "endIndex": 168,
+                "timing": "interval",
+                "start": 9.1,
+                "end": 9.6
+              },
+              {
+                "text": "century.",
+                "startIndex": 169,
+                "endIndex": 177,
+                "timing": "interval",
+                "start": 9.6,
+                "end": 10.1
+              },
+              {
+                "text": "A",
+                "startIndex": 178,
+                "endIndex": 179,
+                "timing": "interval",
+                "start": 10.8,
+                "end": 10.9
+              },
+              {
+                "text": "major",
+                "startIndex": 180,
+                "endIndex": 185,
+                "timing": "interval",
+                "start": 10.9,
+                "end": 11.2
+              },
+              {
+                "text": "turning",
+                "startIndex": 186,
+                "endIndex": 193,
+                "timing": "interval",
+                "start": 11.2,
+                "end": 11.6
+              },
+              {
+                "text": "point",
+                "startIndex": 194,
+                "endIndex": 199,
+                "timing": "interval",
+                "start": 11.6,
+                "end": 12.1
+              },
+              {
+                "text": "was",
+                "startIndex": 200,
+                "endIndex": 203,
+                "timing": "interval",
+                "start": 12.2,
+                "end": 12.4
+              },
+              {
+                "text": "the",
+                "startIndex": 204,
+                "endIndex": 207,
+                "timing": "point",
+                "at": 12.4
+              },
+              {
+                "text": "Berlin",
+                "startIndex": 208,
+                "endIndex": 214,
+                "timing": "interval",
+                "start": 12.4,
+                "end": 12.8
+              },
+              {
+                "text": "Conference",
+                "startIndex": 215,
+                "endIndex": 225,
+                "timing": "interval",
+                "start": 12.8,
+                "end": 13.2
+              },
+              {
+                "text": "of",
+                "startIndex": 226,
+                "endIndex": 228,
+                "timing": "interval",
+                "start": 13.2,
+                "end": 13.4
+              },
+              {
+                "text": "1884",
+                "startIndex": 229,
+                "endIndex": 233,
+                "timing": "interval",
+                "start": 13.4,
+                "end": 14.3
+              },
+              {
+                "text": "to",
+                "startIndex": 234,
+                "endIndex": 236,
+                "timing": "interval",
+                "start": 14.3,
+                "end": 14.4
+              },
+              {
+                "text": "1885,",
+                "startIndex": 237,
+                "endIndex": 242,
+                "timing": "interval",
+                "start": 14.4,
+                "end": 15.6
+              },
+              {
+                "text": "where",
+                "startIndex": 243,
+                "endIndex": 248,
+                "timing": "interval",
+                "start": 15.9,
+                "end": 16
+              },
+              {
+                "text": "European",
+                "startIndex": 249,
+                "endIndex": 257,
+                "timing": "interval",
+                "start": 16,
+                "end": 16.5
+              },
+              {
+                "text": "countries",
+                "startIndex": 258,
+                "endIndex": 267,
+                "timing": "interval",
+                "start": 16.5,
+                "end": 16.8
+              },
+              {
+                "text": "divided",
+                "startIndex": 268,
+                "endIndex": 275,
+                "timing": "interval",
+                "start": 16.8,
+                "end": 17.2
+              },
+              {
+                "text": "African",
+                "startIndex": 276,
+                "endIndex": 283,
+                "timing": "interval",
+                "start": 17.2,
+                "end": 17.5
+              },
+              {
+                "text": "territories",
+                "startIndex": 284,
+                "endIndex": 295,
+                "timing": "interval",
+                "start": 17.5,
+                "end": 18.1
+              },
+              {
+                "text": "among",
+                "startIndex": 296,
+                "endIndex": 301,
+                "timing": "interval",
+                "start": 18.1,
+                "end": 18.3
+              },
+              {
+                "text": "themselves",
+                "startIndex": 302,
+                "endIndex": 312,
+                "timing": "interval",
+                "start": 18.3,
+                "end": 18.9
+              },
+              {
+                "text": "with",
+                "startIndex": 313,
+                "endIndex": 317,
+                "timing": "interval",
+                "start": 18.9,
+                "end": 19.1
+              },
+              {
+                "text": "little",
+                "startIndex": 318,
+                "endIndex": 324,
+                "timing": "interval",
+                "start": 19.1,
+                "end": 19.2
+              },
+              {
+                "text": "regard",
+                "startIndex": 325,
+                "endIndex": 331,
+                "timing": "interval",
+                "start": 19.2,
+                "end": 19.7
+              },
+              {
+                "text": "for",
+                "startIndex": 332,
+                "endIndex": 335,
+                "timing": "interval",
+                "start": 19.7,
+                "end": 19.8
+              },
+              {
+                "text": "existing",
+                "startIndex": 336,
+                "endIndex": 344,
+                "timing": "interval",
+                "start": 19.8,
+                "end": 20.3
+              },
+              {
+                "text": "ethnic",
+                "startIndex": 345,
+                "endIndex": 351,
+                "timing": "interval",
+                "start": 20.3,
+                "end": 20.6
+              },
+              {
+                "text": "groups,",
+                "startIndex": 352,
+                "endIndex": 359,
+                "timing": "interval",
+                "start": 20.6,
+                "end": 21
+              },
+              {
+                "text": "kingdoms,",
+                "startIndex": 360,
+                "endIndex": 369,
+                "timing": "interval",
+                "start": 21.2,
+                "end": 21.8
+              },
+              {
+                "text": "or",
+                "startIndex": 370,
+                "endIndex": 372,
+                "timing": "interval",
+                "start": 21.9,
+                "end": 22
+              },
+              {
+                "text": "boundaries.",
+                "startIndex": 373,
+                "endIndex": 384,
+                "timing": "interval",
+                "start": 22,
+                "end": 22.6
+              },
+              {
+                "text": "Colonial",
+                "startIndex": 385,
+                "endIndex": 393,
+                "timing": "interval",
+                "start": 23.1,
+                "end": 23.4
+              },
+              {
+                "text": "governments",
+                "startIndex": 394,
+                "endIndex": 405,
+                "timing": "interval",
+                "start": 23.4,
+                "end": 23.7
+              },
+              {
+                "text": "introduced",
+                "startIndex": 406,
+                "endIndex": 416,
+                "timing": "interval",
+                "start": 23.7,
+                "end": 24.2
+              },
+              {
+                "text": "new",
+                "startIndex": 417,
+                "endIndex": 420,
+                "timing": "interval",
+                "start": 24.2,
+                "end": 24.5
+              },
+              {
+                "text": "legal",
+                "startIndex": 421,
+                "endIndex": 426,
+                "timing": "interval",
+                "start": 24.5,
+                "end": 24.8
+              },
+              {
+                "text": "systems,",
+                "startIndex": 427,
+                "endIndex": 435,
+                "timing": "interval",
+                "start": 24.8,
+                "end": 25.3
+              },
+              {
+                "text": "schools,",
+                "startIndex": 436,
+                "endIndex": 444,
+                "timing": "interval",
+                "start": 25.4,
+                "end": 26
+              },
+              {
+                "text": "roads,",
+                "startIndex": 445,
+                "endIndex": 451,
+                "timing": "interval",
+                "start": 26,
+                "end": 26.5
+              },
+              {
+                "text": "railways,",
+                "startIndex": 452,
+                "endIndex": 461,
+                "timing": "interval",
+                "start": 26.6,
+                "end": 27.2
+              },
+              {
+                "text": "and",
+                "startIndex": 462,
+                "endIndex": 465,
+                "timing": "interval",
+                "start": 27.4,
+                "end": 27.5
+              },
+              {
+                "text": "administrative",
+                "startIndex": 466,
+                "endIndex": 480,
+                "timing": "interval",
+                "start": 27.5,
+                "end": 28
+              },
+              {
+                "text": "structures.",
+                "startIndex": 481,
+                "endIndex": 492,
+                "timing": "interval",
+                "start": 28,
+                "end": 28.5
+              },
+              {
+                "text": "However,",
+                "startIndex": 493,
+                "endIndex": 501,
+                "timing": "interval",
+                "start": 29,
+                "end": 29.2
+              },
+              {
+                "text": "these",
+                "startIndex": 502,
+                "endIndex": 507,
+                "timing": "interval",
+                "start": 29.2,
+                "end": 29.4
+              },
+              {
+                "text": "developments",
+                "startIndex": 508,
+                "endIndex": 520,
+                "timing": "interval",
+                "start": 29.4,
+                "end": 29.9
+              },
+              {
+                "text": "mainly",
+                "startIndex": 521,
+                "endIndex": 527,
+                "timing": "interval",
+                "start": 29.9,
+                "end": 30.2
+              },
+              {
+                "text": "served",
+                "startIndex": 528,
+                "endIndex": 534,
+                "timing": "interval",
+                "start": 30.2,
+                "end": 30.6
+              },
+              {
+                "text": "colonial",
+                "startIndex": 535,
+                "endIndex": 543,
+                "timing": "interval",
+                "start": 30.6,
+                "end": 31
+              },
+              {
+                "text": "interests.",
+                "startIndex": 544,
+                "endIndex": 554,
+                "timing": "interval",
+                "start": 31,
+                "end": 31.6
+              },
+              {
+                "text": "African",
+                "startIndex": 555,
+                "endIndex": 562,
+                "timing": "interval",
+                "start": 31.9,
+                "end": 32.3
+              },
+              {
+                "text": "land,",
+                "startIndex": 563,
+                "endIndex": 568,
+                "timing": "interval",
+                "start": 32.3,
+                "end": 32.6
+              },
+              {
+                "text": "labor,",
+                "startIndex": 569,
+                "endIndex": 575,
+                "timing": "interval",
+                "start": 32.6,
+                "end": 33
+              },
+              {
+                "text": "minerals,",
+                "startIndex": 576,
+                "endIndex": 585,
+                "timing": "interval",
+                "start": 33,
+                "end": 33.4
+              },
+              {
+                "text": "and",
+                "startIndex": 586,
+                "endIndex": 589,
+                "timing": "interval",
+                "start": 33.4,
+                "end": 33.6
+              },
+              {
+                "text": "agricultural",
+                "startIndex": 590,
+                "endIndex": 602,
+                "timing": "interval",
+                "start": 33.6,
+                "end": 34.2
+              },
+              {
+                "text": "resources",
+                "startIndex": 603,
+                "endIndex": 612,
+                "timing": "interval",
+                "start": 34.2,
+                "end": 34.8
+              },
+              {
+                "text": "were",
+                "startIndex": 613,
+                "endIndex": 617,
+                "timing": "interval",
+                "start": 34.8,
+                "end": 34.9
+              },
+              {
+                "text": "heavily",
+                "startIndex": 618,
+                "endIndex": 625,
+                "timing": "interval",
+                "start": 34.9,
+                "end": 35.2
+              },
+              {
+                "text": "exploited,",
+                "startIndex": 626,
+                "endIndex": 636,
+                "timing": "interval",
+                "start": 35.2,
+                "end": 35.9
+              },
+              {
+                "text": "while",
+                "startIndex": 637,
+                "endIndex": 642,
+                "timing": "interval",
+                "start": 36.1,
+                "end": 36.2
+              },
+              {
+                "text": "many",
+                "startIndex": 643,
+                "endIndex": 647,
+                "timing": "interval",
+                "start": 36.2,
+                "end": 36.4
+              },
+              {
+                "text": "local",
+                "startIndex": 648,
+                "endIndex": 653,
+                "timing": "interval",
+                "start": 36.4,
+                "end": 36.7
+              },
+              {
+                "text": "industries",
+                "startIndex": 654,
+                "endIndex": 664,
+                "timing": "interval",
+                "start": 36.7,
+                "end": 37.1
+              },
+              {
+                "text": "and",
+                "startIndex": 665,
+                "endIndex": 668,
+                "timing": "interval",
+                "start": 37.1,
+                "end": 37.2
+              },
+              {
+                "text": "political",
+                "startIndex": 669,
+                "endIndex": 678,
+                "timing": "interval",
+                "start": 37.2,
+                "end": 37.6
+              },
+              {
+                "text": "institutions",
+                "startIndex": 679,
+                "endIndex": 691,
+                "timing": "interval",
+                "start": 37.6,
+                "end": 38.2
+              },
+              {
+                "text": "were",
+                "startIndex": 692,
+                "endIndex": 696,
+                "timing": "interval",
+                "start": 38.2,
+                "end": 38.3
+              },
+              {
+                "text": "weakened.",
+                "startIndex": 697,
+                "endIndex": 706,
+                "timing": "interval",
+                "start": 38.3,
+                "end": 38.7
+              },
+              {
+                "text": "Colonial",
+                "startIndex": 707,
+                "endIndex": 715,
+                "timing": "interval",
+                "start": 39.3,
+                "end": 39.6
+              },
+              {
+                "text": "rule",
+                "startIndex": 716,
+                "endIndex": 720,
+                "timing": "interval",
+                "start": 39.6,
+                "end": 39.8
+              },
+              {
+                "text": "also",
+                "startIndex": 721,
+                "endIndex": 725,
+                "timing": "interval",
+                "start": 39.8,
+                "end": 40
+              },
+              {
+                "text": "created",
+                "startIndex": 726,
+                "endIndex": 733,
+                "timing": "interval",
+                "start": 40,
+                "end": 40.5
+              },
+              {
+                "text": "artificial",
+                "startIndex": 734,
+                "endIndex": 744,
+                "timing": "interval",
+                "start": 40.5,
+                "end": 40.8
+              },
+              {
+                "text": "borders",
+                "startIndex": 745,
+                "endIndex": 752,
+                "timing": "interval",
+                "start": 40.8,
+                "end": 41.2
+              },
+              {
+                "text": "that",
+                "startIndex": 753,
+                "endIndex": 757,
+                "timing": "interval",
+                "start": 41.2,
+                "end": 41.4
+              },
+              {
+                "text": "later",
+                "startIndex": 758,
+                "endIndex": 763,
+                "timing": "interval",
+                "start": 41.4,
+                "end": 41.6
+              },
+              {
+                "text": "contributed",
+                "startIndex": 764,
+                "endIndex": 775,
+                "timing": "interval",
+                "start": 41.6,
+                "end": 42.1
+              },
+              {
+                "text": "to",
+                "startIndex": 776,
+                "endIndex": 778,
+                "timing": "interval",
+                "start": 42.1,
+                "end": 42.3
+              },
+              {
+                "text": "political",
+                "startIndex": 779,
+                "endIndex": 788,
+                "timing": "interval",
+                "start": 42.3,
+                "end": 42.6
+              },
+              {
+                "text": "and",
+                "startIndex": 789,
+                "endIndex": 792,
+                "timing": "interval",
+                "start": 42.6,
+                "end": 42.8
+              },
+              {
+                "text": "ethnic",
+                "startIndex": 793,
+                "endIndex": 799,
+                "timing": "interval",
+                "start": 42.8,
+                "end": 43
+              },
+              {
+                "text": "tensions.",
+                "startIndex": 800,
+                "endIndex": 809,
+                "timing": "interval",
+                "start": 43,
+                "end": 43.6
+              },
+              {
+                "text": "From",
+                "startIndex": 810,
+                "endIndex": 814,
+                "timing": "interval",
+                "start": 44.1,
+                "end": 44.2
+              },
+              {
+                "text": "the",
+                "startIndex": 815,
+                "endIndex": 818,
+                "timing": "point",
+                "at": 44.2
+              },
+              {
+                "text": "mid",
+                "startIndex": 819,
+                "endIndex": 822,
+                "timing": "interval",
+                "start": 44.2,
+                "end": 44.4
+              },
+              {
+                "text": "20th",
+                "startIndex": 823,
+                "endIndex": 827,
+                "timing": "interval",
+                "start": 44.4,
+                "end": 44.7
+              },
+              {
+                "text": "century,",
+                "startIndex": 828,
+                "endIndex": 836,
+                "timing": "interval",
+                "start": 44.7,
+                "end": 45.3
+              },
+              {
+                "text": "African",
+                "startIndex": 837,
+                "endIndex": 844,
+                "timing": "interval",
+                "start": 45.4,
+                "end": 45.8
+              },
+              {
+                "text": "nationalist",
+                "startIndex": 845,
+                "endIndex": 856,
+                "timing": "interval",
+                "start": 45.8,
+                "end": 46.3
+              },
+              {
+                "text": "movements",
+                "startIndex": 857,
+                "endIndex": 866,
+                "timing": "interval",
+                "start": 46.3,
+                "end": 46.6
+              },
+              {
+                "text": "grew",
+                "startIndex": 867,
+                "endIndex": 871,
+                "timing": "interval",
+                "start": 46.6,
+                "end": 46.8
+              },
+              {
+                "text": "stronger,",
+                "startIndex": 872,
+                "endIndex": 881,
+                "timing": "interval",
+                "start": 46.8,
+                "end": 47.3
+              },
+              {
+                "text": "and",
+                "startIndex": 882,
+                "endIndex": 885,
+                "timing": "interval",
+                "start": 47.6,
+                "end": 47.7
+              },
+              {
+                "text": "many",
+                "startIndex": 886,
+                "endIndex": 890,
+                "timing": "interval",
+                "start": 47.7,
+                "end": 47.8
+              },
+              {
+                "text": "countries",
+                "startIndex": 891,
+                "endIndex": 900,
+                "timing": "interval",
+                "start": 47.8,
+                "end": 48.2
+              },
+              {
+                "text": "gained",
+                "startIndex": 901,
+                "endIndex": 907,
+                "timing": "interval",
+                "start": 48.2,
+                "end": 48.5
+              },
+              {
+                "text": "independence",
+                "startIndex": 908,
+                "endIndex": 920,
+                "timing": "interval",
+                "start": 48.5,
+                "end": 49
+              },
+              {
+                "text": "during",
+                "startIndex": 921,
+                "endIndex": 927,
+                "timing": "interval",
+                "start": 49,
+                "end": 49.2
+              },
+              {
+                "text": "the",
+                "startIndex": 928,
+                "endIndex": 931,
+                "timing": "interval",
+                "start": 49.2,
+                "end": 49.3
+              },
+              {
+                "text": "1950s",
+                "startIndex": 932,
+                "endIndex": 937,
+                "timing": "interval",
+                "start": 49.3,
+                "end": 49.9
+              },
+              {
+                "text": "and",
+                "startIndex": 938,
+                "endIndex": 941,
+                "timing": "interval",
+                "start": 49.9,
+                "end": 50
+              },
+              {
+                "text": "1960s.",
+                "startIndex": 942,
+                "endIndex": 948,
+                "timing": "interval",
+                "start": 50,
+                "end": 50.8
+              },
+              {
+                "text": "The",
+                "startIndex": 949,
+                "endIndex": 952,
+                "timing": "interval",
+                "start": 51.2,
+                "end": 51.3
+              },
+              {
+                "text": "legacy",
+                "startIndex": 953,
+                "endIndex": 959,
+                "timing": "interval",
+                "start": 51.3,
+                "end": 51.6
+              },
+              {
+                "text": "of",
+                "startIndex": 960,
+                "endIndex": 962,
+                "timing": "interval",
+                "start": 51.6,
+                "end": 51.8
+              },
+              {
+                "text": "colonialism",
+                "startIndex": 963,
+                "endIndex": 974,
+                "timing": "interval",
+                "start": 51.8,
+                "end": 52.5
+              },
+              {
+                "text": "remains",
+                "startIndex": 975,
+                "endIndex": 982,
+                "timing": "interval",
+                "start": 52.5,
+                "end": 52.8
+              },
+              {
+                "text": "important",
+                "startIndex": 983,
+                "endIndex": 992,
+                "timing": "interval",
+                "start": 52.8,
+                "end": 53.3
+              },
+              {
+                "text": "today,",
+                "startIndex": 993,
+                "endIndex": 999,
+                "timing": "interval",
+                "start": 53.3,
+                "end": 53.9
+              },
+              {
+                "text": "influencing",
+                "startIndex": 1000,
+                "endIndex": 1011,
+                "timing": "interval",
+                "start": 54.1,
+                "end": 54.6
+              },
+              {
+                "text": "Africa's",
+                "startIndex": 1012,
+                "endIndex": 1020,
+                "timing": "interval",
+                "start": 54.6,
+                "end": 55
+              },
+              {
+                "text": "borders,",
+                "startIndex": 1021,
+                "endIndex": 1029,
+                "timing": "interval",
+                "start": 55,
+                "end": 55.5
+              },
+              {
+                "text": "languages,",
+                "startIndex": 1030,
+                "endIndex": 1040,
+                "timing": "interval",
+                "start": 55.5,
+                "end": 56.1
+              },
+              {
+                "text": "economies,",
+                "startIndex": 1041,
+                "endIndex": 1051,
+                "timing": "interval",
+                "start": 56.2,
+                "end": 56.7
+              },
+              {
+                "text": "and",
+                "startIndex": 1052,
+                "endIndex": 1055,
+                "timing": "interval",
+                "start": 56.7,
+                "end": 56.9
+              },
+              {
+                "text": "political",
+                "startIndex": 1056,
+                "endIndex": 1065,
+                "timing": "interval",
+                "start": 56.9,
+                "end": 57.2
+              },
+              {
+                "text": "systems.",
+                "startIndex": 1066,
+                "endIndex": 1074,
+                "timing": "interval",
+                "start": 57.2,
+                "end": 57.7
+              }
+            ],
+            "sourceId": "audio-1",
+            "sourceFingerprint": "a1e479affb031e56356c862c8bb19ec134e3337e6140e9ba21daf7d01be7f660"
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "status": "source-ready"
+    },
+    "preferences": {
+      "needs": [
+        "stepwise"
+      ],
+      "description": "",
+      "focus": ""
+    },
+    "experience": {
+      "introduction": "Read the lecture on colonialism in Africa, broken into connected steps that follow the source explanation. Each section presents key points from the transcript in order.",
+      "sections": [
+        {
+          "id": "transcript-1",
+          "title": "Colonialism in Africa: Definition, Berlin Conference, and Legacy",
+          "kind": "prose",
+          "paragraphs": [
+            "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+          ],
+          "evidence": [
+            {
+              "sourceId": "transcript-1",
+              "mode": "text",
+              "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+            }
+          ],
+          "steps": [
+            "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century.",
+            "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+            "Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests.",
+            "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+            "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+            "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+          ]
+        }
+      ],
+      "practice": [],
+      "limitations": [
+        "Stereo audio is mixed to one channel for transcription. Overlapping speakers may be difficult to distinguish.",
+        "This machine transcript may mishear words, names, numbers or notation. Adaptations use the transcript, not independently verified audio. Non-speech sounds and unstated visual information are not reconstructed.",
+        "This machine transcript may mishear words, names, numbers or notation. Adaptations use the transcript, not independently verified audio.",
+        "Non-speech sounds and unstated visual information are not reconstructed."
+      ]
+    },
+    "revision": 1
+  }
+}

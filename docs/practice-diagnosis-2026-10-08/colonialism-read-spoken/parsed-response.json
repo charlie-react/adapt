@@ -1,0 +1,56 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What was the Berlin Conference of 1884 to 1885, and what did European countries do there?",
+      "sectionId": "transcript-1",
+      "answerQuote": "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "excerptId": "excerpt-1-1"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "What happened to African land, labor, minerals, and agricultural resources during colonial rule?",
+      "sectionId": "transcript-1",
+      "answerQuote": "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "excerptId": "excerpt-1-1"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "When did many African countries gain independence?",
+      "sectionId": "transcript-1",
+      "answerQuote": "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "excerptId": "excerpt-1-1"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "prompt": "What aspects of Africa today are still influenced by the legacy of colonialism?",
+      "sectionId": "transcript-1",
+      "answerQuote": "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems.",
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "excerptId": "excerpt-1-1"
+        }
+      ]
+    }
+  ]
+}

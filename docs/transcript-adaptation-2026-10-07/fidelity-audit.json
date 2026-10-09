@@ -1,0 +1,11 @@
+{
+  "completeTranscriptPreservedVerbatimInParagraphs": true,
+  "sourceReferences": [
+    "text-1"
+  ],
+  "keyPointsVerbatim": false,
+  "keyPointsManualReview": "Faithful condensation: source qualifiers, chronology, dates, resources, infrastructure and terminology retained; no unsupported claims identified.",
+  "introductionManualReview": "Source-grounded overview.",
+  "secretValuesFound": false,
+  "scope": "Single live transcript case; not general reliability or UI certification."
+}

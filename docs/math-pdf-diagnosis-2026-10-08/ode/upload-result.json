@@ -1,0 +1,71 @@
+{
+  "status": 200,
+  "body": {
+    "fingerprint": "e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a",
+    "expiresAt": 1791468651241,
+    "material": {
+      "id": "pdf:e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a",
+      "kind": "pdf",
+      "title": "ODE_Mathematics_7_Page_Study_Material.pdf",
+      "fingerprint": "e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a",
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+      ],
+      "units": [
+        {
+          "id": "p1",
+          "locator": {
+            "kind": "pdf",
+            "page": 1
+          }
+        },
+        {
+          "id": "p2",
+          "locator": {
+            "kind": "pdf",
+            "page": 2
+          }
+        },
+        {
+          "id": "p3",
+          "locator": {
+            "kind": "pdf",
+            "page": 3
+          }
+        },
+        {
+          "id": "p4",
+          "locator": {
+            "kind": "pdf",
+            "page": 4
+          }
+        },
+        {
+          "id": "p5",
+          "locator": {
+            "kind": "pdf",
+            "page": 5
+          }
+        },
+        {
+          "id": "p6",
+          "locator": {
+            "kind": "pdf",
+            "page": 6
+          }
+        },
+        {
+          "id": "p7",
+          "locator": {
+            "kind": "pdf",
+            "page": 7
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "status": "source-ready"
+    },
+    "revision": 0
+  }
+}

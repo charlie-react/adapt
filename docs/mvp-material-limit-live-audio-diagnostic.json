@@ -1,0 +1,37 @@
+{
+  "test": "Controlled near-30-minute audio diagnostic",
+  "duration": 1796.8819954648527,
+  "bytes": 28750950,
+  "providerShape": {
+    "status": "completed",
+    "model": "gemini-3.5-transcribe",
+    "parts": 1,
+    "characters": 33322,
+    "words": 4464,
+    "firstInvalid": {
+      "index": 2933,
+      "startIndex": 21850,
+      "endIndex": 21857,
+      "start": 1179.9,
+      "end": 180.3,
+      "previousTime": 1179.9,
+      "flags": {
+        "overlappingCharacters": false,
+        "invalidCharacterRange": false,
+        "wordMismatch": false,
+        "uncoveredText": false,
+        "overlappingTime": false,
+        "reversedTime": true,
+        "pastDuration": false
+      }
+    },
+    "uncoveredTail": false
+  },
+  "success": false,
+  "stage": "transcription",
+  "error": {
+    "name": "Error",
+    "message": "INVALID_TRANSCRIPTION"
+  },
+  "elapsedMs": 129712
+}

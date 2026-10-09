@@ -1,0 +1,6 @@
+{
+  "failure": {
+    "name": "Error",
+    "message": "Answer was not presented in the lesson"
+  }
+}

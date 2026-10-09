@@ -1,0 +1,29 @@
+{
+  "name": "binomial",
+  "sha256": "bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+  "uploadStatus": 200,
+  "pages": 18,
+  "adaptStatus": 503,
+  "providerFailure": {
+    "name": "ProviderResponseError",
+    "message": "Invalid list",
+    "stage": "validation"
+  },
+  "metadata": {
+    "elapsedMs": 92171.87409999999,
+    "stopReason": "end_turn",
+    "usage": {
+      "inputTokens": 38229,
+      "outputTokens": 6272,
+      "totalTokens": 44501,
+      "cacheReadInputTokens": 0,
+      "cacheWriteInputTokens": 0
+    },
+    "metrics": {
+      "latencyMs": 88549
+    },
+    "httpStatus": 200,
+    "requestId": "2b8b5ed6-bf72-4a74-838c-f633a59a782b"
+  },
+  "code": "AI_UNAVAILABLE"
+}

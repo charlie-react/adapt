@@ -1,0 +1,17 @@
+{
+  "localAdaptationStatus": 200,
+  "localPracticeStatus": 400,
+  "freshPracticeStatus": 503,
+  "providerFailure": {
+    "name": "ProviderResponseError",
+    "message": "Answer was not presented in the lesson",
+    "stage": "validation"
+  },
+  "replay": {
+    "failure": {
+      "name": "Error",
+      "message": "Answer was not presented in the lesson"
+    }
+  },
+  "sourceUnchanged": true
+}

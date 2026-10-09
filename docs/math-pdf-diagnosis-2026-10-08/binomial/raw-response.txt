@@ -1,0 +1,385 @@
+```json
+{
+  "introduction": "This material presents binomial expansion step by step. Each section breaks down the formulas, examples, and calculations into connected steps to help you follow the process clearly.",
+  "sections": [
+    {
+      "id": "source-1",
+      "title": "Title Slide: Expanding Binomial Expressions",
+      "kind": "prose",
+      "paragraphs": [
+        "This is the title slide for a lesson on expanding binomial expressions, presented by the Department of Computer Science. The slide displays the main topic in large text against a red background with decorative patterns and institutional branding."
+      ],
+      "steps": [],
+      "evidence": [
+        {
+          "sourceId": "p1",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-2",
+      "title": "Learning Objectives",
+      "kind": "prose",
+      "paragraphs": [
+        "The lesson has three main learning objectives. By the end of this lesson, you should be able to expand a given binomial expression with a power of a natural number, expand a given binomial expression with a power of a real number, and use binomial expansion to simplify algebraic expressions."
+      ],
+      "steps": [
+        "First objective: Expand a binomial expression when the power is a natural number.",
+        "Second objective: Expand a binomial expression when the power is a real number.",
+        "Third objective: Apply binomial expansion to simplify algebraic expressions."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p2",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-3",
+      "title": "Rationale for Binomial Expansion",
+      "kind": "prose",
+      "paragraphs": [
+        "A binomial expression typically has the form (a + b) raised to the power n, where a and b are algebraic terms and n is a real number. If n is a natural number, you could expand the bracket by repeatedly multiplying pairs of brackets until the power n is exhausted. However, this approach becomes time-consuming for large values of n and does not work when n is not a natural number. This lesson presents approaches to expanding binomial expressions for any real number n."
+      ],
+      "steps": [
+        "Recognize the standard form: (a + b) to the power n.",
+        "Understand that repeated multiplication works only for natural number powers.",
+        "Note that the repeated method is impractical for large n or non-natural n.",
+        "Learn general formulas that handle any real number power."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p3",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-4",
+      "title": "Binomial Expansion Formula for Natural Number Powers",
+      "kind": "equation",
+      "paragraphs": [
+        "When n is a natural number, a binomial expression (a + b) to the power n can be expanded using a formula. The expansion is the sum of terms from k equals 0 to n, where each term is the binomial coefficient (n choose k) multiplied by a to the power (n minus k) and b to the power k. The formula is displayed as a sum of terms starting with (n choose 0) times a to the n times b to the 0, plus (n choose 1) times a to the (n minus 1) times b to the 1, continuing up to (n choose n) times a to the 0 times b to the n."
+      ],
+      "steps": [
+        "Identify the binomial (a + b) and the natural number power n.",
+        "Write the expansion as a sum of (n + 1) terms.",
+        "For each term, compute the binomial coefficient (n choose k).",
+        "Multiply the coefficient by a to the power (n minus k) and b to the power k.",
+        "Sum all terms from k equals 0 to k equals n."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p4",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-5",
+      "title": "Example 1: Expanding (x + y) to the Power 5",
+      "kind": "example",
+      "paragraphs": [
+        "This example asks for the expansion of (x + y) to the power 5. The solution uses the binomial formula with a equals x, b equals y, and n equals 5. The expansion is written out term by term: (5 choose 0) times x to the 5 times y to the 0, plus (5 choose 1) times x to the 4 times y to the 1, plus (5 choose 2) times x to the 3 times y to the 2, plus (5 choose 3) times x to the 2 times y to the 3, plus (5 choose 4) times x to the 1 times y to the 4, plus (5 choose 5) times x to the 0 times y to the 5. Simplifying the powers gives the final form with binomial coefficients still to be calculated."
+      ],
+      "steps": [
+        "Identify a equals x, b equals y, and n equals 5.",
+        "Write the formula with six terms (from k equals 0 to 5).",
+        "For each term, write (5 choose k) times x to the (5 minus k) times y to the k.",
+        "Simplify the exponents: x to the 5, x to the 4 y, x to the 3 y squared, x squared y cubed, x y to the fourth, and y to the fifth.",
+        "The expansion is now ready for coefficient evaluation."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p5",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-6",
+      "title": "Example 1 Continued: Computing Binomial Coefficients",
+      "kind": "example",
+      "paragraphs": [
+        "This slide defines the binomial coefficient (n choose m) as n factorial divided by (n minus m) factorial times m factorial, and n factorial as n times (n minus 1) times (n minus 2) down to 2 times 1. Each binomial coefficient for n equals 5 is calculated step by step. (5 choose 0) equals 1, (5 choose 1) equals 5, (5 choose 2) equals 10, (5 choose 3) equals 10, (5 choose 4) equals 5, and (5 choose 5) equals 1. The calculations show the factorial expansions and cancellations explicitly."
+      ],
+      "steps": [
+        "Recall that (n choose m) equals n factorial over ((n minus m) factorial times m factorial).",
+        "Compute (5 choose 0): 5 factorial over (5 factorial times 0 factorial) equals 1.",
+        "Compute (5 choose 1): 5 factorial over (4 factorial times 1 factorial) equals 5.",
+        "Compute (5 choose 2): 5 factorial over (3 factorial times 2 factorial) equals 10.",
+        "Compute (5 choose 3): 5 factorial over (2 factorial times 3 factorial) equals 10.",
+        "Compute (5 choose 4): 5 factorial over (1 factorial times 4 factorial) equals 5.",
+        "Compute (5 choose 5): 5 factorial over (0 factorial times 5 factorial) equals 1."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p6",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-7",
+      "title": "Example 1 Continued: Final Expansion and Activities",
+      "kind": "example",
+      "paragraphs": [
+        "Substituting the computed binomial coefficients into the expansion gives (x + y) to the 5 equals 1 times x to the 5 plus 5 times x to the 4 y plus 10 times x cubed y squared plus 10 times x squared y cubed plus 5 times x y to the fourth plus 1 times y to the fifth. Simplifying, the final expansion is x to the 5 plus 5 x to the 4 y plus 10 x cubed y squared plus 10 x squared y cubed plus 5 x y to the fourth plus y to the fifth. The slide also poses easy activities: How many terms does the expansion have and why? What are the first, second, and fourth terms? What are the coefficients of the first, second, and fourth terms?"
+      ],
+      "steps": [
+        "Substitute each coefficient: 1, 5, 10, 10, 5, 1 into the expansion.",
+        "Multiply each coefficient by its corresponding power term.",
+        "Write the final expansion: x to the 5 plus 5 x to the 4 y plus 10 x cubed y squared plus 10 x squared y cubed plus 5 x y to the fourth plus y to the fifth.",
+        "Count the terms: there are six terms because n equals 5 gives (n plus 1) terms.",
+        "Identify specific terms and their coefficients as requested."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p7",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-8",
+      "title": "Example 2: Expanding (2x − 3) to the Power 4",
+      "kind": "example",
+      "paragraphs": [
+        "This example asks for the expansion of (2x minus 3) to the power 4 and then to evaluate (minus 2.998) to the power 4. The solution uses the binomial formula with a equals 2x, b equals minus 3, and n equals 4. The expansion is written term by term with binomial coefficients (4 choose k) and powers of 2x and minus 3. After substituting and simplifying, the expansion becomes (4 choose 0) times 16 x to the 4 plus (4 choose 1) times 8 x cubed times (minus 3) plus (4 choose 2) times 4 x squared times 9 plus (4 choose 3) times 2x times (minus 27) plus (4 choose 4) times 81. Evaluating the coefficients gives 1 times 16 x to the 4 minus 4 times 24 x cubed plus 6 times 36 x squared minus 4 times 54 x plus 81, which simplifies to 16 x to the 4 minus 96 x cubed plus 216 x squared minus 216 x plus 81."
+      ],
+      "steps": [
+        "Identify a equals 2x, b equals minus 3, and n equals 4.",
+        "Write the expansion with five terms (k equals 0 to 4).",
+        "For each term, compute (4 choose k) times (2x) to the (4 minus k) times (minus 3) to the k.",
+        "Simplify powers: (2x) to the 4 equals 16 x to the 4, (2x) cubed equals 8 x cubed, etc.",
+        "Evaluate binomial coefficients: 1, 4, 6, 4, 1.",
+        "Combine to get 16 x to the 4 minus 96 x cubed plus 216 x squared minus 216 x plus 81."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p8",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-9",
+      "title": "Example 2 Continued: Evaluating (−2.998) to the Power 4",
+      "kind": "example",
+      "paragraphs": [
+        "To simplify (minus 2.998) to the power 4 using the expansion, compare (2x minus 3) to the power 4 with (minus 2.998) to the power 4. This implies 2x minus 3 equals minus 2.998, so x equals 0.001. Substituting x equals 0.001 into the expansion 16 x to the 4 minus 96 x cubed plus 216 x squared minus 216 x plus 81 gives 16 times (0.001) to the 4 minus 96 times (0.001) cubed plus 216 times (0.001) squared minus 216 times 0.001 plus 81, which evaluates to 80.7842. Hence, (minus 2.998) to the power 4 equals 80.7842."
+      ],
+      "steps": [
+        "Set 2x minus 3 equal to minus 2.998.",
+        "Solve for x: 2x equals minus 2.998 plus 3 equals 0.002, so x equals 0.001.",
+        "Substitute x equals 0.001 into the expansion.",
+        "Compute each term: 16 times (0.001) to the 4, minus 96 times (0.001) cubed, etc.",
+        "Sum the terms to get 80.7842."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p9",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-10",
+      "title": "Student Activity: Practice Problems",
+      "kind": "prose",
+      "paragraphs": [
+        "Two practice problems are given. First, find the coefficient of the fourth term in the expansion of (2 minus one-fourth x squared) to the power 6. Second, evaluate the fifth term in the expansion of (4x minus 3y) to the power 8."
+      ],
+      "steps": [
+        "For problem 1, identify the fourth term (k equals 3) in the expansion.",
+        "Compute the binomial coefficient and the powers of each part.",
+        "For problem 2, identify the fifth term (k equals 4) in the expansion.",
+        "Compute the binomial coefficient and the powers of 4x and minus 3y."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p10",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-11",
+      "title": "Solution to Student Activity",
+      "kind": "example",
+      "paragraphs": [
+        "For problem 1, the fourth term is (6 choose 3) times 2 cubed times (minus one-fourth x squared) cubed, which equals (6 choose 3) times 8 times (minus 1 over 64 x to the 6). Computing (6 choose 3) as 6 times 5 times 4 times 3 factorial over (3 times 2 times 1 times 3 factorial) gives 20. Multiplying, the term is minus 20 over 8 x to the 6, so the coefficient is minus 20 over 8. For problem 2, the fifth term is (8 choose 5) times (4x) cubed times (minus 3y) to the fifth, which equals (8 choose 5) times 64 x cubed times (minus 243 y to the fifth). Computing (8 choose 5) as 8 times 7 times 6 times 5 factorial over (3 times 2 times 1 times 5 factorial) gives 56. Multiplying, the term is 56 times 64 x cubed times (minus 243 y to the fifth) equals minus 870,912 x cubed y to the fifth."
+      ],
+      "steps": [
+        "Problem 1: Write the fourth term with k equals 3.",
+        "Compute (6 choose 3) equals 20.",
+        "Multiply 20 times 8 times (minus 1 over 64) to get the coefficient minus 20 over 8.",
+        "Problem 2: Write the fifth term with k equals 4.",
+        "Compute (8 choose 4) equals 70, but the slide shows (8 choose 5) equals 56 (since k equals 4 means the fifth term).",
+        "Multiply 56 times 64 times (minus 243) to get minus 870,912 x cubed y to the fifth."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p11",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-12",
+      "title": "Binomial Expansion for Real Number Powers",
+      "kind": "equation",
+      "paragraphs": [
+        "When the power n is negative or a fraction, transform the binomial expression into the form (1 minus x) to the power n and use the formula: (1 minus x) to the power n equals 1 minus n x plus (n times (n minus 1) over 2 factorial) times x squared minus (n times (n minus 1) times (n minus 2) over 3 factorial) times x cubed plus continuing terms. An example is given: Find the binomial expansion of (1 plus 3x) to the power minus 4 to the fourth term."
+      ],
+      "steps": [
+        "Recognize that n is not a natural number (negative or fractional).",
+        "Rewrite the binomial in the form (1 minus x) to the power n.",
+        "Apply the generalized binomial series formula.",
+        "Compute each term using the formula up to the desired number of terms.",
+        "Simplify the coefficients and powers."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p12",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-13",
+      "title": "Solution to Example 1 (Real Power)",
+      "kind": "example",
+      "paragraphs": [
+        "Given (1 plus 3x) to the power minus 4, compare with (1 minus x) to the power n to find 3x equals minus x and minus 4 equals n. Using the formula, (1 minus (minus 3x)) to the power minus 4 equals 1 minus (minus 4) times (minus 3x) plus ((minus 4) times (minus 4 minus 1) over 2 factorial) times (minus 3x) squared minus ((minus 4) times (minus 4 minus 1) times (minus 4 minus 2) over 3 factorial) times (minus 3x) cubed plus continuing terms. Simplifying gives 1 minus 12x plus (20 over 2) times 9 x squared minus (120 over 6) times 27 x cubed plus continuing terms, which equals 1 minus 12x plus 90 x squared minus 540 x cubed plus continuing terms."
+      ],
+      "steps": [
+        "Identify that (1 plus 3x) equals (1 minus (minus 3x)), so x is replaced by minus 3x and n equals minus 4.",
+        "Substitute into the formula: 1 minus n x becomes 1 minus (minus 4)(minus 3x) equals 1 minus 12x.",
+        "Compute the second term: (minus 4 times minus 5 over 2) times 9 x squared equals 10 times 9 x squared equals 90 x squared.",
+        "Compute the third term: (minus 4 times minus 5 times minus 6 over 6) times 27 x cubed equals minus 20 times 27 x cubed equals minus 540 x cubed.",
+        "Write the expansion: 1 minus 12x plus 90 x squared minus 540 x cubed plus continuing terms."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p13",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-14",
+      "title": "Student Activity: Fractional Power Expansion",
+      "kind": "prose",
+      "paragraphs": [
+        "The activity asks you to find the binomial expansion of (1 minus 2x) to the power one-half to the fourth term."
+      ],
+      "steps": [
+        "Identify that n equals one-half and x is replaced by 2x.",
+        "Apply the formula for (1 minus x) to the power n.",
+        "Compute the first four terms using the generalized binomial coefficients.",
+        "Simplify each term."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p14",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-15",
+      "title": "Solution to Student Activity (Fractional Power)",
+      "kind": "example",
+      "paragraphs": [
+        "Given (1 minus 2x) to the power one-half, compare with (1 minus x) to the power n to find 2x equals x and one-half equals n. Using the formula, (1 minus 2x) to the power one-half equals 1 minus (one-half) times 2x plus ((one-half times (one-half minus 1)) over 2 factorial) times (2x) squared minus ((one-half times (one-half minus 1) times (one-half minus 2)) over 3 factorial) times (2x) cubed plus continuing terms. Simplifying gives 1 minus x minus (one-half) x squared minus (one-half) x cubed plus continuing terms."
+      ],
+      "steps": [
+        "Identify n equals one-half and x is replaced by 2x.",
+        "Substitute into the formula: 1 minus n x becomes 1 minus (one-half)(2x) equals 1 minus x.",
+        "Compute the second term: (one-half times (minus one-half) over 2) times 4 x squared equals (minus one-quarter over 2) times 4 x squared equals minus one-half x squared.",
+        "Compute the third term: (one-half times (minus one-half) times (minus three-halves) over 6) times 8 x cubed equals (three-eighths over 6) times 8 x cubed equals minus one-half x cubed.",
+        "Write the expansion: 1 minus x minus one-half x squared minus one-half x cubed plus continuing terms."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p15",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-16",
+      "title": "Summary of Concepts Covered",
+      "kind": "prose",
+      "paragraphs": [
+        "This lecture covered the following concepts: binomial expressions, binomial expansion, binomial coefficients and terms, algebraic application of binomial expansion, and binomial expansion with negative or fractional power."
+      ],
+      "steps": [],
+      "evidence": [
+        {
+          "sourceId": "p16",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-17",
+      "title": "Further Reading Resources",
+      "kind": "prose",
+      "paragraphs": [
+        "Three further reading resources are listed. First, Kenneth H. Rosen (2012), Discrete Mathematics and Its Applications, published by McGraw-Hill in the United States. Second, Handbook of Discrete Mathematics and Its Applications by Rosen, also published by McGraw-Hill in the United States. Third, the website http://www-history.mcs.st-and.ac.uk/."
+      ],
+      "steps": [],
+      "evidence": [
+        {
+          "sourceId": "p17",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    },
+    {
+      "id": "source-18",
+      "title": "Thank You Slide",
+      "kind": "prose",
+      "paragraphs": [
+        "This is the closing slide displaying 'Thank You' in large text, presented by the Department of Computer Science, with institutional branding and a red background."
+      ],
+      "steps": [],
+      "evidence": [
+        {
+          "sourceId": "p18",
+          "mode": "visual",
+          "quote": ""
+        }
+      ]
+    }
+  ],
+  "practice": [],
+  "limitations": [
+    "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain.",
+    "The slide equations and calculations are described in words; refer to the original slides for exact symbolic notation.",
+    "Some intermediate arithmetic steps in the examples are summarized; detailed factorial cancellations are visible in the original slides.",
+    "The activities and solutions are presented as shown; no additional worked examples or alternative methods are provided."
+  ]
+}
+```

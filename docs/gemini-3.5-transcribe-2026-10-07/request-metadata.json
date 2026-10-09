@@ -1,0 +1,25 @@
+{
+  "modelRequested": "gemini-3.5-transcribe",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/interactions",
+  "source": {
+    "filename": "Colonialism_in_Africa___Exact_60_Seconds.mp3",
+    "bytes": 927495,
+    "sha256": "a1e479affb031e56356c862c8bb19ec134e3337e6140e9ba21daf7d01be7f660",
+    "mimeType": "audio/mp3"
+  },
+  "generationConfig": {
+    "transcription_config": {
+      "mode": {
+        "type": "verbatim",
+        "timestamp_granularities": [
+          "word"
+        ]
+      }
+    }
+  },
+  "startedAt": "2026-10-07T18:40:48.955Z",
+  "transport": "REST inline original MP3; x-goog-api-key from environment, not recorded",
+  "store": false,
+  "instructions": "Dedicated verbatim transcription only; no text prompt, summary, adaptation, vocabulary hints or smart formatting.",
+  "bypassesADAPT": true
+}

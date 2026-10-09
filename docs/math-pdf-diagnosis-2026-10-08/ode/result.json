@@ -1,0 +1,29 @@
+{
+  "name": "ode",
+  "sha256": "e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a",
+  "uploadStatus": 200,
+  "pages": 7,
+  "adaptStatus": 503,
+  "providerFailure": {
+    "name": "ProviderResponseError",
+    "message": "Invalid list",
+    "stage": "validation"
+  },
+  "metadata": {
+    "elapsedMs": 46825.2547,
+    "stopReason": "end_turn",
+    "usage": {
+      "inputTokens": 18990,
+      "outputTokens": 2785,
+      "totalTokens": 21775,
+      "cacheReadInputTokens": 0,
+      "cacheWriteInputTokens": 0
+    },
+    "metrics": {
+      "latencyMs": 41410
+    },
+    "httpStatus": 200,
+    "requestId": "5dcbb92f-0399-4f38-a314-85f5fd75df90"
+  },
+  "code": "AI_UNAVAILABLE"
+}

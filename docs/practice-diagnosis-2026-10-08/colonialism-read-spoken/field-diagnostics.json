@@ -1,0 +1,170 @@
+{
+  "parsing": "passed",
+  "evidenceResolution": "passed",
+  "count": 4,
+  "validation": "passed",
+  "details": [
+    {
+      "index": 0,
+      "id": "q1",
+      "sectionId": "transcript-1",
+      "sectionExists": true,
+      "answerQuote": "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [
+        "transcript-1"
+      ],
+      "sectionParagraphs": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "sectionSteps": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century.",
+        "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+        "Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests.",
+        "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+        "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+        "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 1,
+      "id": "q2",
+      "sectionId": "transcript-1",
+      "sectionExists": true,
+      "answerQuote": "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [
+        "transcript-1"
+      ],
+      "sectionParagraphs": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "sectionSteps": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century.",
+        "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+        "Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests.",
+        "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+        "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+        "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 2,
+      "id": "q3",
+      "sectionId": "transcript-1",
+      "sectionExists": true,
+      "answerQuote": "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [
+        "transcript-1"
+      ],
+      "sectionParagraphs": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "sectionSteps": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century.",
+        "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+        "Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests.",
+        "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+        "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+        "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    },
+    {
+      "index": 3,
+      "id": "q4",
+      "sectionId": "transcript-1",
+      "sectionExists": true,
+      "answerQuote": "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems.",
+      "exactPresentedQuote": true,
+      "caseInsensitiveMatchForDiagnosisOnly": true,
+      "joinedBlocksMatchForDiagnosisOnly": true,
+      "exactQuoteInOriginalExtractedSourceIds": [
+        "transcript-1"
+      ],
+      "sectionParagraphs": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "sectionSteps": [
+        "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century.",
+        "A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries.",
+        "Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests.",
+        "African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened.",
+        "From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s.",
+        "The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+      ],
+      "evidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "expectedSectionEvidence": [
+        {
+          "sourceId": "transcript-1",
+          "mode": "text",
+          "quote": "Colonialism in Africa refers to the period when European powers took political, economic, and military control over much of the continent, especially from the late 19th century. A major turning point was the Berlin Conference of 1884 to 1885, where European countries divided African territories among themselves with little regard for existing ethnic groups, kingdoms, or boundaries. Colonial governments introduced new legal systems, schools, roads, railways, and administrative structures. However, these developments mainly served colonial interests. African land, labor, minerals, and agricultural resources were heavily exploited, while many local industries and political institutions were weakened. Colonial rule also created artificial borders that later contributed to political and ethnic tensions. From the mid 20th century, African nationalist movements grew stronger, and many countries gained independence during the 1950s and 1960s. The legacy of colonialism remains important today, influencing Africa's borders, languages, economies, and political systems."
+        }
+      ],
+      "evidenceModeMatchesSection": true
+    }
+  ],
+  "diagnosticCounterfactual": {
+    "notProductionBehavior": true,
+    "explanation": "Select existing server-owned lesson paragraphs instead of regenerating their words. Raw response remains unchanged.",
+    "selected": [],
+    "validation": "passed"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "status": 200,
+  "body": {
+    "fingerprint": "bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+    "expiresAt": 1791468726451,
+    "material": {
+      "id": "pdf:bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+      "kind": "pdf",
+      "title": "CSC203LL_Y2_01_08_Expanding Binomial Expressions.pdf",
+      "fingerprint": "bddae9264f85a9dd2250f7e116f898f300e330bbb08f159ec6b8230ecfd537d6",
+      "limitations": [
+        "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain."
+      ],
+      "units": [
+        {
+          "id": "p1",
+          "locator": {
+            "kind": "pdf",
+            "page": 1
+          }
+        },
+        {
+          "id": "p2",
+          "locator": {
+            "kind": "pdf",
+            "page": 2
+          }
+        },
+        {
+          "id": "p3",
+          "locator": {
+            "kind": "pdf",
+            "page": 3
+          }
+        },
+        {
+          "id": "p4",
+          "locator": {
+            "kind": "pdf",
+            "page": 4
+          }
+        },
+        {
+          "id": "p5",
+          "locator": {
+            "kind": "pdf",
+            "page": 5
+          }
+        },
+        {
+          "id": "p6",
+          "locator": {
+            "kind": "pdf",
+            "page": 6
+          }
+        },
+        {
+          "id": "p7",
+          "locator": {
+            "kind": "pdf",
+            "page": 7
+          }
+        },
+        {
+          "id": "p8",
+          "locator": {
+            "kind": "pdf",
+            "page": 8
+          }
+        },
+        {
+          "id": "p9",
+          "locator": {
+            "kind": "pdf",
+            "page": 9
+          }
+        },
+        {
+          "id": "p10",
+          "locator": {
+            "kind": "pdf",
+            "page": 10
+          }
+        },
+        {
+          "id": "p11",
+          "locator": {
+            "kind": "pdf",
+            "page": 11
+          }
+        },
+        {
+          "id": "p12",
+          "locator": {
+            "kind": "pdf",
+            "page": 12
+          }
+        },
+        {
+          "id": "p13",
+          "locator": {
+            "kind": "pdf",
+            "page": 13
+          }
+        },
+        {
+          "id": "p14",
+          "locator": {
+            "kind": "pdf",
+            "page": 14
+          }
+        },
+        {
+          "id": "p15",
+          "locator": {
+            "kind": "pdf",
+            "page": 15
+          }
+        },
+        {
+          "id": "p16",
+          "locator": {
+            "kind": "pdf",
+            "page": 16
+          }
+        },
+        {
+          "id": "p17",
+          "locator": {
+            "kind": "pdf",
+            "page": 17
+          }
+        },
+        {
+          "id": "p18",
+          "locator": {
+            "kind": "pdf",
+            "page": 18
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "status": "source-ready"
+    },
+    "revision": 0
+  }
+}

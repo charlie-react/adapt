@@ -1,0 +1,9 @@
+{
+  "status": "live-adaptation-validated",
+  "latencyMs": 11764,
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "sourceUnchanged": true,
+  "paragraphsExactSourceExcerpts": true,
+  "keyPointsExactSourceExcerpts": false,
+  "sections": 1
+}

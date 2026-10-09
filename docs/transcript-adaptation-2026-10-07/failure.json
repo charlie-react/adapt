@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "name": "Error",
+  "message": "The pending stream has been canceled (caused by: getaddrinfo ENOTFOUND bedrock-runtime.eu-north-1.amazonaws.com)"
+}

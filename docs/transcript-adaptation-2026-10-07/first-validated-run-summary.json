@@ -1,0 +1,10 @@
+{
+  "status": "live-adaptation-validated",
+  "latencyMs": 11226,
+  "sections": 1,
+  "paragraphs": 3,
+  "keyPoints": 6,
+  "practicePrompts": 0,
+  "sourceUnchanged": true,
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0"
+}

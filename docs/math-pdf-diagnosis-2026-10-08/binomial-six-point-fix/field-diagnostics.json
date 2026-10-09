@@ -1,0 +1,119 @@
+{
+  "validation": "passed",
+  "listFailures": [],
+  "missingTextPages": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p9",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16",
+    "p17",
+    "p18"
+  ],
+  "numericCheckEnabled": false,
+  "unknownNumbers": [],
+  "sections": [
+    {
+      "id": "source-1",
+      "paragraphs": 1,
+      "steps": 0
+    },
+    {
+      "id": "source-2",
+      "paragraphs": 1,
+      "steps": 3
+    },
+    {
+      "id": "source-3",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-4",
+      "paragraphs": 1,
+      "steps": 3
+    },
+    {
+      "id": "source-5",
+      "paragraphs": 1,
+      "steps": 3
+    },
+    {
+      "id": "source-6",
+      "paragraphs": 1,
+      "steps": 6
+    },
+    {
+      "id": "source-7",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-8",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-9",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-10",
+      "paragraphs": 1,
+      "steps": 2
+    },
+    {
+      "id": "source-11",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-12",
+      "paragraphs": 1,
+      "steps": 3
+    },
+    {
+      "id": "source-13",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-14",
+      "paragraphs": 1,
+      "steps": 2
+    },
+    {
+      "id": "source-15",
+      "paragraphs": 1,
+      "steps": 4
+    },
+    {
+      "id": "source-16",
+      "paragraphs": 1,
+      "steps": 5
+    },
+    {
+      "id": "source-17",
+      "paragraphs": 1,
+      "steps": 0
+    },
+    {
+      "id": "source-18",
+      "paragraphs": 1,
+      "steps": 0
+    }
+  ],
+  "sourceCharacters": 0
+}

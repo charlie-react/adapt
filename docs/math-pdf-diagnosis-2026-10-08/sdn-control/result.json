@@ -1,0 +1,24 @@
+{
+  "name": "sdn-control",
+  "sha256": "45f614358c4c80d40eef34e609818f271e3bc92771c0c8099af868670fb0e8d3",
+  "uploadStatus": 200,
+  "pages": 13,
+  "adaptStatus": 200,
+  "metadata": {
+    "elapsedMs": 66879.7751,
+    "stopReason": "end_turn",
+    "usage": {
+      "inputTokens": 29998,
+      "outputTokens": 3327,
+      "totalTokens": 33325,
+      "cacheReadInputTokens": 0,
+      "cacheWriteInputTokens": 0
+    },
+    "metrics": {
+      "latencyMs": 62196
+    },
+    "httpStatus": 200,
+    "requestId": "380fa4b6-f1e0-40c2-a5e4-093764b65199"
+  },
+  "sections": 13
+}

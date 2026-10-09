@@ -1,0 +1,6 @@
+{
+  "outcome": "failed",
+  "stage": "validation",
+  "name": "ProviderResponseError",
+  "message": "Adaptation introduced or changed a source number"
+}
