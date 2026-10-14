@@ -106,3 +106,5 @@ Codex supports development; **Gemini transcribes and Claude adapts at runtime**.
 - **Privacy:** use non-sensitive material. External providers process content; temporary local sessions do not establish provider retention. Explicit developer diagnostics may save local artifacts.
 - **PDF candidate:** default-off incremental reading is restricted to the exact reviewed networking source and tested preferences. [Human acceptance](docs/pdf-incremental-2026-10-13/production-integration.md) remains outstanding; general incremental PDFs are not enabled.
 - **Out of scope:** direct video processing, learner accounts/history, LMS integration, formal grading and unverified multilingual/offline support.
+
+By Bidemi Afolabi.
