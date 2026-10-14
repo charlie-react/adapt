@@ -4,9 +4,13 @@ ADAPT turns PDFs, text, images and audio into accessible learning experiences.<b
 It helps students facing reading, visual, hearing or motor-accessibility barriers.<br>
 It changes how learning happens, not what the student is expected to learn.
 
-## Screenshot
+## Screenshots
+<img width="1920" height="2516" alt="image" src="https://github.com/user-attachments/assets/c78bffe3-3dbd-49c3-8ff2-1b74d052d404" />
+<img width="1920" height="2306" alt="image" src="https://github.com/user-attachments/assets/ee911622-32ee-45f1-9aaf-2b281d6ba6e7" />
+<img width="1920" height="3581" alt="image" src="https://github.com/user-attachments/assets/255980f5-d38a-4a0f-b21f-db96f13724c6" />
 
-> **Screenshot placeholder:** add a real completed audio lesson showing structured text, section navigation and Read Aloud.
+
+
 
 ## Features that work today
 
