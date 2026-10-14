@@ -1,0 +1,14 @@
+{
+  "scope": "actual production UI/API; restricted rehearsal; headless, no audible/screen-reader acceptance",
+  "sourceFingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "uploadToSupportMs": 2612.8625,
+  "firstSectionVisibleMs": 14073.900000000373,
+  "practiceUnavailableWhilePartial": true,
+  "firstInstructionalVisibleMs": 15501,
+  "fullVisibleMs": 28634.300000000745,
+  "all11SectionsMatchSourceContract": true,
+  "tableCellsMatchReviewedSource": true,
+  "practiceVisibleMs": 11131.009499999993,
+  "livePracticeValidated": true,
+  "status": "passed"
+}

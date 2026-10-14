@@ -1,0 +1,43 @@
+{
+  "kind": "audio",
+  "label": "baseline",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-live-performance-2BUvpt",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 18629826,
+  "sourceSha256": "8246fed25dde4995275d07e3a841131a222518759bdd1817334af3a06aee6d38",
+  "directPreparationMs": 1054.4154999999998,
+  "directDecodeMs": 938.6168000000002,
+  "audioSeconds": 422.44403628117914,
+  "geminiTranscriptionMs": 42750.5311,
+  "uploadHandlerMs": 45297.765400000004,
+  "uploadStatus": 200,
+  "uploadClickToSupportMs": 45676.5034,
+  "claudeMs": 16361.532399999996,
+  "claudeReportedMs": 12264,
+  "usage": {
+    "inputTokens": 4244,
+    "outputTokens": 1503,
+    "totalTokens": 5747,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "providerWithValidationMs": 16376.916999999994,
+  "sections": 1,
+  "paragraphCharacters": 5440,
+  "adaptHandlerMs": 16488.858500000002,
+  "adaptStatus": 200,
+  "adaptClickToVisibleMs": 16966.565799999997,
+  "totalWaitingMs": 62643.0692,
+  "validatedVisible": true,
+  "sourceUnits": 1,
+  "pages": 1,
+  "measurement": "Current production UI with current injected HTTP/service/providers. Local visible lesson plus two frames, not deployed first-paint."
+}

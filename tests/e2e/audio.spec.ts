@@ -14,27 +14,31 @@ async function silentReading(page: Page) {
   });
 }
 async function mockedSpeechServices(page: Page, title: string) {
+  let releaseUpload!: () => void;
+  const uploadGate = new Promise<void>(resolve => { releaseUpload = resolve; });
   const fingerprint = "a".repeat(64), original = "b".repeat(64);
   const units: SourceUnit[] = [{ id: "audio-1", locator: { kind: "audio", duration: 1 } }, ...phrases.map((text, index) => ({ id: `transcript-${index + 1}`, text, locator: { kind: "transcript" as const, startSeconds: index * 0.5, endSeconds: index * 0.5 + 0.4 }, transcription: { service: "gemini-transcribe" as const, model: "gemini-3.5-transcribe", language: "und" as const, sourceId: "audio-1", sourceFingerprint: original } }))];
   let snapshot: LearningSnapshot = { fingerprint, expiresAt: Date.now() + 900000, revision: 0, material: { id: `audio:${original}:transcript:${fingerprint}`, title, kind: "audio", fingerprint, limitations: ["Machine transcription may mishear details."], units: units.map(({ text: _text, ...unit }) => { void _text; return unit; }) }, analysis: { status: "source-ready" } };
   await page.route("**/api/learning", async route => {
     if (route.request().method() !== "POST") return route.continue();
-    await new Promise(resolve => setTimeout(resolve, 150)); await route.fulfill({ json: snapshot });
+    await uploadGate; await route.fulfill({ json: snapshot });
   });
   await page.route("**/api/learning/source?*", async route => { const id = new URL(route.request().url()).searchParams.get("id"); await route.fulfill({ json: units.find(unit => unit.id === id) }); });
   await page.route("**/api/learning/adapt", async route => {
     snapshot = { ...snapshot, revision: 1, preferences: route.request().postDataJSON().preferences, experience: { introduction: "Read the recorded lesson in clear sections.", sections: phrases.map((phrase, index) => ({ id: `source-${index + 1}`, title: index ? "Leaf nodes" : "Parent nodes", kind: "prose", paragraphs: [phrase], steps: [phrase], evidence: [{ sourceId: `transcript-${index + 1}`, mode: "text", quote: phrase }] })), practice: [], limitations: [] } };
     await route.fulfill({ json: snapshot });
   });
+  return releaseUpload;
 }
 test("MP3/WAV share the support journey and readable lesson without source panels", async ({ page }) => {
   for (const [name, bytes] of [["lecture.mp3", mp3Audio()], ["lecture.wav", wavAudio()]] as const) {
-    await silentReading(page); await mockedSpeechServices(page, name); await page.goto("/");
+    await silentReading(page); const releaseUpload = await mockedSpeechServices(page, name); await page.goto("/");
     await expect(page.locator("#learning-file")).toHaveAttribute("accept", /\.mp3,\.wav/);
     await page.locator("#learning-file").setInputFiles({ name, mimeType: "application/octet-stream", buffer: bytes });
     await expect(page.getByText(/will transcribe/)).toHaveCount(0);
     await page.getByRole("button", { name: /Continue with my material/ }).focus(); await page.keyboard.press("Enter");
     await expect(page.getByRole("status").filter({ hasText: "Preparing your learning experience. Please wait." })).toBeVisible();
+    releaseUpload();
     await expect(page.getByRole("checkbox", { name: /Make spoken content readable/ })).toBeChecked();
     await page.getByRole("button", { name: /Create my learning experience/ }).focus(); await page.keyboard.press("Enter");
     await expect(page.locator(".adapt-lesson .reading-region").first()).toHaveText(phrases[0]);

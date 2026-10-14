@@ -1,0 +1,12 @@
+{
+  "slug": "compact-4",
+  "variant": "compact",
+  "trial": 4,
+  "status": "failed",
+  "failure": {
+    "name": "Error",
+    "message": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3205/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3205/\", waiting until \"load\"\u001b[22m\n"
+  },
+  "browserMeasurement": "Unchanged production UI; intercepted local API requests run current handlers/store/live Claude. Visible lesson plus two animation frames, not deployed-network first-paint timing.",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-network-review-omowof"
+}

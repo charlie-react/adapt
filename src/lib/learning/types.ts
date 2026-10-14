@@ -22,6 +22,7 @@ export type UnderstandingQuestion = { id: string; prompt: string; sectionId: str
 export type SourceAdaptation = AdaptedExperience;
 export type LearningSnapshot = { fingerprint: string; expiresAt: number; material: Omit<LearningMaterial, "bytes" | "format" | "units"> & { units: Omit<SourceUnit, "text">[] }; analysis: { status: "source-ready" } | { status: "ready"; content: MaterialUnderstanding } | { status: "unavailable" | "unusable"; message: string }; preferences?: AccessPreferences; experience?: SourceAdaptation; revision: number };
 export interface LearningProvider {
+  adaptSourceProgress?(material: LearningMaterial, preferences: AccessPreferences, signal: AbortSignal, publish: (section: AdaptedSection) => void): Promise<unknown>;
   createPractice?(material: LearningMaterial, experience: AdaptedExperience, preferences: AccessPreferences, signal: AbortSignal): Promise<unknown>;
   adaptSource?(material: LearningMaterial, preferences: AccessPreferences, signal: AbortSignal): Promise<unknown>;
   /** Legacy diagnostic contracts; the learner flow does not use an understanding call. */

@@ -1,0 +1,67 @@
+{
+  "verdict": "fail",
+  "reason": "High reasoning still omits exact worked-example equations and calculation lines from displayed material, relies on unavailable original-source views, and offers no observed latency benefit.",
+  "returnedModel": "gpt-6.1-sol",
+  "returnedReasoning": {
+    "context": "all_turns",
+    "effort": "high",
+    "mode": "standard",
+    "summary": null
+  },
+  "sections": 7,
+  "exampleEquationChecks": [
+    {
+      "id": "example-1-order-degree",
+      "sourceExpression": "y''' + 4y'' - y' + 7y = 0",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-2-linear",
+      "sourceExpression": "y' + 3y = x²",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-3-separable",
+      "sourceExpression": "dy/dx = 3x²y",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-4-initial",
+      "sourceExpression": "dy/dx = 2xy",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-5-integrating",
+      "sourceExpression": "dy/dx + 2y = 4",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-6-initial",
+      "sourceExpression": "y' = 6x - 4",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-7-distinct",
+      "sourceExpression": "y'' - 5y' + 6y = 0",
+      "presentInDisplayedLesson": false
+    },
+    {
+      "id": "example-8-repeated",
+      "sourceExpression": "y'' - 4y' + 4y = 0",
+      "presentInDisplayedLesson": false
+    }
+  ],
+  "displayedExampleEquations": 0,
+  "negativeExponentResultPresent": false,
+  "unsupportedInputClaim": "These sections use the supplied text excerpts. No original page images were supplied, so visual layout and obscured mathematical labels cannot be checked.",
+  "comparison": {
+    "highProviderMs": 72287.80970000001,
+    "lowProviderMs": 42984.3029,
+    "providerLatencyIncreasePercent": 68.17257655235815,
+    "highCostUsd": 0.0512685,
+    "lowCostUsd": 0.0338385,
+    "combinedCalculatedOpenaiUsd": 0.085107
+  },
+  "noPracticeCall": true,
+  "noProductionMigration": true
+}

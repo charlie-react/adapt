@@ -1,0 +1,14 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning": {
+    "effort": "low"
+  },
+  "serviceTier": "default",
+  "store": false,
+  "outputTokenCap": 25000,
+  "countedInputTokens": 5796,
+  "reservedUsd": 0.40688,
+  "pdfPages": 7,
+  "fileBytes": 34712,
+  "sourceFingerprint": "e3fe69b27104c1fc7672ce66274f4339abfef078b104a089579182a2f366a91a"
+}

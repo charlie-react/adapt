@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { LEARNING_LIMITS } from "@/lib/learning/limits";
 import { useEffect, useRef, useState } from "react";
-import { accessOptions, type AccessNeed, type LearningSnapshot, type UnderstandingQuestion } from "@/lib/learning/types";
-import { Readable } from "./read-aloud";
+import { accessOptions, type AccessNeed, type AdaptedSection, type LearningSnapshot, type UnderstandingQuestion } from "@/lib/learning/types";
+import { Readable, useStopReadAloud } from "./read-aloud";
 import { VoiceField } from "./voice-field";
 import { AdaptedLearning } from "./adapted-learning";
 import { LoadingExperience } from "./loading-experience";
@@ -12,14 +12,17 @@ import { LearnerActionError, learnerFailure, learnerMessage } from "@/lib/learni
 export function AdaptWorkspace() {
   const [mode, setMode] = useState<"file" | "text">("file"), [file, setFile] = useState<File>(), [text, setText] = useState("");
   const [snapshot, setSnapshot] = useState<LearningSnapshot>(), [busy, setBusy] = useState(""), [error, setError] = useState("");
+  const [partialSections, setPartialSections] = useState<AdaptedSection[]>([]), [partialState, setPartialState] = useState<"" | "reading" | "incomplete" | "complete">("");
+  const generation = useRef(0), progressive = useRef(false), stopReading = useStopReadAloud();
+  const stopProgress = useRef<HTMLButtonElement>(null), fallbackAction = useRef<HTMLButtonElement>(null);
   const [needs, setNeeds] = useState<AccessNeed[]>(["stepwise"]), [description, setDescription] = useState(""), [focus, setFocus] = useState(""), [focusOpen, setFocusOpen] = useState(false);
   const controller = useRef<AbortController | undefined>(undefined), heading = useRef<HTMLHeadingElement>(null);
   const prepared = snapshot?.analysis.status === "source-ready" || snapshot?.analysis.status === "ready";
-  const stage = snapshot?.experience ? 2 : prepared ? 1 : 0;
+  const stage = snapshot?.experience || partialSections.length ? 2 : prepared ? 1 : 0;
   const fingerprint = snapshot?.fingerprint;
   const wasBusy = useRef(false);
   useEffect(() => { if (fingerprint) heading.current?.focus(); }, [stage, fingerprint]);
-  useEffect(() => { if (wasBusy.current && !busy) heading.current?.focus(); wasBusy.current = Boolean(busy); }, [busy]);
+  useEffect(() => { if (wasBusy.current && !busy && !progressive.current) heading.current?.focus(); wasBusy.current = Boolean(busy); }, [busy]);
   useEffect(() => () => { controller.current?.abort(); }, []);
 
   async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
@@ -48,13 +51,52 @@ export function AdaptWorkspace() {
     } catch (failure) { setError(learnerFailure(failure)); }
     finally { setBusy(""); }
   }
-  async function adapt(event: React.FormEvent) {
-    event.preventDefault(); if (!snapshot) return; setBusy("Creating your learning experience…"); setError("");
-    try { setSnapshot(await request<LearningSnapshot>("/api/learning/adapt", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ fingerprint: snapshot.fingerprint, revision: snapshot.revision, preferences: { needs, description, focus } }) })); }
-    catch (failure) { setError(learnerFailure(failure)); }
-    finally { setBusy(""); }
+  async function adapt(event?: React.FormEvent, whole = false) {
+    event?.preventDefault(); if (!snapshot) return;
+    const own = ++generation.current; controller.current?.abort(); stopReading();
+    setPartialSections([]); setPartialState(""); progressive.current = false;
+    setBusy("Creating your learning experience…"); setError("");
+    const body = JSON.stringify({ fingerprint: snapshot.fingerprint, revision: snapshot.revision, preferences: { needs, description, focus } });
+    try {
+      if (snapshot.material.kind !== "pdf" || whole) {
+        setSnapshot(await request<LearningSnapshot>("/api/learning/adapt", { method: "POST", headers: { "Content-Type": "application/json" }, body }));
+      } else {
+        const abort = new AbortController(); controller.current = abort;
+        const response = await fetch("/api/learning/adapt-progress", { method: "POST", headers: { "Content-Type": "application/json" }, body, cache: "no-store", signal: AbortSignal.any([abort.signal, AbortSignal.timeout(LEARNING_LIMITS.clientAdaptationMs)]) });
+        if (!response.ok) { const failure = await response.json(); if (["EXPIRED", "STALE_MATERIAL"].includes(failure.code)) setSnapshot(undefined); throw new LearnerActionError(failure.code); }
+        if (!response.body) throw new Error("Unavailable lesson");
+        const reader = response.body.getReader(), decoder = new TextDecoder(); let buffer = "", completed = false;
+        const received: AdaptedSection[] = [];
+        while (!completed) {
+          const chunk = await reader.read(); if (chunk.done) break;
+          buffer += decoder.decode(chunk.value, { stream: true }); let boundary;
+          while ((boundary = buffer.indexOf("\n\n")) >= 0) {
+            const line = buffer.slice(0, boundary); buffer = buffer.slice(boundary + 2);
+            if (!line.startsWith("data:")) continue;
+            const event = JSON.parse(line.slice(5)); if (own !== generation.current) return;
+            if (event.type === "section") {
+              if (event.section.id !== `source-${received.length + 1}`) throw new Error("Unavailable lesson");
+              received.push(event.section); progressive.current = true;
+              setPartialSections([...received]); setPartialState("reading");
+            } else if (event.type === "complete") {
+              const next = event.snapshot as LearningSnapshot;
+              if (next.fingerprint !== snapshot.fingerprint || next.revision !== snapshot.revision + 1 || !next.experience || JSON.stringify(next.experience.sections.slice(0, received.length)) !== JSON.stringify(received)) throw new Error("Unavailable lesson");
+              const recoverFocus = document.activeElement === stopProgress.current;
+              setSnapshot(next); if (received.length) setPartialState("complete"); completed = true;
+              if (recoverFocus) requestAnimationFrame(() => heading.current?.focus());
+            } else if (event.type === "error") {
+              if (["EXPIRED", "STALE_MATERIAL"].includes(event.code)) { setSnapshot(undefined); setPartialSections([]); }
+              throw new LearnerActionError(event.code);
+            } else throw new Error("Unavailable lesson");
+          }
+        }
+        if (!completed) throw new Error("Unavailable lesson");
+      }
+    } catch (failure) { if (own === generation.current) { stopReading(); const recoverFocus = document.activeElement === stopProgress.current; if (progressive.current) setPartialState("incomplete"); setError(learnerFailure(failure)); if (recoverFocus) requestAnimationFrame(() => fallbackAction.current?.focus()); } }
+    finally { if (own === generation.current) setBusy(""); }
   }
   async function startOver() {
+    generation.current++; stopReading(); setPartialSections([]); setPartialState(""); progressive.current = false;
     controller.current?.abort(); setError(""); setBusy("");
     try { await request("/api/learning", { method: "DELETE" }); } catch {}
     setSnapshot(undefined); setNeeds(["stepwise"]); setDescription(""); setFocus("");
@@ -85,6 +127,7 @@ export function AdaptWorkspace() {
       </div><LoadingExperience active={Boolean(busy)} onCancel={() => controller.current?.abort()} />
     </section>}
     {error && <p className="adapt-error" role="alert">{error}</p>}
+    {error && stage === 1 && snapshot?.material.kind === "pdf" && !busy && <button type="button" onClick={() => void adapt(undefined, true)}>Prepare the whole lesson</button>}
     {snapshot && snapshot.analysis.status !== "ready" && snapshot.analysis.status !== "source-ready" && <section className="understanding-failure"><h2>This material isn’t available yet.</h2><Readable label="Material unavailable" units={["Try another file or paste your material as text."]}><p>Try another file or paste your material as text.</p></Readable><button type="button" disabled={Boolean(busy)} onClick={startOver}>Choose another material</button></section>}
     {stage === 1 && snapshot && <section className="support-studio loading-surface" aria-labelledby="support-title">
       <div className="loading-underlay" inert={Boolean(busy)}>
@@ -101,7 +144,10 @@ export function AdaptWorkspace() {
     </section>}
     {stage === 2 && snapshot && <section className="adapt-experience" aria-labelledby="experience-title">
       <div className="experience-heading"><div><p className="adapt-eyebrow">Your material. Your way in.</p><h1 id="experience-title" ref={heading} tabIndex={-1}>{snapshot.material.title}</h1><div className="preference-tags">{snapshot.preferences?.needs.map(need => <span key={need}>{accessOptions.find(option => option.id === need)?.label}</span>)}</div></div><button type="button" className="adapt-secondary" onClick={startOver}>Bring new material</button></div>
-      <AdaptedLearning key={`${snapshot.fingerprint}:${snapshot.revision}`} snapshot={snapshot} practice={() => request<{ questions: UnderstandingQuestion[] }>("/api/learning/practice", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ fingerprint: snapshot.fingerprint, revision: snapshot.revision }) })} />
+      {partialState && <p role="status" aria-live="polite" aria-atomic="true">{partialState === "reading" ? "You can start reading. The rest of your lesson is still getting ready." : partialState === "complete" ? "Your complete lesson is ready." : "This lesson is incomplete. You can try preparing the whole lesson."}</p>}
+      {partialState === "reading" && <button ref={stopProgress} type="button" className="adapt-secondary" onClick={() => { stopReading(); controller.current?.abort(); }}>Stop preparing</button>}
+      {partialState === "incomplete" && <button ref={fallbackAction} type="button" onClick={() => void adapt(undefined, true)}>Prepare the whole lesson</button>}
+      <AdaptedLearning key={partialSections.length ? snapshot.fingerprint : `${snapshot.fingerprint}:${snapshot.revision}`} snapshot={snapshot} partialSections={partialSections.length ? partialSections : undefined} practice={() => request<{ questions: UnderstandingQuestion[] }>("/api/learning/practice", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ fingerprint: snapshot.fingerprint, revision: snapshot.revision }) })} />
     </section>}
     {stage === 0 && <section className="adapt-demo-invitation"><div><p className="adapt-eyebrow">Explore a worked example</p><h2>A diagram. A different way to understand it.</h2><p>Explore a binary-tree lesson with clear descriptions and practice.</p></div><Link href="/demo">Try a sample lesson <span aria-hidden="true">↗</span></Link></section>}
   </>;

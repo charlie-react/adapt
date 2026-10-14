@@ -1,0 +1,11 @@
+{
+  "unchanged": true,
+  "files": {
+    "src/lib/learning/provider.ts": "9221ab8cd58337f5e86fbf927a86ae465bde43cd07feecbaa047fbe08575cb0e",
+    "src/lib/learning/service.ts": "a081657dd571903d17ee91ec8b4998e3ea8baa8c29f3b3ce325de3efcbf9b934",
+    "src/lib/learning/http.ts": "892336718213f77f2d7eafa8dfdfeed262525c514838803e35d9433147b99708",
+    "src/lib/learning/validation.ts": "e8526bfb7e0de587ac8a9375212338532aa366399d138ff6b8be3563270bc721",
+    "src/lib/learning/gemini-transcription.ts": "684580f84188d94860232cde49b14005730c2f0b43cd7d2af9cead3874007d4e",
+    "src/lib/learning/practice-answers.ts": "87f004ee489c91b7f63b9d4055fc4bf6e1117ac65c45a2cc95e5ba7a20cf8d0a"
+  }
+}

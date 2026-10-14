@@ -1,0 +1,68 @@
+{
+  "kind": "audio",
+  "label": "references-control2-control",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-live-performance-Rbx2tQ",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 18629826,
+  "sourceSha256": "8246fed25dde4995275d07e3a841131a222518759bdd1817334af3a06aee6d38",
+  "directPreparationMs": 1057.6545,
+  "directDecodeMs": 879.3899000000001,
+  "audioSeconds": 422.44403628117914,
+  "transcriptSha256": "8a6058c439abaf41f6ce68c9fd285d21e38167802717ab05a8733cea7f30b58d",
+  "claudeMs": 11454.8684,
+  "claudeReportedMs": 10561,
+  "usage": {
+    "inputTokens": 4408,
+    "outputTokens": 724,
+    "totalTokens": 5132,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "responseShape": [
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphRefs",
+        "steps",
+        "evidence"
+      ],
+      "refs": [
+        "transcript-paragraph-1-1",
+        "transcript-paragraph-1-2",
+        "transcript-paragraph-1-3",
+        "transcript-paragraph-1-4",
+        "transcript-paragraph-1-5",
+        "transcript-paragraph-1-6",
+        "transcript-paragraph-1-7",
+        "transcript-paragraph-1-8",
+        "transcript-paragraph-1-9",
+        "transcript-paragraph-1-10",
+        "transcript-paragraph-1-11",
+        "transcript-paragraph-1-12",
+        "transcript-paragraph-1-13",
+        "transcript-paragraph-1-14",
+        "transcript-paragraph-1-15",
+        "transcript-paragraph-1-16",
+        "transcript-paragraph-1-17",
+        "transcript-paragraph-1-18",
+        "transcript-paragraph-1-19",
+        "transcript-paragraph-1-20"
+      ]
+    }
+  ],
+  "failure": {
+    "name": "ProviderResponseError",
+    "message": "Invalid transcript paragraph references; complete ordered source required"
+  },
+  "measurement": "Same exact baseline transcript, adaptation only; no Gemini/browser run."
+}

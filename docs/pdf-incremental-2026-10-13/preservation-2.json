@@ -1,0 +1,308 @@
+{
+  "label": "preservation-2",
+  "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "preparationMs": 859.0237999999999,
+  "prefs": {
+    "needs": [
+      "stepwise"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "preservation": true,
+  "manifestHash": "84d0b16288094f8867a96401040995549cc743f8ba05d91396662a9b4d97c37d",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-incremental-l8zXKR",
+  "productionUnchanged": true,
+  "metrics": [
+    {
+      "variant": "baseline",
+      "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "providerMs": 54528.3266,
+      "usage": {
+        "inputTokens": 26178,
+        "outputTokens": 2734,
+        "totalTokens": 28912,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "reportedMs": 49753,
+      "completeValidatedMs": 54572.1925,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ],
+      "generationToAssemblyUnchanged": true,
+      "exactPassagesPresent": 4,
+      "requiredPassages": 19,
+      "browser": {
+        "started": 855.5999999996275,
+        "server": {
+          "variant": "baseline",
+          "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+          "providerMs": 54528.3266,
+          "usage": {
+            "inputTokens": 26178,
+            "outputTokens": 2734,
+            "totalTokens": 28912,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 0
+          },
+          "reportedMs": 49753,
+          "completeValidatedMs": 54572.1925,
+          "coverage": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5",
+            "p6",
+            "p7",
+            "p8",
+            "p9",
+            "p10",
+            "p11"
+          ],
+          "sectionIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "source-6",
+            "source-7",
+            "source-8",
+            "source-9",
+            "source-10",
+            "source-11"
+          ],
+          "generationToAssemblyUnchanged": true,
+          "exactPassagesPresent": 4,
+          "requiredPassages": 19
+        },
+        "firstSectionMs": 54622.90000000037,
+        "completeVisibleMs": 54622.90000000037,
+        "firstUsefulMs": 55036.800000000745
+      },
+      "keyboardHeadingFocus": true,
+      "silentReadAloud": true,
+      "axeViolations": [],
+      "narrowNoOverflow": true,
+      "assemblyToRenderedUnchanged": true,
+      "practiceProviderMs": 9697.438399999992,
+      "practiceUsage": {
+        "inputTokens": 29123,
+        "outputTokens": 581,
+        "totalTokens": 29704,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "practice": {
+        "questions": 5,
+        "validated": true,
+        "ms": 9704.385300000002
+      }
+    },
+    {
+      "variant": "stream",
+      "originalRequestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "requestHash": "e951e274def6452577c3862608748023b6611edef82c794627455b48191964d1",
+      "firstValidatedMs": 10320.171900000001,
+      "sectionEvents": [
+        {
+          "id": "source-1",
+          "validatedMs": 10320.189500000008
+        },
+        {
+          "id": "source-2",
+          "validatedMs": 13759.436799999996
+        },
+        {
+          "id": "source-3",
+          "validatedMs": 18859.2083
+        },
+        {
+          "id": "source-4",
+          "validatedMs": 23509.2062
+        },
+        {
+          "id": "source-5",
+          "validatedMs": 28138.843800000002
+        },
+        {
+          "id": "source-6",
+          "validatedMs": 33209.8881
+        },
+        {
+          "id": "source-7",
+          "validatedMs": 37499.414699999994
+        },
+        {
+          "id": "source-8",
+          "validatedMs": 42918.6688
+        }
+      ],
+      "usage": {
+        "inputTokens": 27619,
+        "outputTokens": 3252,
+        "totalTokens": 30871
+      },
+      "reportedMs": 52308,
+      "providerMs": 53322.253800000006,
+      "completeValidatedMs": 53354.24029999999,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ],
+      "generationToAssemblyUnchanged": true,
+      "exactPassagesPresent": 19,
+      "requiredPassages": 19,
+      "preservationValidated": true,
+      "browser": {
+        "started": 239.09999999962747,
+        "firstSectionMs": 10379.700000000186,
+        "firstUsefulMs": 14261.400000000373,
+        "server": {
+          "variant": "stream",
+          "originalRequestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+          "requestHash": "e951e274def6452577c3862608748023b6611edef82c794627455b48191964d1",
+          "firstValidatedMs": 10320.171900000001,
+          "sectionEvents": [
+            {
+              "id": "source-1",
+              "validatedMs": 10320.189500000008
+            },
+            {
+              "id": "source-2",
+              "validatedMs": 13759.436799999996
+            },
+            {
+              "id": "source-3",
+              "validatedMs": 18859.2083
+            },
+            {
+              "id": "source-4",
+              "validatedMs": 23509.2062
+            },
+            {
+              "id": "source-5",
+              "validatedMs": 28138.843800000002
+            },
+            {
+              "id": "source-6",
+              "validatedMs": 33209.8881
+            },
+            {
+              "id": "source-7",
+              "validatedMs": 37499.414699999994
+            },
+            {
+              "id": "source-8",
+              "validatedMs": 42918.6688
+            }
+          ],
+          "usage": {
+            "inputTokens": 27619,
+            "outputTokens": 3252,
+            "totalTokens": 30871
+          },
+          "reportedMs": 52308,
+          "providerMs": 53322.253800000006,
+          "completeValidatedMs": 53354.24029999999,
+          "coverage": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5",
+            "p6",
+            "p7",
+            "p8",
+            "p9",
+            "p10",
+            "p11"
+          ],
+          "sectionIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "source-6",
+            "source-7",
+            "source-8",
+            "source-9",
+            "source-10",
+            "source-11"
+          ],
+          "generationToAssemblyUnchanged": true,
+          "exactPassagesPresent": 19,
+          "requiredPassages": 19,
+          "preservationValidated": true
+        },
+        "completeVisibleMs": 53385.40000000037
+      },
+      "keyboardHeadingFocus": true,
+      "silentReadAloud": true,
+      "axeViolations": [],
+      "narrowNoOverflow": true,
+      "assemblyToRenderedUnchanged": true,
+      "practiceProviderMs": 10155.352600000013,
+      "practiceUsage": {
+        "inputTokens": 30207,
+        "outputTokens": 584,
+        "totalTokens": 30791,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "practice": {
+        "questions": 5,
+        "validated": true,
+        "ms": 10165.948800000013
+      }
+    }
+  ]
+}

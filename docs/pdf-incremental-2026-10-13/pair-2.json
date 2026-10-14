@@ -1,0 +1,56 @@
+{
+  "label": "pair-2",
+  "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "preparationMs": 451.50729999999976,
+  "prefs": {
+    "needs": [
+      "stepwise"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-incremental-GOShUx",
+  "productionUnchanged": true,
+  "metrics": [
+    {
+      "variant": "baseline",
+      "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "providerMs": 50580.3495,
+      "usage": {
+        "inputTokens": 26178,
+        "outputTokens": 2715,
+        "totalTokens": 28893,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "reportedMs": 48454,
+      "completeValidatedMs": 50611.800299999995,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ]
+    }
+  ]
+}

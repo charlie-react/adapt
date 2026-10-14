@@ -4,9 +4,10 @@ import { LEARNING_LIMITS } from "./limits";
 import { fileMaterial, textMaterial, withTranscript } from "./material";
 import { createLearningStore, learningStore, materialRevision } from "./service";
 import { learningProvider } from "./provider";
+import { withVerifiedPdfProgress } from "./pdf-incremental/provider";
 import { validatePreferences } from "./validation";
 import type { LearningMaterial, LearningProvider } from "./types";
-import { decodeAudio } from "./audio";
+import { decodeAudio, type DecodedAudio } from "./audio";
 import { attachTranscription, audioTranscriber, transcribeAudio, transcriptionFailure, type AudioTranscriber } from "./transcription";
 const cookieName = "adapt-learning";
 const messages: Record<string, string> = {
@@ -29,7 +30,7 @@ function cookie(request: Request, value: string) { return `${cookieName}=${value
 function json(body: unknown, status = 200, cookieValue?: string) { return Response.json(body, { status, headers: { "Cache-Control": "no-store", ...(cookieValue ? { "Set-Cookie": cookieValue } : {}) } }); }
 function exact(body: Record<string, unknown>, keys: string[]) { if (Object.keys(body).sort().join(",") !== keys.sort().join(",")) throw new RequestFailure("INVALID_REQUEST"); }
 function revision(body: Record<string, unknown>) { if (typeof body.fingerprint !== "string" || !/^[a-f0-9]{64}$/.test(body.fingerprint) || !Number.isSafeInteger(body.revision) || (body.revision as number) < 0) throw new RequestFailure("INVALID_REQUEST"); return { fingerprint: body.fingerprint, revision: body.revision as number }; }
-export function createLearningHandlers(store: ReturnType<typeof createLearningStore> = learningStore, provider: LearningProvider = learningProvider, transcriber: AudioTranscriber = audioTranscriber) {
+export function createLearningHandlers(store: ReturnType<typeof createLearningStore> = learningStore, provider: LearningProvider = learningProvider, transcriber: AudioTranscriber = audioTranscriber, incrementalEnabled = process.env.ADAPT_VERIFIED_PDF_INCREMENTAL === "networking-rehearsal" && process.env.ADAPT_AI_DISABLE !== "1") {
   let uploads = 0;
   async function run(request: Request, action: () => Promise<Response> | Response) {
     if (!sameOrigin(request)) return json({ code: "INVALID_REQUEST", error: messages.INVALID_REQUEST }, 403);
@@ -40,6 +41,8 @@ export function createLearningHandlers(store: ReturnType<typeof createLearningSt
       if (uploads >= 2) throw new RequestFailure("BUSY", 429); uploads++;
       try {
         const signal = AbortSignal.any([request.signal, AbortSignal.timeout(LEARNING_LIMITS.uploadMs)]); let material: LearningMaterial;
+        let decodedAudio: DecodedAudio | undefined;
+        const receiveAudio = (audio: DecodedAudio) => { decodedAudio = audio; };
         if (request.headers.get("content-type")?.split(";")[0] === "application/json") {
           const body = await requestJson(request, 128000); exact(body, ["text"]); if (typeof body.text !== "string") throw new RequestFailure("INVALID_REQUEST"); material = textMaterial(body.text);
         } else if (request.headers.get("content-type")?.startsWith("multipart/form-data;")) {
@@ -48,16 +51,16 @@ export function createLearningHandlers(store: ReturnType<typeof createLearningSt
           if ([...form.keys()].sort().join(",") !== "material,transcript") throw new RequestFailure("INVALID_REQUEST");
           const file = form.get("material"), transcript = form.get("transcript");
           if (!(file instanceof File) || typeof transcript !== "string" || transcript.length > 30000) throw new RequestFailure("INVALID_REQUEST");
-          material = await fileMaterial(new Uint8Array(await file.arrayBuffer()), file.name, signal); material = withTranscript(material, transcript);
+          material = await fileMaterial(new Uint8Array(await file.arrayBuffer()), file.name, signal, receiveAudio); material = withTranscript(material, transcript);
           if (transcript.trim()) { material.fingerprint = materialRevision(material.fingerprint, transcript); material.id += `:transcript:${material.fingerprint}`; }
         } else {
           const bytes = await boundedBody(request, LEARNING_LIMITS.uploadBytes, signal); const encoded = request.headers.get("x-material-name") || "material";
-          if (encoded.length > 1500) throw new RequestFailure("INVALID_REQUEST"); material = await fileMaterial(bytes, decodeURIComponent(encoded), signal);
+          if (encoded.length > 1500) throw new RequestFailure("INVALID_REQUEST"); material = await fileMaterial(bytes, decodeURIComponent(encoded), signal, receiveAudio);
         }
         if (material.kind === "audio") {
           const transcriptionSignal = AbortSignal.any([request.signal, AbortSignal.timeout(LEARNING_LIMITS.transcriptionMs)]);
           try {
-            const decoded = await decodeAudio(material.bytes!, transcriptionSignal);
+            const decoded = decodedAudio ?? await decodeAudio(material.bytes!, transcriptionSignal);
             const segments = await transcribeAudio(decoded, transcriber, transcriptionSignal, material.bytes);
             transcriptionSignal.throwIfAborted(); material = attachTranscription(material, segments, transcriber);
           } catch (failure) { throw transcriptionFailure(failure); }
@@ -73,6 +76,27 @@ export function createLearningHandlers(store: ReturnType<typeof createLearningSt
     source: (request: Request) => run(request, () => { const url = new URL(request.url), id = url.searchParams.get("id"), fingerprint = request.headers.get("x-material-fingerprint"); if (!id || !fingerprint) throw new RequestFailure("INVALID_REQUEST"); return json(store.source(key(request), fingerprint, id)); }),
     analyze: (request: Request) => run(request, async () => { const body = await requestJson(request); exact(body, ["fingerprint", "revision"]); const r = revision(body); return json(await store.analyze(key(request), r.fingerprint, r.revision, provider, request.signal)); }),
     adapt: (request: Request) => run(request, async () => { const body = await requestJson(request); exact(body, ["fingerprint", "revision", "preferences"]); const r = revision(body); let preferences; try { preferences = validatePreferences(body.preferences); } catch { throw new RequestFailure("INVALID_REQUEST"); } return json(await store.adapt(key(request), r.fingerprint, r.revision, preferences, provider, request.signal)); }),
+    progress: (request: Request) => run(request, async () => {
+      const body = await requestJson(request); exact(body, ["fingerprint", "revision", "preferences"]); const r = revision(body);
+      let preferences; try { preferences = validatePreferences(body.preferences); } catch { throw new RequestFailure("INVALID_REQUEST"); }
+      // Authenticate before opening the stream; use the existing cookie and revision ownership.
+      const owned = store.snapshot(key(request)); if (owned.fingerprint !== r.fingerprint || owned.revision !== r.revision) throw new RequestFailure("STALE_MATERIAL", 409);
+      const controller = new AbortController(), signal = AbortSignal.any([request.signal, controller.signal]);
+      const encoder = new TextEncoder();
+      const stream = new ReadableStream<Uint8Array>({
+        start(output) {
+          const send = (event: unknown) => { signal.throwIfAborted(); output.enqueue(encoder.encode(`data:${JSON.stringify(event)}\n\n`)); };
+          const candidate = withVerifiedPdfProgress(provider, { enabled: incrementalEnabled, modelId: process.env.BEDROCK_ADAPTATION_MODEL_ID });
+          void store.adapt(key(request), r.fingerprint, r.revision, preferences, candidate, signal, section => send({ type: "section", section })).then(snapshot => {
+            send({ type: "complete", snapshot });
+          }).catch(error => {
+            if (!signal.aborted) send({ type: "error", code: error instanceof RequestFailure ? error.code : "AI_UNAVAILABLE" });
+          }).finally(() => { if (!signal.aborted) output.close(); });
+        },
+        cancel() { controller.abort(); },
+      });
+      return new Response(stream, { headers: { "Content-Type": "text/event-stream", "Cache-Control": "no-store", "X-Accel-Buffering": "no" } });
+    }),
     practice: (request: Request) => run(request, async () => { const body = await requestJson(request); exact(body, ["fingerprint", "revision"]); const r = revision(body); return json(await store.practice(key(request), r.fingerprint, r.revision, provider, request.signal)); }),
     reflect: (request: Request) => run(request, async () => { const body = await requestJson(request); exact(body, ["fingerprint", "revision", "questionId", "answer"]); const r = revision(body); if (typeof body.questionId !== "string" || body.questionId.length > 50 || typeof body.answer !== "string" || body.answer.length > 2000) throw new RequestFailure("INVALID_REQUEST"); return json(await store.reflect(key(request), r.fingerprint, r.revision, body.questionId, body.answer, provider, request.signal)); }),
   };

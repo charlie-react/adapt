@@ -1,0 +1,55 @@
+{
+  "kind": "audio",
+  "label": "references-release",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-live-performance-fdUkba",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 18629826,
+  "sourceSha256": "8246fed25dde4995275d07e3a841131a222518759bdd1817334af3a06aee6d38",
+  "directPreparationMs": 1115.8554000000001,
+  "directDecodeMs": 1021.3042,
+  "audioSeconds": 422.44403628117914,
+  "geminiTranscriptionMs": 19139.8087,
+  "uploadHandlerMs": 20902.0114,
+  "uploadStatus": 200,
+  "uploadClickToSupportMs": 21415.0076,
+  "claudeMs": 6074.633400000002,
+  "claudeReportedMs": 4814,
+  "usage": {
+    "inputTokens": 7032,
+    "outputTokens": 269,
+    "totalTokens": 7301,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "responseShape": [
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphSourceId",
+        "stepRefs",
+        "evidence"
+      ]
+    }
+  ],
+  "providerWithValidationMs": 6086.6211,
+  "sections": 1,
+  "paragraphCharacters": 5440,
+  "adaptHandlerMs": 6137.919999999998,
+  "adaptStatus": 200,
+  "adaptClickToVisibleMs": 6588.163199999995,
+  "totalWaitingMs": 28003.170799999996,
+  "validatedVisible": true,
+  "sourceUnits": 1,
+  "pages": 1,
+  "measurement": "Current production UI with current injected HTTP/service/providers. Local visible lesson plus two frames, not deployed first-paint."
+}

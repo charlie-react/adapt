@@ -1,0 +1,46 @@
+{
+  "kind": "audio",
+  "label": "references-standalone-control",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-live-performance-2EDMQ6",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 18629826,
+  "sourceSha256": "8246fed25dde4995275d07e3a841131a222518759bdd1817334af3a06aee6d38",
+  "directPreparationMs": 1537.3231,
+  "directDecodeMs": 1850.5592000000001,
+  "audioSeconds": 422.44403628117914,
+  "transcriptSha256": "8a6058c439abaf41f6ce68c9fd285d21e38167802717ab05a8733cea7f30b58d",
+  "claudeMs": 6431.4734,
+  "claudeReportedMs": 4574,
+  "usage": {
+    "inputTokens": 7032,
+    "outputTokens": 269,
+    "totalTokens": 7301,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "responseShape": [
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphSourceId",
+        "stepRefs",
+        "evidence"
+      ]
+    }
+  ],
+  "providerWithValidationMs": 6479.8778999999995,
+  "sections": 1,
+  "paragraphCharacters": 5440,
+  "validated": true,
+  "measurement": "Same exact baseline transcript, adaptation only; no Gemini/browser run."
+}

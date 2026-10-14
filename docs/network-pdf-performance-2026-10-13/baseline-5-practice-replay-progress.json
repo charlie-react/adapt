@@ -1,0 +1,42 @@
+{
+  "uploadHandlerPreparationMs": 581.8699999999999,
+  "uploadHttpStatus": 200,
+  "uploadClickToSupportMs": 977.5666000000001,
+  "adaptationReplayedWithoutModelCall": true,
+  "replayEvidence": "Same page IDs; first real server excerpt per text page. Not original response quotation objects or exact-session replay.",
+  "adaptHandlerMs": 13.104400000000169,
+  "adaptHttpStatus": 200,
+  "adaptClickToVisibleLessonMs": 280.40509999999995,
+  "browserTotalWaitingMs": 1257.9717,
+  "sections": 11,
+  "sourcePageIds": [
+    "p1",
+    "p2",
+    "p3",
+    "p4",
+    "p5",
+    "p6",
+    "p7",
+    "p8",
+    "p9",
+    "p10",
+    "p11"
+  ],
+  "visibleParagraphs": 11,
+  "keyPoints": 54,
+  "experienceHeadingFocused": false,
+  "axeViolations": [],
+  "narrowNoOverflow": true,
+  "focusReadingWorksWithSilentSpeechSpy": false,
+  "practiceProviderMs": 10174.138599999998,
+  "practiceUsage": {
+    "inputTokens": 30284,
+    "outputTokens": 577,
+    "totalTokens": 30861,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "practiceHandlerMs": 10184.2098,
+  "practiceHttpStatus": 200,
+  "practiceQuestions": 5
+}

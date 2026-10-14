@@ -1,0 +1,20 @@
+{
+  "slug": "claude-1",
+  "status": "strictly-validated",
+  "preparationMs": 592.0020999999999,
+  "providerMs": 42460.0825,
+  "tokenCountMs": 0,
+  "adaptationPipelineMs": 42469.839,
+  "pipelineIncludingPreparationMs": 43061.8411,
+  "nonProviderMs": 9.756500000003143,
+  "usage": {
+    "inputTokens": 19239,
+    "outputTokens": 2409,
+    "totalTokens": 21648,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "sections": 7,
+  "sourcePages": 7,
+  "browserPaintMeasured": false
+}

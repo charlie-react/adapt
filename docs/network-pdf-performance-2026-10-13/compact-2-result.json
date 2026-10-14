@@ -1,0 +1,21 @@
+{
+  "slug": "compact-2",
+  "variant": "compact",
+  "trial": 2,
+  "status": "failed",
+  "failure": {
+    "name": "TimeoutError",
+    "message": "locator.waitFor: Timeout 180000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.adapt-lesson') to be visible\u001b[22m\n"
+  },
+  "uploadHandlerPreparationMs": 425.57050000000163,
+  "uploadHttpStatus": 200,
+  "uploadClickToSupportMs": 916.7569999999832,
+  "requestConstructionMs": 1.017599999991944,
+  "systemCharacters": 10663,
+  "userTextCharacters": 8717,
+  "originalPdfBytes": 38632,
+  "adaptHandlerMs": 2018.2766999999876,
+  "adaptHttpStatus": 503,
+  "browserMeasurement": "Unchanged production UI; intercepted local API requests run current handlers/store/live Claude. Visible lesson plus two animation frames, not deployed-network first-paint timing.",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-network-review-4ncB57"
+}

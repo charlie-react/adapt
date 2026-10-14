@@ -1,0 +1,19 @@
+{
+  "slug": "baseline-3",
+  "variant": "baseline",
+  "trial": 3,
+  "status": "failed",
+  "failure": {
+    "name": "Error",
+    "message": "Adaptation rejected; see stage metrics"
+  },
+  "uploadHandlerPreparationMs": 510.58680000000004,
+  "uploadHttpStatus": 200,
+  "uploadClickToSupportMs": 957.6935999999996,
+  "requestConstructionMs": 1.787600000000566,
+  "systemCharacters": 12055,
+  "userTextCharacters": 8717,
+  "originalPdfBytes": 38632,
+  "browserMeasurement": "Unchanged production UI; intercepted local API requests run current handlers/store/live Claude. Visible lesson plus two animation frames, not deployed-network first-paint timing.",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-network-review-u482VN"
+}

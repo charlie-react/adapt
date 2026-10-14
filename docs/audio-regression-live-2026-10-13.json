@@ -1,0 +1,25 @@
+{
+  "comparison": "Current handlers, saved verified-origin Gemini transcript; ONE live Claude call; no Gemini call",
+  "configuration": {
+    "regionPresent": true,
+    "profilePresent": false,
+    "aiDisabled": false
+  },
+  "calls": 1,
+  "uploadStatus": 200,
+  "transcriptUnits": 1,
+  "providerMs": 733.2869000000001,
+  "awsFailure": {
+    "name": "CredentialsProviderError",
+    "message": "Your session has expired. Please reauthenticate."
+  },
+  "adaptationFailure": {
+    "name": "CredentialsProviderError",
+    "message": "Your session has expired. Please reauthenticate.",
+    "stage": "request-or-validation"
+  },
+  "adaptStatus": 503,
+  "learnerCode": "AI_UNAVAILABLE",
+  "sections": 0,
+  "keyPoints": 0
+}

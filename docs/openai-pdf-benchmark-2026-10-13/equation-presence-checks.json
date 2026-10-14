@@ -1,0 +1,118 @@
+{
+  "claude": {
+    "exampleEquationChecks": [
+      {
+        "id": "example-1-order-degree",
+        "sourceExpression": "y''' + 4y'' - y' + 7y = 0",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-2-linear",
+        "sourceExpression": "y' + 3y = x²",
+        "presentInDisplayedLesson": true
+      },
+      {
+        "id": "example-3-separable",
+        "sourceExpression": "dy/dx = 3x²y",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-4-initial",
+        "sourceExpression": "dy/dx = 2xy",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-5-integrating",
+        "sourceExpression": "dy/dx + 2y = 4",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-6-initial",
+        "sourceExpression": "y' = 6x - 4",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-7-distinct",
+        "sourceExpression": "y'' - 5y' + 6y = 0",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-8-repeated",
+        "sourceExpression": "y'' - 4y' + 4y = 0",
+        "presentInDisplayedLesson": false
+      }
+    ],
+    "displayedExampleEquations": 1,
+    "totalWorkedExamples": 8,
+    "negativeExponentResultPresent": false,
+    "sectionCount": 7,
+    "sourcePageIds": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7"
+    ],
+    "checkScope": "Display paragraphs/key points only; evidence quotations are not rendered in the current UI. Exact expression presence ignoring whitespace only; not a semantic grading score."
+  },
+  "openai": {
+    "exampleEquationChecks": [
+      {
+        "id": "example-1-order-degree",
+        "sourceExpression": "y''' + 4y'' - y' + 7y = 0",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-2-linear",
+        "sourceExpression": "y' + 3y = x²",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-3-separable",
+        "sourceExpression": "dy/dx = 3x²y",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-4-initial",
+        "sourceExpression": "dy/dx = 2xy",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-5-integrating",
+        "sourceExpression": "dy/dx + 2y = 4",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-6-initial",
+        "sourceExpression": "y' = 6x - 4",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-7-distinct",
+        "sourceExpression": "y'' - 5y' + 6y = 0",
+        "presentInDisplayedLesson": false
+      },
+      {
+        "id": "example-8-repeated",
+        "sourceExpression": "y'' - 4y' + 4y = 0",
+        "presentInDisplayedLesson": false
+      }
+    ],
+    "displayedExampleEquations": 0,
+    "totalWorkedExamples": 8,
+    "negativeExponentResultPresent": false,
+    "sectionCount": 7,
+    "sourcePageIds": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5",
+      "p6",
+      "p7"
+    ],
+    "checkScope": "Display paragraphs/key points only; evidence quotations are not rendered in the current UI. Exact expression presence ignoring whitespace only; not a semantic grading score."
+  }
+}

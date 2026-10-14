@@ -1,0 +1,20 @@
+{
+  "uploadHandlerPreparationMs": 510.58680000000004,
+  "uploadHttpStatus": 200,
+  "uploadClickToSupportMs": 957.6935999999996,
+  "requestConstructionMs": 1.787600000000566,
+  "systemCharacters": 12055,
+  "userTextCharacters": 8717,
+  "originalPdfBytes": 38632,
+  "providerMs": 2046.5892999999996,
+  "providerFailure": {
+    "name": "CredentialsProviderError",
+    "message": "Could not load credentials from any providers"
+  },
+  "adaptHandlerMs": 2053.1102,
+  "adaptHttpStatus": 503,
+  "lastHttpFailure": {
+    "status": 503,
+    "code": "AI_UNAVAILABLE"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "unchanged": true,
+  "hashes": {
+    "src/lib/learning/provider.ts": "9221ab8cd58337f5e86fbf927a86ae465bde43cd07feecbaa047fbe08575cb0e",
+    "src/lib/learning/service.ts": "a081657dd571903d17ee91ec8b4998e3ea8baa8c29f3b3ce325de3efcbf9b934",
+    "src/lib/learning/http.ts": "892336718213f77f2d7eafa8dfdfeed262525c514838803e35d9433147b99708",
+    "src/lib/learning/provider-response.ts": "6a07e10186f3795d6a4f8f2ff8d8da459b7032450fb0798a85d8b207f5e7a766",
+    "src/lib/learning/validation.ts": "e8526bfb7e0de587ac8a9375212338532aa366399d138ff6b8be3563270bc721",
+    "src/lib/learning/gemini-transcription.ts": "684580f84188d94860232cde49b14005730c2f0b43cd7d2af9cead3874007d4e",
+    "src/components/adapt-workspace.tsx": "c15772791bc841589429efe58bf66c0b95645a71d969e38b4a9999d8f3d4212f",
+    "src/components/adapted-learning.tsx": "259a3bcd63794f93a74bacf4cd2e8a941a59625f04c6e4d08283ce8d6894a286"
+  }
+}

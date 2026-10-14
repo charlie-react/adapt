@@ -1,0 +1,21 @@
+{
+  "slug": "baseline-2",
+  "variant": "baseline",
+  "trial": 2,
+  "status": "failed",
+  "failure": {
+    "name": "TimeoutError",
+    "message": "locator.waitFor: Timeout 180000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.adapt-lesson') to be visible\u001b[22m\n"
+  },
+  "uploadHandlerPreparationMs": 533.2831000000006,
+  "uploadHttpStatus": 200,
+  "uploadClickToSupportMs": 987.0126,
+  "requestConstructionMs": 2.6724999999996726,
+  "systemCharacters": 12055,
+  "userTextCharacters": 8717,
+  "originalPdfBytes": 38632,
+  "adaptHandlerMs": 2147.1911999999993,
+  "adaptHttpStatus": 503,
+  "browserMeasurement": "Unchanged production UI; intercepted local API requests run current handlers/store/live Claude. Visible lesson plus two animation frames, not deployed-network first-paint timing.",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-network-review-4ncB57"
+}

@@ -3,6 +3,8 @@ import test from "node:test";
 import { createLearningProvider } from "../src/lib/learning/provider";
 import { sourceExcerpts } from "../src/lib/learning/provider-response";
 import { validatePractice } from "../src/lib/learning/practice";
+import { lessonAnswers, resolvePracticeAnswers } from "../src/lib/learning/practice-answers";
+import recordedCases from "./fixtures/pdf-practice-records.json";
 import { textMaterial, fileMaterial, sourceForAdaptation } from "../src/lib/learning/material";
 import { attachTranscription } from "../src/lib/learning/transcription";
 import { createLearningHandlers } from "../src/lib/learning/http";
@@ -60,7 +62,7 @@ test("replaceable provider uses the adapted lesson/preferences and exact source 
       assert.deepEqual(context.context.preferences, prefs);
       if (material.kind === "audio") { assert.equal(material.bytes, undefined); assert.ok(content.every(block => !block.video && !block.image && !block.document)); }
       const excerpts = sourceExcerpts(material, { includeShort: true });
-      const wire = { questions: value.questions.map(question => ({ ...question, evidence: [{ sourceId: material.units[0].id, mode: "text", excerptId: excerpts[0].id }] })) };
+      const wire = { questions: value.questions.map(({ answerQuote: _answerQuote, ...question }) => { void _answerQuote; return ({ ...question, answerRef: lessonAnswers(experience)[0].id, evidence: [{ sourceId: material.units[0].id, mode: "text", excerptId: excerpts[0].id }] }); }) };
       return { $metadata: { httpStatusCode: 200 }, usage: { inputTokens: 1, outputTokens: 1, totalTokens: 2 }, metrics: { latencyMs: 1 }, stopReason: "end_turn", output: { message: { role: "assistant", content: [{ text: "```json\n" + JSON.stringify(wire) + "\n```" }] } } };
     });
     const result = await provider.createPractice!(material, experience, prefs, new AbortController().signal);
@@ -95,4 +97,118 @@ test("provider/malformed/ungrounded failures preserve the lesson and permit a la
   }
   assert.equal((await store.practice(created.key, material.fingerprint, adapted.revision, { ...provider, createPractice: async () => questions(lesson(material)) })).questions.length, 3);
   store.remove(created.key);
+});
+
+// Reduced non-sensitive source/lesson/response records from the October 8 live diagnosis.
+// References below are explicit fixture selections, not a fuzzy-match or production repair.
+for (const record of recordedCases) test(`recorded ${record.name} practice resolves displayed answers through the provider and strict validation (PDFs include HTTP sessions)`, async () => {
+  const material = record.source as LearningMaterial, experience = record.experience as AdaptedExperience;
+  if (record.previouslyRejected) assert.throws(() => validatePractice(record.response, material, experience), /not presented/);
+  else assert.equal(validatePractice(record.response, material, experience).length, 4);
+  const before = structuredClone(experience), answers = lessonAnswers(experience);
+  const wire = { questions: record.response.questions.map(({ answerQuote: _quote, ...question }, index) => {
+    void _quote;
+    const selection = record.selections[index];
+    const answer = answers.find(answer => answer.sectionId === question.sectionId && answer.kind === selection.kind && answer.index === selection.index)!;
+    assert.ok(answer);
+    return { ...question, answerRef: answer.id };
+  }) };
+  let calls = 0;
+  const provider = createLearningProvider({}, async command => {
+    calls++;
+    assert.match(command.input.system![0].text!, /Do not return answerQuote/);
+    const context = JSON.parse(command.input.messages![0].content!.at(-1)!.text!).context;
+    assert.deepEqual(context.experience.sections, experience.sections);
+    assert.deepEqual(context.lessonAnswers, answers.map(({ text: _text, ...reference }) => { void _text; return reference; }));
+    if (material.kind === "audio") assert.ok(command.input.messages![0].content!.every(block => !block.document && !block.image && !block.video));
+    return { $metadata: { httpStatusCode: 200 }, usage: { inputTokens: 1, outputTokens: 1, totalTokens: 2 }, metrics: { latencyMs: 1 }, stopReason: "end_turn", output: { message: { role: "assistant", content: [{ text: "```json\n" + JSON.stringify(wire) + "\n```" }] } } };
+  });
+  if (material.kind === "audio") {
+    // The record intentionally has no original audio bytes. Replay at the existing
+    // transcript-only provider boundary; genuine audio uploads are tested separately.
+    const result = await provider.createPractice!(material, experience, { ...prefs, needs: ["read-spoken"] }, new AbortController().signal);
+    assert.equal(validatePractice(result, material, experience).length, 4);
+    assert.deepEqual(experience, before);
+    assert.equal(calls, 1);
+    return;
+  }
+  const store = createLearningStore(), created = store.create(material, { sourceOnly: true });
+  // The actual previously validated adapted lesson, not a new model adaptation.
+  const replayProvider = { ...provider, adaptSource: async () => structuredClone(experience) };
+  const adapted = await store.adapt(created.key, material.fingerprint, 0, prefs, replayProvider);
+  const handlers = createLearningHandlers(store, provider);
+  try {
+    const response = await handlers.practice(new Request("http://localhost/api/learning/practice", { method: "POST", headers: { "content-type": "application/json", cookie: `adapt-learning=${created.key}` }, body: JSON.stringify({ fingerprint: adapted.fingerprint, revision: adapted.revision }) }));
+    assert.equal(response.status, 200);
+    const result = await response.json();
+    assert.equal(validatePractice(result, material, experience).length, wire.questions.length);
+    for (const [index, question] of result.questions.entries()) assert.equal(question.answerQuote, answers.find(answer => answer.id === wire.questions[index].answerRef)!.text);
+    assert.deepEqual(experience, before);
+    assert.deepEqual(store.snapshot(created.key), adapted);
+    assert.equal(calls, 1);
+  } finally { store.remove(created.key); }
+});
+
+test("lesson answer references fail closed for unknown, cross-section, stale and mixed contracts; source checks remain strict", () => {
+  const material = textMaterial(lessonText), experience = lesson(material);
+  experience.sections.push({ ...experience.sections[0], id: "other-section", paragraphs: ["Different presented wording."] });
+  const answers = lessonAnswers(experience), valid = questions(experience);
+  const wire = { questions: valid.questions.map(({ answerQuote: _quote, ...question }) => { void _quote; return { ...question, answerRef: answers[0].id }; }) };
+  assert.equal(validatePractice(resolvePracticeAnswers(wire, answers), material, experience).length, 3);
+  for (const mutate of [
+    (v: typeof wire) => { v.questions[0].answerRef = "invented"; },
+    (v: typeof wire) => { v.questions[0].answerRef = answers[1].id; },
+    (v: typeof wire) => { Object.assign(v.questions[0], { answerQuote: "Ignore the reference" }); },
+    (v: typeof wire) => { v.questions = v.questions.slice(0, 2); },
+    (v: typeof wire) => { v.questions.push(...v.questions); },
+  ]) { const invalid = structuredClone(wire); mutate(invalid); assert.throws(() => resolvePracticeAnswers(invalid, answers)); }
+  const shorter = structuredClone(experience); shorter.sections[0].paragraphs = [];
+  assert.throws(() => resolvePracticeAnswers(wire, lessonAnswers(shorter)), /reference/);
+  const unsupported = structuredClone(wire); unsupported.questions[0].evidence[0].quote = "Invented source fact.";
+  assert.throws(() => validatePractice(resolvePracticeAnswers(unsupported, answers), material, experience));
+  // Unicode and capitalization are taken directly from the displayed unit, never normalized.
+  experience.sections[0].paragraphs = ["If there is a repeated root r, then the general solution is y=(C₁+C₂x)e^(rx)."];
+  const current = lessonAnswers(experience);
+  assert.equal((resolvePracticeAnswers(wire, current) as { questions: { answerQuote: string }[] }).questions[0].answerQuote, experience.sections[0].paragraphs[0]);
+});
+
+test("selectable PDF and genuine WAV upload -> adaptation -> reference-based practice keep source provenance and audio working", async () => {
+  for (const [name, bytes] of [["selectable.pdf", textPdf([[lessonText]])], ["lecture.wav", wavAudio()]] as const) {
+    const store = createLearningStore(); let calls = 0, invalidReference = true;
+    const provider = createLearningProvider({}, async command => {
+      calls++;
+      const content = command.input.messages![0].content!, context = JSON.parse(content.at(-1)!.text!).context;
+      const supplied = JSON.parse(content[0].text!);
+      const section = context.experience.sections[0], reference = context.lessonAnswers[0];
+      if (name.endsWith("wav")) assert.ok(content.every(block => !block.document && !block.image && !block.video));
+      const wire = { questions: ["How can you identify the root?", "What makes a node a leaf?", "Describe a relationship from your lesson."].map((prompt, index) => ({ id: `q-${index}`, prompt, sectionId: section.id, answerRef: reference.id, evidence: [{ sourceId: supplied.sourceExcerpts[0].sourceId, mode: "text", excerptId: supplied.sourceExcerpts[0].id }] })) };
+      if (invalidReference) wire.questions[0].answerRef = "unknown-answer";
+      return { $metadata: { httpStatusCode: 200 }, usage: { inputTokens: 1, outputTokens: 1, totalTokens: 2 }, metrics: { latencyMs: 1 }, stopReason: "end_turn", output: { message: { role: "assistant", content: [{ text: JSON.stringify(wire) }] } } };
+    });
+    const handlers = createLearningHandlers(store, { ...provider, adaptSource: async material => lesson(material) }, { service: "gemini-transcribe", model: "gemini-3.5-transcribe", transcribe: async () => [{ id: "segment", text: lessonText, start: 0, end: 0.9 }] });
+    const form = new FormData(); form.set("material", new File([Uint8Array.from(bytes)], name)); form.set("transcript", "");
+    const upload = await handlers.upload(new Request("http://localhost/api/learning", { method: "POST", body: form }));
+    assert.equal(upload.status, 200);
+    const initial = await upload.json() as LearningSnapshot, cookie = upload.headers.get("set-cookie")!.split(";")[0], key = cookie.split("=")[1];
+    const request = (path: string, body: unknown) => new Request(`http://localhost/api/learning/${path}`, { method: "POST", headers: { "content-type": "application/json", cookie }, body: JSON.stringify(body) });
+    try {
+      const adaptedResponse = await handlers.adapt(request("adapt", { fingerprint: initial.fingerprint, revision: initial.revision, preferences: { ...prefs, needs: name.endsWith("wav") ? ["read-spoken"] : prefs.needs } }));
+      assert.equal(adaptedResponse.status, 200);
+      const adapted = await adaptedResponse.json() as LearningSnapshot;
+      const failed = await handlers.practice(request("practice", { fingerprint: adapted.fingerprint, revision: adapted.revision }));
+      assert.equal(failed.status, 503);
+      assert.deepEqual(store.snapshot(key), adapted);
+      invalidReference = false;
+      const result = await handlers.practice(request("practice", { fingerprint: adapted.fingerprint, revision: adapted.revision }));
+      assert.equal(result.status, 200);
+      const { questions } = await result.json();
+      assert.equal(questions.length, 3);
+      for (const question of questions) {
+        assert.equal(question.answerQuote, adapted.experience!.sections[0].paragraphs[0]);
+        assert.equal(question.evidence[0].sourceId, adapted.experience!.sections[0].evidence[0].sourceId);
+      }
+      assert.deepEqual(store.snapshot(key), adapted);
+      assert.equal(calls, 2);
+    } finally { store.remove(key); }
+  }
 });

@@ -1,0 +1,288 @@
+{
+  "label": "pair-5",
+  "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "preparationMs": 660.2951000000003,
+  "prefs": {
+    "needs": [
+      "stepwise"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-incremental-m5h8lq",
+  "productionUnchanged": true,
+  "metrics": [
+    {
+      "variant": "stream",
+      "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "firstValidatedMs": 10282.535,
+      "sectionEvents": [
+        {
+          "id": "source-1",
+          "validatedMs": 10282.562399999999
+        },
+        {
+          "id": "source-2",
+          "validatedMs": 15156.937700000002
+        },
+        {
+          "id": "source-3",
+          "validatedMs": 19508.3504
+        },
+        {
+          "id": "source-4",
+          "validatedMs": 24046.022800000002
+        },
+        {
+          "id": "source-5",
+          "validatedMs": 28052.2003
+        },
+        {
+          "id": "source-6",
+          "validatedMs": 34112.5806
+        },
+        {
+          "id": "source-7",
+          "validatedMs": 36958.9676
+        },
+        {
+          "id": "source-8",
+          "validatedMs": 42222.3634
+        }
+      ],
+      "usage": {
+        "inputTokens": 26178,
+        "outputTokens": 3231,
+        "totalTokens": 29409
+      },
+      "reportedMs": 53617,
+      "providerMs": 55504.019799999995,
+      "completeValidatedMs": 55537.1374,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ],
+      "browser": {
+        "started": 1281.4000000003725,
+        "firstSectionMs": 10405.599999999627,
+        "firstUsefulMs": 15518.200000000186,
+        "server": {
+          "variant": "stream",
+          "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+          "firstValidatedMs": 10282.535,
+          "sectionEvents": [
+            {
+              "id": "source-1",
+              "validatedMs": 10282.562399999999
+            },
+            {
+              "id": "source-2",
+              "validatedMs": 15156.937700000002
+            },
+            {
+              "id": "source-3",
+              "validatedMs": 19508.3504
+            },
+            {
+              "id": "source-4",
+              "validatedMs": 24046.022800000002
+            },
+            {
+              "id": "source-5",
+              "validatedMs": 28052.2003
+            },
+            {
+              "id": "source-6",
+              "validatedMs": 34112.5806
+            },
+            {
+              "id": "source-7",
+              "validatedMs": 36958.9676
+            },
+            {
+              "id": "source-8",
+              "validatedMs": 42222.3634
+            }
+          ],
+          "usage": {
+            "inputTokens": 26178,
+            "outputTokens": 3231,
+            "totalTokens": 29409
+          },
+          "reportedMs": 53617,
+          "providerMs": 55504.019799999995,
+          "completeValidatedMs": 55537.1374,
+          "coverage": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5",
+            "p6",
+            "p7",
+            "p8",
+            "p9",
+            "p10",
+            "p11"
+          ],
+          "sectionIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "source-6",
+            "source-7",
+            "source-8",
+            "source-9",
+            "source-10",
+            "source-11"
+          ]
+        },
+        "completeVisibleMs": 55590.40000000037
+      },
+      "keyboardHeadingFocus": true,
+      "silentReadAloud": true,
+      "axeViolations": [],
+      "narrowNoOverflow": true,
+      "practiceProviderMs": 13935.637300000002,
+      "practiceUsage": {
+        "inputTokens": 30370,
+        "outputTokens": 593,
+        "totalTokens": 30963,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "practice": {
+        "questions": 5,
+        "validated": true,
+        "ms": 13943.474999999991
+      }
+    },
+    {
+      "variant": "baseline",
+      "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "providerMs": 59378.943799999994,
+      "usage": {
+        "inputTokens": 26178,
+        "outputTokens": 3378,
+        "totalTokens": 29556,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "reportedMs": 58154,
+      "completeValidatedMs": 59402.259399999995,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ],
+      "browser": {
+        "started": 312,
+        "server": {
+          "variant": "baseline",
+          "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+          "providerMs": 59378.943799999994,
+          "usage": {
+            "inputTokens": 26178,
+            "outputTokens": 3378,
+            "totalTokens": 29556,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 0
+          },
+          "reportedMs": 58154,
+          "completeValidatedMs": 59402.259399999995,
+          "coverage": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5",
+            "p6",
+            "p7",
+            "p8",
+            "p9",
+            "p10",
+            "p11"
+          ],
+          "sectionIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "source-6",
+            "source-7",
+            "source-8",
+            "source-9",
+            "source-10",
+            "source-11"
+          ]
+        },
+        "firstSectionMs": 59706.59999999963,
+        "completeVisibleMs": 59706.59999999963,
+        "firstUsefulMs": 60046.39999999944
+      },
+      "keyboardHeadingFocus": true,
+      "silentReadAloud": true,
+      "axeViolations": [],
+      "narrowNoOverflow": true,
+      "practiceProviderMs": 11556.549999999988,
+      "practiceUsage": {
+        "inputTokens": 30152,
+        "outputTokens": 584,
+        "totalTokens": 30736,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "practice": {
+        "questions": 5,
+        "validated": true,
+        "ms": 11581.95199999999
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "sourceFingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "reviewedRuns": ["baseline-4", "baseline-5", "compact-5"],
+  "method": "Manual comparison of generated lessons with rendered original pages 1-11; production parsing, evidence resolution and validation also passed. Page references alone do not establish semantic correctness.",
+  "baseline": {
+    "verdict": "pass",
+    "scope": "Networking competency coverage and strict contract; not exhaustive preservation of every example or source revision question.",
+    "pagesRepresented": 11,
+    "topics": ["geographical classification", "network purposes", "LAN devices and technologies", "MAN infrastructure and uses", "WAN connectivity and management", "comparison table", "combined university network"],
+    "reservations": ["Some individual examples and the six original revision questions were compressed or omitted in baseline-5.", "One MAN key point says multiple LANs connect using fiber without retaining the source's optional wording; the paragraph retains may. Avoid treating that key point as a universal technology requirement."]
+  },
+  "compact": {
+    "verdict": "pass",
+    "scope": "Networking competency coverage and strict contract; not exhaustive preservation of every source detail.",
+    "pagesRepresented": 11,
+    "topics": ["geographical classification", "network purposes", "LAN devices and technologies", "MAN infrastructure and uses", "WAN connectivity and management", "comparison table", "combined university network", "original revision questions"],
+    "reservations": ["Specific examples of resource sharing and centralized services are compressed on page 2.", "Some key points are more categorical than the qualified surrounding paragraph; read with the paragraph rather than as universal networking rules."]
+  },
+  "visualFidelity": "All five comparison rows on page 9 match the visible source table in both primary runs. Evidence remains visual interpretation; extraction did not establish table understanding.",
+  "invention": "No unsupported protocols, fixed distance cutoffs, speed figures or invented network relationships identified in this bounded review.",
+  "practice": {"method": "Live Claude practice from replayed unchanged displayed lessons, with real same-page server excerpts and strict validators; not exact original session replay.", "baselineQuestions": 5, "compactQuestions": 5, "manualAnswerReview": "All ten questions and resolved answers supported by displayed lesson and source; no score or grading."},
+  "accessibility": {"axeViolations": 0, "narrowOverflow": false, "existingE2E": "33 passed", "benchmarkSpeechSpy": "Failed to record speech; do not count as a live Read Aloud pass. Actual speech and screen-reader rehearsal remain manual."},
+  "productionRecommendation": "Do not adopt compaction for latency. One candidate was slower, with larger output; no demonstrated speed improvement."
+}

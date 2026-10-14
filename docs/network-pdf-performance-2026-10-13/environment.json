@@ -1,0 +1,18 @@
+{
+  "node": "v24.20.0",
+  "modelId": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "preferences": {
+    "needs": [
+      "stepwise"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 38632,
+  "physicalPages": 11,
+  "reliableTextPages": 10,
+  "sourceFingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "directPreparationMs": 496.54659999999967,
+  "browserBuildId": "f5Wuj8EUyHTlQnoMHznik",
+  "noOpenaiOrAudioCalls": true
+}

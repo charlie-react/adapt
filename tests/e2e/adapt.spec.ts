@@ -20,10 +20,11 @@ async function modelPresentation(page: Page, unreadable = false) {
     else snapshot.analysis = { status: "source-ready" };
     await route.fulfill({ response, json: snapshot });
   });
-  await page.route("**/api/learning/adapt", async route => {
+  await page.route(/\/api\/learning\/adapt(?:-progress)?$/, async route => {
     const body = route.request().postDataJSON(); if (snapshot.analysis.status !== "source-ready") throw new Error("Source unavailable");
     snapshot = { ...snapshot, preferences: body.preferences, revision: snapshot.revision + 1, experience: experience(material, understanding(material), body.preferences) };
-    await route.fulfill({ json: snapshot });
+    if (route.request().url().endsWith("adapt-progress")) await route.fulfill({ contentType: "text/event-stream", body: `data:${JSON.stringify({ type: "complete", snapshot })}\n\n` });
+    else await route.fulfill({ json: snapshot });
   });
   await page.route("**/api/learning/practice", async route => {
     const section = snapshot.experience!.sections[0];
@@ -73,7 +74,7 @@ test("all support choices use the same source-first experience, without technica
     await expect(page.locator(".evidence-links, .original-material, .learning-limitations, .source-preview")).toHaveCount(0);
     await expect(page.getByRole("button", { name: "Read Aloud: Off" })).toBeVisible();
     expect(understandingCalls).toBe(0);
-    await noViolations(page); await page.unroute("**/api/learning"); await page.unroute("**/api/learning/adapt"); await page.unroute("**/api/learning/reflect");
+    await noViolations(page); await page.unroute("**/api/learning"); await page.unroute(/\/api\/learning\/adapt(?:-progress)?$/); await page.unroute("**/api/learning/reflect");
   }
 });
 test("keyboard journey keeps focus, useful lesson content and desktop/narrow accessibility", async ({ page }) => {
@@ -114,7 +115,7 @@ test("PDF and image share the clean needs/learning experience", async ({ page })
     await page.getByRole("button", { name: /Continue with my material/ }).click(); await expect(page.getByRole("heading", { name: "What would make learning more comfortable?" })).toBeVisible();
     await page.getByRole("button", { name: /Create my learning experience/ }).click(); await expect(page.locator(".adapt-lesson")).toContainText("The root has no parent");
     await expect(page.locator(".evidence-links, .learning-limitations, .visible-scope-note")).toHaveCount(0);
-    await noViolations(page); await page.unroute("**/api/learning"); await page.unroute("**/api/learning/adapt"); await page.unroute("**/api/learning/reflect");
+    await noViolations(page); await page.unroute("**/api/learning"); await page.unroute(/\/api\/learning\/adapt(?:-progress)?$/); await page.unroute("**/api/learning/reflect");
   }
 });
 test("unavailable source cannot enter adaptation; malformed, encrypted, and oversized uploads recover", async ({ page }) => {
@@ -197,7 +198,7 @@ test("technical diagnostics stay out of the learner journey and errors remain ac
   await expect(page.getByRole("main").getByRole("alert")).toHaveText("We couldn’t finish that. Please try again.");
   await expect(page.getByRole("main")).not.toContainText(/AWS|Bedrock|HTTP|schema|grounding|validation/);
   await expect(page.getByRole("button", { name: /Create my learning experience/ })).toBeEnabled();
-  await page.unroute("**/api/learning/adapt"); await modelPresentation(page); await page.goto("/"); await learn(page);
+  await page.unroute(/\/api\/learning\/adapt(?:-progress)?$/); await modelPresentation(page); await page.goto("/"); await learn(page);
   await expect(page.locator(".adapt-lesson")).toBeVisible();
   await expect(page.locator(".evidence-links, .original-material, .source-preview, .learning-limitations, .visible-scope-note")).toHaveCount(0);
   await expect(page.getByRole("main")).not.toContainText(/AI-adapted|provenance|source excerpt|What to keep in mind|canonical|validation/);

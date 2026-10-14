@@ -1,0 +1,34 @@
+{
+  "kind": "audio",
+  "label": "references-control",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-live-performance-HYqPrz",
+  "preferences": {
+    "needs": [
+      "read-spoken"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 18629826,
+  "sourceSha256": "8246fed25dde4995275d07e3a841131a222518759bdd1817334af3a06aee6d38",
+  "directPreparationMs": 656.6670999999999,
+  "directDecodeMs": 590.0342000000003,
+  "audioSeconds": 422.44403628117914,
+  "transcriptSha256": "8a6058c439abaf41f6ce68c9fd285d21e38167802717ab05a8733cea7f30b58d",
+  "claudeMs": 7970.5762,
+  "claudeReportedMs": 6809,
+  "usage": {
+    "inputTokens": 4347,
+    "outputTokens": 746,
+    "totalTokens": 5093,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "failure": {
+    "name": "ProviderResponseError",
+    "message": "Invalid transcript paragraph references; complete ordered source required"
+  },
+  "measurement": "Same exact baseline transcript, adaptation only; no Gemini/browser run."
+}

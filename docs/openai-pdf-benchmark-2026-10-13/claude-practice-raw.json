@@ -1,0 +1,29 @@
+{
+  "output": {
+    "message": {
+      "role": "assistant",
+      "content": [
+        {
+          "text": "```json\n{\n  \"questions\": [\n    {\n      \"id\": \"q1-order-degree\",\n      \"prompt\": \"What is the order and degree of the ODE: y''' + 4y'' - y' + 7y = 0?\",\n      \"sectionId\": \"source-2\",\n      \"answerRef\": \"answer-2-step-5\",\n      \"evidence\": [\n        {\n          \"sourceId\": \"p2\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-2-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"q2-separable-pattern\",\n      \"prompt\": \"When solving a separable equation of the form dy/dx = f(x)g(y), what is the general pattern for rearranging and solving it?\",\n      \"sectionId\": \"source-3\",\n      \"answerRef\": \"answer-3-step-2\",\n      \"evidence\": [\n        {\n          \"sourceId\": \"p3\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-3-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"q3-integrating-factor\",\n      \"prompt\": \"For a first-order linear ODE in the form dy/dx + P(x)y = Q(x), what is the integrating factor μ(x)?\",\n      \"sectionId\": \"source-4\",\n      \"answerRef\": \"answer-4-step-2\",\n      \"evidence\": [\n        {\n          \"sourceId\": \"p4\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-4-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"q4-initial-condition-purpose\",\n      \"prompt\": \"In an initial-value problem, what does the initial condition determine?\",\n      \"sectionId\": \"source-5\",\n      \"answerRef\": \"answer-5-paragraph-1\",\n      \"evidence\": [\n        {\n          \"sourceId\": \"p5\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-5-1\"\n        }\n      ]\n    },\n    {\n      \"id\": \"q5-repeated-root-solution\",\n      \"prompt\": \"For a second-order linear homogeneous ODE with a repeated root r, what is the form of the general solution?\",\n      \"sectionId\": \"source-7\",\n      \"answerRef\": \"answer-7-step-2\",\n      \"evidence\": [\n        {\n          \"sourceId\": \"p7\",\n          \"mode\": \"text\",\n          \"excerptId\": \"excerpt-7-1\"\n        }\n      ]\n    }\n  ]\n}\n```"
+        }
+      ]
+    }
+  },
+  "stopReason": "end_turn",
+  "usage": {
+    "inputTokens": 22620,
+    "outputTokens": 671,
+    "totalTokens": 23291,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "metrics": {
+    "latencyMs": 9061
+  },
+  "$metadata": {
+    "httpStatusCode": 200,
+    "requestId": "75426260-2d5e-4ac9-8e63-22f473793a43",
+    "attempts": 1,
+    "totalRetryDelay": 0
+  }
+}

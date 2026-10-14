@@ -1,0 +1,32 @@
+{
+  "sourceBytes": 18629826,
+  "durationSeconds": 422.44403628117914,
+  "observations": [
+    {
+      "variant": "before",
+      "ms": 3692.1911999999998
+    },
+    {
+      "variant": "after",
+      "ms": 1816.7491999999993
+    },
+    {
+      "variant": "after",
+      "ms": 1853.8741
+    },
+    {
+      "variant": "before",
+      "ms": 3341.8269999999993
+    },
+    {
+      "variant": "before",
+      "ms": 3265.218499999999
+    },
+    {
+      "variant": "after",
+      "ms": 1674.5148999999983
+    }
+  ],
+  "decodedSamplesIdentical": true,
+  "scope": "Local preparation+decode only; no Gemini, Claude or browser calls."
+}

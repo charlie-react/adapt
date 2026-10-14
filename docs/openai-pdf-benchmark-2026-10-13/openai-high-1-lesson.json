@@ -1,0 +1,172 @@
+{
+  "introduction": "Follow the guide page by page at your own pace. Each section breaks the existing explanations and worked examples into connected steps. Keep the original pages alongside these sections for exact equations and mathematical notation.",
+  "sections": [
+    {
+      "id": "source-1",
+      "title": "Study guide and learning objectives",
+      "kind": "prose",
+      "paragraphs": [
+        "This Ordinary Differential Equations (ODEs) study guide contains 8 worked examples. The steps below preserve its stated learning objectives."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p1",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 1\n\nOrdinary Differential Equations (ODEs)\n\nA 7-page mathematics study guide with 8 worked examples.\n\nLearning objectives\n\n• Understand what an ordinary differential equation is.\n\n• Identify order and degree and distinguish linear from nonlinear equations.\n\n• Solve basic first-order ODEs using separation of variables and integrating factors.\n\n• Recognize and solve simple second-order linear homogeneous equations.\n\n• Interpret initial conditions and apply them to obtain particular solutions."
+        }
+      ],
+      "steps": [
+        "Understand what an ordinary differential equation is.",
+        "Identify order and degree and distinguish linear from nonlinear equations.",
+        "Solve basic first-order ODEs using separation of variables and integrating factors.",
+        "Recognize and solve simple second-order linear homogeneous equations.",
+        "Interpret initial conditions and apply them to obtain particular solutions."
+      ]
+    },
+    {
+      "id": "source-2",
+      "title": "Introduction to ODEs: terminology and classification",
+      "kind": "prose",
+      "paragraphs": [
+        "An ordinary differential equation involves an unknown function of one independent variable and one or more of its derivatives. The guide describes ODEs as equations used for quantities that change with respect to another variable, such as time, distance or position."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p2",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 2\n\n1. Introduction to ODEs\n\nAn ordinary differential equation is an equation involving an unknown function of one independent variable and one or more of its derivatives. ODEs are used to describe quantities that change with respect to another variable, such as time, distance or position.\n\nBasic terminology\n\n• The order of an ODE is the highest derivative appearing in the equation.\n\n• The degree is the power of the highest-order derivative after the equation has been made polynomial in its\n\nderivatives.\n\n• An ODE is linear if the dependent variable and its derivatives occur only to the first power and are not\n\nmultiplied together.\n\n• A solution is a function that satisfies the differential equation on an appropriate interval.\n\nExample 1 — Identify order and degree\n\n• Consider: y''' + 4y'' - y' + 7y = 0.\n\n• The highest derivative is y''', so the order is 3. The highest derivative occurs to the first power, so the\n\ndegree is 1.\n\nExample 2 — Classify an ODE\n\n• Consider: y' + 3y = x².\n\n• This is a first-order linear ODE because y and y' occur only to the first power and are not multiplied\n\ntogether."
+        }
+      ],
+      "steps": [
+        "Identify the highest derivative appearing in the equation. This determines the order of the ODE.",
+        "For the degree, use the power of the highest-order derivative after the equation has been made polynomial in its derivatives.",
+        "To recognize a linear ODE, check whether the dependent variable and its derivatives occur only to the first power and are not multiplied together.",
+        "A solution is a function that satisfies the differential equation on an appropriate interval.",
+        "In Example 1, the source identifies the highest derivative and gives the order as 3. That derivative occurs to the first power, so the degree is 1. Refer to the original for the exact equation.",
+        "In Example 2, the source classifies the equation as first-order linear because y and its first derivative occur only to the first power and are not multiplied together."
+      ]
+    },
+    {
+      "id": "source-3",
+      "title": "Separation of variables: following the worked examples",
+      "kind": "example",
+      "paragraphs": [
+        "A separable differential equation can be rearranged so that all terms involving the dependent variable are on one side and all terms involving the independent variable are on the other. The source's general pattern is to separate these terms and then integrate both sides.",
+        "Example 3 shows separation without an initial condition. Example 4 follows the same method and then uses an initial condition. Read the original equations alongside the sequence below."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p3",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 3\n\n2. First-Order ODEs: Separation of Variables\n\nA separable differential equation can be rearranged so that all terms involving the dependent variable are on one side and all terms involving the independent variable are on the other.\n\nGeneral pattern\n\n• If dy/dx = f(x)g(y), rearrange to dy/g(y) = f(x) dx, then integrate both sides.\n\nExample 3 — Separable equation\n\n• Solve dy/dx = 3x²y.\n\n• Separate: dy/y = 3x² dx.\n\n• Integrate: ln|y| = x³ + C.\n\n• Therefore: y = Ce^(x³).\n\nExample 4 — Separable equation with an initial condition\n\n• Solve dy/dx = 2xy, given y(0) = 5.\n\n• Separate: dy/y = 2x dx.\n\n• Integrate: ln|y| = x² + C, so y = Ce^(x²).\n\n• Using y(0)=5 gives C=5.\n\n• Therefore: y = 5e^(x²)."
+        }
+      ],
+      "steps": [
+        "Example 3 begins by separating the variables, placing the term involving y on one side and the term involving x on the other.",
+        "The source then integrates both sides. Its next line contains the logarithm of the absolute value of y and the constant C.",
+        "The source then writes y in exponential form. Refer to the original solution line for the exact expression.",
+        "Example 4 also begins by separating the variables. It then integrates both sides and writes y in exponential form.",
+        "The source applies the given initial condition and obtains 5 for the constant C.",
+        "The source then uses that value of C to write the particular solution shown at the end of Example 4."
+      ]
+    },
+    {
+      "id": "source-4",
+      "title": "First-order linear ODEs: the integrating factor method",
+      "kind": "example",
+      "paragraphs": [
+        "The guide presents a standard form for a first-order linear ODE and explains that it is commonly solved using an integrating factor. Refer to the original page for the exact standard form and integrating factor formula.",
+        "Multiplying by the integrating factor converts the left-hand side into the derivative of the product of that factor and y. Example 5 follows this sequence."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p4",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 4\n\n3. First-Order Linear ODEs\n\nA first-order linear ODE can be written in the standard form dy/dx + P(x)y = Q(x). It is commonly solved using an integrating factor.\n\nIntegrating factor\n\n• The integrating factor is μ(x) = e^(∫P(x)dx). Multiplying the equation by μ converts the left-hand side into the\n\nderivative of μy.\n\nExample 5 — Integrating factor method\n\n• Solve dy/dx + 2y = 4.\n\n• Here P(x)=2, so μ=e^(∫2dx)=e^(2x).\n\n• Multiply through: e^(2x)y' + 2e^(2x)y = 4e^(2x).\n\n• Thus d/dx(e^(2x)y)=4e^(2x).\n\n• Integrating gives e^(2x)y=2e^(2x)+C.\n\n• Therefore: y=2+Ce^(-2x)."
+        }
+      ],
+      "steps": [
+        "Begin with the first-order linear equation given in Example 5.",
+        "The source identifies P(x) as 2 and uses it to obtain the integrating factor.",
+        "It multiplies every term of the equation by the integrating factor.",
+        "It then writes the left-hand side as the derivative of the product of the integrating factor and y.",
+        "It integrates to obtain a relation containing the arbitrary constant C.",
+        "Finally, it writes the solution for y. Use the original solution line for the exact expression."
+      ]
+    },
+    {
+      "id": "source-5",
+      "title": "Initial-value problems and rates of change",
+      "kind": "example",
+      "paragraphs": [
+        "An initial-value problem gives a differential equation together with a condition. The condition determines the arbitrary constant in the general solution. The notation in the introductory condition differs between the supplied text versions, so its unclear labels are not reproduced here.",
+        "The guide explains that an ODE may describe a rate of change. If y represents the amount of a quantity at time t, its derivative with respect to t represents its instantaneous rate of change. An initial condition specifies the starting state."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p5",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 5\n\n4. Applications and Initial-Value Problems\n\nAn initial-value problem gives a differential equation together with a condition such as y(xn)=yn. The condition determines the arbitrary constant in the general solution.\n\nExample 6 — Initial-value problem\n\n• Solve y' = 6x - 4, given y(1)=3.\n\n• Integrate: y = 3x² - 4x + C.\n\n• Apply y(1)=3: 3 - 4 + C = 3, so C=4.\n\n• Therefore: y = 3x² - 4x + 4.\n\nCommon interpretation\n\n• An ODE may describe a rate of change. For example, if y represents the amount of a quantity at time t,\n\nthen dy/dt represents its instantaneous rate of change. An initial condition specifies the starting state."
+        }
+      ],
+      "steps": [
+        "Example 6 begins with a differential equation and a given initial condition.",
+        "The source integrates the equation to obtain a general solution containing the constant C.",
+        "It applies the initial condition to that general solution and obtains 4 for C.",
+        "It then uses that value of C to write the particular solution. Refer to the original for the exact equation, calculation and solution."
+      ]
+    },
+    {
+      "id": "source-6",
+      "title": "Second-order linear ODEs and the characteristic equation",
+      "kind": "example",
+      "paragraphs": [
+        "The guide presents a common second-order linear homogeneous ODE with constant coefficients a, b and c. It assumes an exponential form for y and substitutes that form to obtain the characteristic equation, which determines the form of the solution.",
+        "For distinct real roots, the source gives a solution formed from a sum of exponential terms. For a repeated root, it gives an exponential term multiplied by an expression containing a constant term and a term involving x. Root and constant subscripts differ between the supplied text versions and are obscured in the parsed text; those exact labels cannot be confirmed here."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p6",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 6\n\n5. Second-Order Linear ODEs\n\nA common second-order linear homogeneous ODE has the form ay'' + by' + cy = 0, where a, b and c are constants. We use the characteristic equation to determine the form of the solution.\n\nCharacteristic equation\n\n• Assume y=e^(rx). Substitution gives the characteristic equation ar²+br+c=0.\n\n• If the roots are distinct real numbers rn and rn, then y=Cne^(rnx)+Cne^(rnx).\n\n• If there is a repeated root r, then y=(Cn+Cnx)e^(rx).\n\nExample 7 — Distinct roots\n\n• Solve y'' - 5y' + 6y = 0.\n\n• Characteristic equation: r² - 5r + 6 = 0.\n\n• Factor: (r-2)(r-3)=0, giving r=2 and r=3.\n\n• Therefore: y=Cne^(2x)+Cne^(3x)."
+        }
+      ],
+      "steps": [
+        "Example 7 begins with the second-order linear homogeneous equation shown on the page.",
+        "The source forms its characteristic equation.",
+        "It factors the characteristic equation and gives the roots as 2 and 3.",
+        "It then writes the solution as a sum of exponential terms using those roots. Refer to the original for the exact expressions and constant labels."
+      ]
+    },
+    {
+      "id": "source-7",
+      "title": "Repeated roots, revision checklist and formula reference",
+      "kind": "example",
+      "paragraphs": [
+        "The guide states that repeated roots require a second independent solution containing x. Example 8 shows this case for a second-order linear ODE.",
+        "The source's revision checklist asks: Can you identify the order and degree of an ODE? Can you recognize a separable equation? Can you find an integrating factor for a first-order linear equation? Can you apply an initial condition to find an arbitrary constant? Can you form and solve a characteristic equation for a second-order homogeneous ODE?",
+        "The final formula list covers separation of variables, first-order linear equations and their integrating factor, the characteristic equation for second-order constant coefficients, distinct roots and repeated roots. Use the original list for the exact formulas. The constant and root subscripts remain unclear across the supplied text versions."
+      ],
+      "evidence": [
+        {
+          "sourceId": "p7",
+          "mode": "text",
+          "quote": "Ordinary Differential Equations (ODEs) • Page 7\n\n6. Repeated Roots, Summary and Practice\n\nRepeated roots require a second independent solution containing x. This is one of the important cases in second-order linear ODEs.\n\nExample 8 — Repeated root\n\n• Solve y'' - 4y' + 4y = 0.\n\n• Characteristic equation: r² - 4r + 4 = 0 = (r-2)².\n\n• The repeated root is r=2.\n\n• Therefore: y=(Cn+Cnx)e^(2x).\n\nQuick revision checklist\n\n• Can you identify the order and degree of an ODE?\n\n• Can you recognize a separable equation?\n\n• Can you find an integrating factor for a first-order linear equation?\n\n• Can you apply an initial condition to find an arbitrary constant?\n\n• Can you form and solve a characteristic equation for a second-order homogeneous ODE?\n\nKey formulas\n\n• Separable: dy/g(y) = f(x)dx.\n\n• Linear first order: y' + P(x)y = Q(x), with μ=e^(∫P(x)dx).\n\n• Second-order constant coefficients: ar²+br+c=0.\n\n• Distinct roots: y=Cne^(rnx)+Cne^(rnx).\n\n• Repeated root: y=(Cn+Cnx)e^(rx)."
+        }
+      ],
+      "steps": [
+        "Example 8 begins with the second-order equation shown on the page.",
+        "The source forms the characteristic equation and writes it in factored form.",
+        "It identifies 2 as the repeated root.",
+        "It then writes the repeated-root solution with a term containing x. Refer to the original for the exact expression; the obscured constant subscripts are not reconstructed here."
+      ]
+    }
+  ],
+  "practice": [],
+  "limitations": [
+    "Visual and mathematical explanations are AI interpretations of the original pages, not verified reconstructions. Unclear details must remain uncertain.",
+    "These sections use the supplied text excerpts. No original page images were supplied, so visual layout and obscured mathematical labels cannot be checked.",
+    "The supplied text versions differ in the initial-condition labels on the applications page and in root and constant subscripts on the final pages. Those labels have not been guessed or repaired.",
+    "Mathematical explanations describe the source's existing operations; they are not independent verification or reconstructed solutions. Consult the original pages for exact equations and calculations."
+  ]
+}

@@ -5,7 +5,7 @@ import { inspectPdfSource } from "../ingestion/pdf/adapter";
 import { pageBlocks } from "../ingestion/pdf/normalize";
 import { RequestFailure } from "../server/request";
 import type { LearningMaterial, SourceUnit } from "./types";
-import { decodeAudio, isAudio } from "./audio";
+import { decodeAudio, isAudio, type DecodedAudio } from "./audio";
 export const MATERIAL_LIMITS = { textCharacters: 30000, pdfBytes: 4 * 1024 * 1024, imageBytes: 3 * 1024 * 1024, videoBytes: 8 * 1024 * 1024, imageDimension: 4096, videoSeconds: 120 } as const;
 const fingerprint = (bytes: Uint8Array) => createHash("sha256").update(bytes).digest("hex");
 function title(name: string) { return name.split(/[\\/]/).at(-1)!.replace(/[\u0000-\u001f\u007f]/g, "").slice(0, 120) || "Your material"; }
@@ -72,12 +72,13 @@ export function mp4Duration(bytes: Uint8Array): number {
   if (duration > MATERIAL_LIMITS.videoSeconds) throw new RequestFailure("RESOURCE_LIMIT", 413);
   return duration;
 }
-export async function fileMaterial(bytes: Uint8Array, name: string, signal?: AbortSignal): Promise<LearningMaterial> {
+export async function fileMaterial(bytes: Uint8Array, name: string, signal?: AbortSignal, receiveAudio?: (audio: DecodedAudio) => void): Promise<LearningMaterial> {
   if (!bytes.length) throw new RequestFailure("EMPTY_INPUT", 422);
   if (bytes.length > LEARNING_LIMITS.uploadBytes) throw new RequestFailure("RESOURCE_LIMIT", 413);
   const b = Buffer.from(bytes.buffer, bytes.byteOffset, bytes.byteLength), hash = fingerprint(bytes);
   if (isAudio(bytes) || /\.(mp3|wav)$/i.test(name)) {
     const decoded = await decodeAudio(bytes, signal);
+    receiveAudio?.(decoded); // Request-local reuse only; PCM is never added to stored material.
     return { id: `audio:${hash}`, kind: "audio", title: title(name), fingerprint: hash, bytes: Uint8Array.from(bytes), format: decoded.format, units: [{ id: "audio-1", locator: { kind: "audio", duration: decoded.duration } }], limitations: decoded.channels > 1 ? ["Stereo audio is mixed to one channel for transcription. Overlapping speakers may be difficult to distinguish."] : [] };
   }
   if (b.subarray(0, 5).toString() === "%PDF-") {

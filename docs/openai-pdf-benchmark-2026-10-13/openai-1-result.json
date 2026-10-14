@@ -1,0 +1,31 @@
+{
+  "slug": "openai-1",
+  "status": "strictly-validated",
+  "preparationMs": 592.0020999999999,
+  "providerMs": 42984.3029,
+  "tokenCountMs": 2675.4415999999983,
+  "adaptationPipelineMs": 45669.261,
+  "pipelineIncludingPreparationMs": 46261.2631,
+  "nonProviderMs": 9.516499999997905,
+  "usage": {
+    "input_tokens": 5796,
+    "input_tokens_details": {
+      "cache_write_tokens": 5793,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1935,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 7731
+  },
+  "cost": {
+    "baseUsd": 0.0338385,
+    "upperUsd": 0.03384,
+    "cacheWritesItemized": true,
+    "pricing": "Standard; 2026-10-13 published rates; token charge estimate, not invoice/taxes"
+  },
+  "sections": 7,
+  "sourcePages": 7,
+  "browserPaintMeasured": false
+}

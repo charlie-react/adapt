@@ -1,0 +1,308 @@
+{
+  "label": "preservation-4",
+  "fingerprint": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "preparationMs": 313.7456000000002,
+  "prefs": {
+    "needs": [
+      "stepwise"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "preservation": true,
+  "manifestHash": "345ab2eebf7c453afea1f84d8e6a5587c3f7af3f1bbdaf3158586be70a6cc167",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-incremental-1UjojA",
+  "productionUnchanged": true,
+  "metrics": [
+    {
+      "variant": "baseline",
+      "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "providerMs": 54052.2154,
+      "usage": {
+        "inputTokens": 26178,
+        "outputTokens": 2715,
+        "totalTokens": 28893,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "reportedMs": 47564,
+      "completeValidatedMs": 54084.5328,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ],
+      "generationToAssemblyUnchanged": true,
+      "exactPassagesPresent": 4,
+      "requiredPassages": 23,
+      "browser": {
+        "started": 529.2999999988824,
+        "server": {
+          "variant": "baseline",
+          "requestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+          "providerMs": 54052.2154,
+          "usage": {
+            "inputTokens": 26178,
+            "outputTokens": 2715,
+            "totalTokens": 28893,
+            "cacheReadInputTokens": 0,
+            "cacheWriteInputTokens": 0
+          },
+          "reportedMs": 47564,
+          "completeValidatedMs": 54084.5328,
+          "coverage": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5",
+            "p6",
+            "p7",
+            "p8",
+            "p9",
+            "p10",
+            "p11"
+          ],
+          "sectionIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "source-6",
+            "source-7",
+            "source-8",
+            "source-9",
+            "source-10",
+            "source-11"
+          ],
+          "generationToAssemblyUnchanged": true,
+          "exactPassagesPresent": 4,
+          "requiredPassages": 23
+        },
+        "firstSectionMs": 54125.5,
+        "completeVisibleMs": 54125.5,
+        "firstUsefulMs": 54574.70000000112
+      },
+      "keyboardHeadingFocus": true,
+      "silentReadAloud": true,
+      "axeViolations": [],
+      "narrowNoOverflow": true,
+      "assemblyToRenderedUnchanged": true,
+      "practiceProviderMs": 30395.113200000007,
+      "practiceUsage": {
+        "inputTokens": 29078,
+        "outputTokens": 576,
+        "totalTokens": 29654,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "practice": {
+        "questions": 5,
+        "validated": true,
+        "ms": 30404.233299999993
+      }
+    },
+    {
+      "variant": "stream",
+      "originalRequestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+      "requestHash": "6aafb87125feb4520beecf30ae507c25c57acc9cc015330b341aa0ffa8ff7390",
+      "firstValidatedMs": 12983.603400000007,
+      "sectionEvents": [
+        {
+          "id": "source-1",
+          "validatedMs": 12983.632000000012
+        },
+        {
+          "id": "source-2",
+          "validatedMs": 16869.501200000013
+        },
+        {
+          "id": "source-3",
+          "validatedMs": 22359.38070000001
+        },
+        {
+          "id": "source-4",
+          "validatedMs": 27749.353900000002
+        },
+        {
+          "id": "source-5",
+          "validatedMs": 32539.444800000012
+        },
+        {
+          "id": "source-6",
+          "validatedMs": 37629.46400000001
+        },
+        {
+          "id": "source-7",
+          "validatedMs": 41979.7105
+        },
+        {
+          "id": "source-8",
+          "validatedMs": 47308.91900000001
+        }
+      ],
+      "usage": {
+        "inputTokens": 27859,
+        "outputTokens": 3490,
+        "totalTokens": 31349
+      },
+      "reportedMs": 60518,
+      "providerMs": 67181.1142,
+      "completeValidatedMs": 67206.2086,
+      "coverage": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11"
+      ],
+      "sectionIds": [
+        "source-1",
+        "source-2",
+        "source-3",
+        "source-4",
+        "source-5",
+        "source-6",
+        "source-7",
+        "source-8",
+        "source-9",
+        "source-10",
+        "source-11"
+      ],
+      "generationToAssemblyUnchanged": true,
+      "exactPassagesPresent": 23,
+      "requiredPassages": 23,
+      "preservationValidated": true,
+      "browser": {
+        "started": 221.5,
+        "firstSectionMs": 13053.200000001118,
+        "firstUsefulMs": 17229.700000001118,
+        "server": {
+          "variant": "stream",
+          "originalRequestHash": "574e603282882a7197b18229fffd8e17a957507d681e94b9293491665ccfaa2c",
+          "requestHash": "6aafb87125feb4520beecf30ae507c25c57acc9cc015330b341aa0ffa8ff7390",
+          "firstValidatedMs": 12983.603400000007,
+          "sectionEvents": [
+            {
+              "id": "source-1",
+              "validatedMs": 12983.632000000012
+            },
+            {
+              "id": "source-2",
+              "validatedMs": 16869.501200000013
+            },
+            {
+              "id": "source-3",
+              "validatedMs": 22359.38070000001
+            },
+            {
+              "id": "source-4",
+              "validatedMs": 27749.353900000002
+            },
+            {
+              "id": "source-5",
+              "validatedMs": 32539.444800000012
+            },
+            {
+              "id": "source-6",
+              "validatedMs": 37629.46400000001
+            },
+            {
+              "id": "source-7",
+              "validatedMs": 41979.7105
+            },
+            {
+              "id": "source-8",
+              "validatedMs": 47308.91900000001
+            }
+          ],
+          "usage": {
+            "inputTokens": 27859,
+            "outputTokens": 3490,
+            "totalTokens": 31349
+          },
+          "reportedMs": 60518,
+          "providerMs": 67181.1142,
+          "completeValidatedMs": 67206.2086,
+          "coverage": [
+            "p1",
+            "p2",
+            "p3",
+            "p4",
+            "p5",
+            "p6",
+            "p7",
+            "p8",
+            "p9",
+            "p10",
+            "p11"
+          ],
+          "sectionIds": [
+            "source-1",
+            "source-2",
+            "source-3",
+            "source-4",
+            "source-5",
+            "source-6",
+            "source-7",
+            "source-8",
+            "source-9",
+            "source-10",
+            "source-11"
+          ],
+          "generationToAssemblyUnchanged": true,
+          "exactPassagesPresent": 23,
+          "requiredPassages": 23,
+          "preservationValidated": true
+        },
+        "completeVisibleMs": 67232.5
+      },
+      "keyboardHeadingFocus": true,
+      "silentReadAloud": true,
+      "axeViolations": [],
+      "narrowNoOverflow": true,
+      "assemblyToRenderedUnchanged": true,
+      "practiceProviderMs": 14633.510099999985,
+      "practiceUsage": {
+        "inputTokens": 30390,
+        "outputTokens": 575,
+        "totalTokens": 30965,
+        "cacheReadInputTokens": 0,
+        "cacheWriteInputTokens": 0
+      },
+      "practice": {
+        "questions": 5,
+        "validated": true,
+        "ms": 14643.297699999996
+      }
+    }
+  ]
+}

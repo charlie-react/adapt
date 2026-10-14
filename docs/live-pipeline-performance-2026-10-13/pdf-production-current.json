@@ -1,0 +1,152 @@
+{
+  "kind": "pdf",
+  "label": "production-current",
+  "model": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-live-performance-1LonjG",
+  "preferences": {
+    "needs": [
+      "stepwise"
+    ],
+    "description": "",
+    "focus": ""
+  },
+  "bytes": 38632,
+  "sourceSha256": "cc5c2637a0f78bd01f444a8d19e300a9eeed866f33eb84c2c1fc9a1398ac9d01",
+  "directPreparationMs": 469.73759999999993,
+  "uploadHandlerMs": 720.5120000000006,
+  "uploadStatus": 200,
+  "uploadClickToSupportMs": 1034.8101000000006,
+  "claudeMs": 48660.2333,
+  "claudeReportedMs": 47590,
+  "usage": {
+    "inputTokens": 26178,
+    "outputTokens": 2734,
+    "totalTokens": 28912,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "responseShape": [
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    },
+    {
+      "keys": [
+        "id",
+        "title",
+        "kind",
+        "paragraphs",
+        "steps",
+        "evidence"
+      ]
+    }
+  ],
+  "providerWithValidationMs": 48694.490000000005,
+  "sections": 11,
+  "paragraphCharacters": 5164,
+  "adaptHandlerMs": 48701.4402,
+  "adaptStatus": 200,
+  "adaptClickToVisibleMs": 49217.4173,
+  "totalWaitingMs": 50252.2274,
+  "validatedVisible": true,
+  "sourceUnits": 11,
+  "pages": 11,
+  "measurement": "Current production UI with current injected HTTP/service/providers. Local visible lesson plus two frames, not deployed first-paint."
+}

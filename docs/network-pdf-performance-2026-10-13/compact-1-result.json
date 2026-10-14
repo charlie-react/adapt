@@ -1,0 +1,13 @@
+{
+  "slug": "compact-1",
+  "variant": "compact",
+  "trial": 1,
+  "status": "failed",
+  "failure": {
+    "name": "TimeoutError",
+    "message": "locator.waitFor: Timeout 180000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('heading', { name: 'What would make learning more comfortable?' }) to be visible\u001b[22m\n"
+  },
+  "uploadHandlerPreparationMs": 2.117599999997765,
+  "browserMeasurement": "Unchanged production UI; intercepted local API requests run current handlers/store/live Claude. Visible lesson plus two animation frames, not deployed-network first-paint timing.",
+  "reviewDirectory": "C:\\Users\\besle\\AppData\\Local\\Temp\\adapt-network-review-Yi4nJP"
+}

@@ -1,0 +1,26 @@
+{
+  "reviewed": "2026-10-13",
+  "scope": "First live ODE pair; visible adapted text versus rendered source pages and extracted text. No independent mathematics solving.",
+  "claude": {
+    "verdict": "fail",
+    "reason": "Only one of eight worked-example starting equations appears in visible lesson text; most worked equations, calculation lines and final results are omitted. Ambiguous extracted constant/root labels are replaced with numbered subscripts that the rendered source cannot verify."
+  },
+  "openai": {
+    "verdict": "fail",
+    "reason": "No worked-example starting equation appears in visible lesson text. Many steps direct the learner to the original instead of supplying the source calculations; source panels are not rendered in current ADAPT UI. It acknowledges obscured labels rather than guessing them."
+  },
+  "sourceLimitations": [
+    "Poppler reports missing display fonts. Some Greek/subscript glyphs on pages 4–7 are not reliably legible in the render; intended replacements were not inferred.",
+    "Equation-presence checks ignore whitespace only and assess display text, not hidden evidence. They are omission signals, not proof of total semantic fidelity."
+  ],
+  "decision": "No repeat generations and no 28-page experiment. Both strict validators pass, but correctness/completeness gate fails; OpenAI has no observed provider latency advantage.",
+  "practiceReview": {
+    "strictValidation": "Both five-question responses pass current strict validator and HTTP handler.",
+    "semanticLimitations": [
+      "OpenAI lesson Q1 asks order and degree; feedback selected only the order statement.",
+      "OpenAI lesson Q4 asks integrating-factor expression and effect; selected paragraph supplies the effect but no expression.",
+      "Claude lesson Q2 asks rearrangement and solving; feedback selected only the rearrangement."
+    ],
+    "noProductionRepair": true
+  }
+}

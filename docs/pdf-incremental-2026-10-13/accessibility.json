@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "No autoplay; partial lesson cannot start practice",
+    "New section preserves focus, does not restart speech, and does not repeat the loading announcement",
+    "Keyboard section navigation, newly registered speech, full completion and practice availability",
+    "No axe violations and no horizontal overflow at 320 pixels",
+    "Cancellation keeps incomplete state and recovers focus",
+    "Duplicate section fails closed",
+    "Connection ending early is never complete",
+    "Provider failure retains clearly incomplete state",
+    "Explicit full-lesson fallback/retry clears stale partial content"
+  ],
+  "axeViolations": [],
+  "manualStillRequired": [
+    "Actual audible playback",
+    "Screen-reader announcements and heading navigation",
+    "Review source fidelity of live generated content"
+  ]
+}

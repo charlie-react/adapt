@@ -1,0 +1,50 @@
+{
+  "ceilingUsd": 5,
+  "spentUpperUsd": 0.08511,
+  "pendingUsd": 0,
+  "attempts": 2,
+  "calls": [
+    {
+      "slug": "openai-1",
+      "usage": {
+        "input_tokens": 5796,
+        "input_tokens_details": {
+          "cache_write_tokens": 5793,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1935,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 7731
+      },
+      "cost": {
+        "baseUsd": 0.0338385,
+        "upperUsd": 0.03384,
+        "cacheWritesItemized": true,
+        "pricing": "Standard; 2026-10-13 published rates; token charge estimate, not invoice/taxes"
+      }
+    },
+    {
+      "slug": "openai-high-1",
+      "usage": {
+        "input_tokens": 5796,
+        "input_tokens_details": {
+          "cache_write_tokens": 5793,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3678,
+        "output_tokens_details": {
+          "reasoning_tokens": 1552
+        },
+        "total_tokens": 9474
+      },
+      "cost": {
+        "baseUsd": 0.0512685,
+        "upperUsd": 0.05127,
+        "cacheWritesItemized": true,
+        "pricing": "Standard; 2026-10-13 published rates; token charge estimate, not invoice/taxes"
+      }
+    }
+  ]
+}

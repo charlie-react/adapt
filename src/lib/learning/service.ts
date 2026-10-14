@@ -1,7 +1,7 @@
 import "server-only";
 import { LEARNING_LIMITS } from "./limits";
 import { createHash, randomBytes } from "node:crypto";
-import type { AccessPreferences, AdaptedExperience, LearningMaterial, LearningProvider, LearningSnapshot, MaterialUnderstanding } from "./types";
+import type { AccessPreferences, AdaptedExperience, AdaptedSection, LearningMaterial, LearningProvider, LearningSnapshot, MaterialUnderstanding } from "./types";
 import { validateExperience, validateReflection, validateSourceAdaptation, validateUnderstanding } from "./validation";
 import { RequestFailure } from "../server/request";
 import { sourceForAdaptation } from "./material";
@@ -55,7 +55,7 @@ export function createLearningStore({ now = Date.now, ttlMs = 15 * 60000, maxSes
         return snapshot(entry);
       });
     },
-    async adapt(key: string | undefined, fingerprint: string, revision: number, preferences: AccessPreferences, provider: LearningProvider, signal?: AbortSignal) {
+    async adapt(key: string | undefined, fingerprint: string, revision: number, preferences: AccessPreferences, provider: LearningProvider, signal?: AbortSignal, publish?: (section: AdaptedSection) => void) {
       return work(key, signal, async (entry, taskSignal) => {
         current(entry, fingerprint, revision); if (entry.analysis.status !== "source-ready" && (!entry.understanding || entry.analysis.status !== "ready")) throw new RequestFailure("NOT_READY", 409);
         const source = entry.analysis.status === "source-ready" ? sourceForAdaptation(entry.material) : entry.material;
@@ -63,11 +63,27 @@ export function createLearningStore({ now = Date.now, ttlMs = 15 * 60000, maxSes
         try {
           if (entry.analysis.status === "source-ready") {
             if (!provider.adaptSource) throw new Error("Source adaptation is unavailable");
-            experience = validateSourceAdaptation(await provider.adaptSource(structuredClone(source), structuredClone(preferences), taskSignal), source, preferences);
+            const progress = (section: AdaptedSection) => {
+              taskSignal.throwIfAborted(); if (get(key) !== entry) throw new RequestFailure("STALE_MATERIAL", 409); current(entry, fingerprint, revision);
+              publish?.(structuredClone(section));
+            };
+            const result = publish && provider.adaptSourceProgress
+              ? await provider.adaptSourceProgress(structuredClone(source), structuredClone(preferences), taskSignal, progress)
+              : await provider.adaptSource(structuredClone(source), structuredClone(preferences), taskSignal);
+            experience = validateSourceAdaptation(result, source, preferences);
           } else {
             experience = validateExperience(await provider.adapt(structuredClone(entry.material), structuredClone(entry.understanding!), structuredClone(preferences), taskSignal), entry.material, entry.understanding!);
           }
-        } catch (error) { if (error instanceof RequestFailure && error.code === "RESOURCE_LIMIT") throw error; throw new RequestFailure("AI_UNAVAILABLE", 503); }
+        } catch (error) {
+          if (error instanceof RequestFailure && ["RESOURCE_LIMIT", "EXPIRED", "STALE_MATERIAL"].includes(error.code)) throw error;
+          const failure = new RequestFailure("AI_UNAVAILABLE", 503);
+          failure.cause = error; // Server-only; HTTP responses serialize only code and learner message.
+          if (error instanceof Error && error.name === "CredentialsProviderError" && error.message === "Your session has expired. Please reauthenticate.") {
+            // Never log an arbitrary provider exception, credential object or source content.
+            console.error("ADAPT adaptation unavailable", { stage: "credentials", reason: "AWS login session expired. Renew the existing AWS login." });
+          }
+          throw failure;
+        }
         if (taskSignal.aborted) throw new RequestFailure("AI_UNAVAILABLE", 503); get(key); current(entry, fingerprint, revision); entry.preferences = structuredClone(preferences); entry.experience = experience; entry.questions = undefined; entry.revision++; return snapshot(entry);
       });
     },

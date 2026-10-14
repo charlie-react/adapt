@@ -1,0 +1,24 @@
+{
+  "uploadHandlerPreparationMs": 466.93240000000014,
+  "uploadHttpStatus": 200,
+  "uploadClickToSupportMs": 956.6552999999999,
+  "requestConstructionMs": 1.7659000000003289,
+  "systemCharacters": 12055,
+  "userTextCharacters": 8717,
+  "originalPdfBytes": 38632,
+  "providerMs": 58427.8431,
+  "providerReportedMs": 54758,
+  "usage": {
+    "inputTokens": 26178,
+    "outputTokens": 3167,
+    "totalTokens": 29345,
+    "cacheReadInputTokens": 0,
+    "cacheWriteInputTokens": 0
+  },
+  "stopReason": "end_turn",
+  "parseMs": 0.7870999999940977,
+  "evidenceMs": 1.0072000000000116,
+  "providerValidationMs": 1.5987000000022817,
+  "adaptHandlerMs": 58441.7899,
+  "adaptHttpStatus": 200
+}
